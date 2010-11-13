@@ -1,10 +1,40 @@
 // !$*UTF8*$!
 {
+	1D3623240D0F684500981E51 /* FinalProjectAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {600, 442}}";
+			sepNavSelRange = "{52, 0}";
+			sepNavVisRange = "{0, 432}";
+		};
+	};
 	1D6058900D05DD3D006BFB54 /* FinalProject */ = {
 		activeExec = 0;
 		executables = (
 			E12A0697128E219300B25945 /* FinalProject */,
 		);
+	};
+	28A0AAE50D9B0CCF005BE974 /* FinalProject_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {684, 245}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 365}";
+			sepNavWindowFrame = "{{15, 261}, {965, 512}}";
+		};
+	};
+	28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {656, 260}}";
+			sepNavSelRange = "{118, 0}";
+			sepNavVisRange = "{0, 486}";
+		};
+	};
+	28C286E00D94DF7D0034E888 /* RootViewController.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{5919, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{5970, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{6020, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 11912}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1118, 4407}}";
+			sepNavSelRange = "{127, 0}";
+			sepNavVisRange = "{0, 367}";
+		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
@@ -40,8 +70,24 @@
 			PBXPerProjectTemplateStateSaveDate = 311304595;
 			PBXWorkspaceStateSaveDate = 311304595;
 		};
+		perUserProjectItems = {
+			E12A06BE128E22CE00B25945 /* PBXTextBookmark */ = E12A06BE128E22CE00B25945 /* PBXTextBookmark */;
+			E12A06BF128E22CE00B25945 /* PBXTextBookmark */ = E12A06BF128E22CE00B25945 /* PBXTextBookmark */;
+			E12A06C0128E22CE00B25945 /* PBXTextBookmark */ = E12A06C0128E22CE00B25945 /* PBXTextBookmark */;
+			E12A06C1128E22CE00B25945 /* PBXTextBookmark */ = E12A06C1128E22CE00B25945 /* PBXTextBookmark */;
+			E12A06C2128E22CE00B25945 /* PBXTextBookmark */ = E12A06C2128E22CE00B25945 /* PBXTextBookmark */;
+			E12A06C3128E22CE00B25945 /* PBXTextBookmark */ = E12A06C3128E22CE00B25945 /* PBXTextBookmark */;
+		};
 		sourceControlManager = E12A06B0128E219700B25945 /* Source Control */;
 		userBuildSettings = {
+			SYMROOT = /Users/amy/Documents/SchoolStuff/Semesters/School_1011F/CMSC491_iOSDev/FinalProject/build;
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 245}}";
+			sepNavSelRange = "{34, 0}";
+			sepNavVisRange = "{0, 265}";
 		};
 	};
 	E12A0697128E219300B25945 /* FinalProject */ = {
@@ -77,12 +123,72 @@
 		isSCMEnabled = 0;
 		scmConfiguration = {
 			repositoryNamesForRoots = {
-				"" = "";
+				"" = iOSdevClass;
 			};
 		};
 	};
 	E12A06B1128E219700B25945 /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
+	};
+	E12A06BE128E22CE00B25945 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28A0AAE50D9B0CCF005BE974 /* FinalProject_Prefix.pch */;
+		name = "FinalProject_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 365;
+		vrLoc = 0;
+	};
+	E12A06BF128E22CE00B25945 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 5";
+		rLen = 0;
+		rLoc = 34;
+		rType = 0;
+		vrLen = 265;
+		vrLoc = 0;
+	};
+	E12A06C0128E22CE00B25945 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* FinalProjectAppDelegate.h */;
+		name = "FinalProjectAppDelegate.h: 4";
+		rLen = 0;
+		rLoc = 52;
+		rType = 0;
+		vrLen = 432;
+		vrLoc = 0;
+	};
+	E12A06C1128E22CE00B25945 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 10";
+		rLen = 0;
+		rLoc = 127;
+		rType = 0;
+		vrLen = 367;
+		vrLoc = 0;
+	};
+	E12A06C2128E22CE00B25945 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
+		name = "RootViewController.h: 4";
+		rLen = 0;
+		rLoc = 47;
+		rType = 0;
+		vrLen = 486;
+		vrLoc = 0;
+	};
+	E12A06C3128E22CE00B25945 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
+		name = "RootViewController.h: 9";
+		rLen = 0;
+		rLoc = 118;
+		rType = 0;
+		vrLen = 486;
+		vrLoc = 0;
 	};
 }

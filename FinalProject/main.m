@@ -2,9 +2,7 @@
 //  main.m
 //  FinalProject
 //
-//  Created by Amy Ciavolino on 11/12/10.
-//  Copyright Single Line Softwear 2010. All rights reserved.
-//
+
 
 #import <UIKit/UIKit.h>
 
