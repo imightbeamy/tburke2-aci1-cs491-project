@@ -14,6 +14,34 @@
 @implementation RootViewController
 
 @synthesize fetchedResultsController=fetchedResultsController_, managedObjectContext=managedObjectContext_;
+@synthesize searchBar;
+
+
+#pragma mark -
+#pragma mark Search Bar
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+	//NSLog(@"Text changed %@", searchText);
+	
+	// TO DO:
+	// Change the search code for the UITableView display to show
+	// the results of the search.
+	
+	
+}
+
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+	// TO DO:
+	// Put the UITableView back ot the standard list of choices
+	
+	
+	
+}
+
+
+
+
 
 
 #pragma mark -
@@ -23,11 +51,13 @@
     [super viewDidLoad];
 
     // Set up the edit and add buttons.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    //self.navigationItem.leftBarButtonItem = self.editButtonItem;
     
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject)];
-    self.navigationItem.rightBarButtonItem = addButton;
-    [addButton release];
+    //UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject)];
+    //self.navigationItem.rightBarButtonItem = addButton;
+    //[addButton release];
+	self.navigationItem.title = @"Conference Name";
+
 }
 
 
@@ -37,11 +67,18 @@
 }
 
 
-/*
+
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+
+	// Put the search bar away when returning to this view
+	// from a subview.
+	[self searchBarCancelButtonClicked:self.searchBar];
+
 }
-*/
+
+
+
 /*
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
@@ -311,6 +348,8 @@
     
     // Relinquish ownership any cached data, images, etc that aren't in use.
 }
+
+
 
 
 - (void)viewDidUnload {
