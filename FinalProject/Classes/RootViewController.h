@@ -8,14 +8,14 @@
 
 @interface RootViewController : UITableViewController <NSFetchedResultsControllerDelegate, UISearchBarDelegate> {
 
-@private
-    NSFetchedResultsController *fetchedResultsController_;
-    NSManagedObjectContext *managedObjectContext_;
 }
 
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 
 @property (nonatomic, retain) IBOutlet UISearchBar *searchBar;
+
+
+@property(nonatomic,retain) NSArray * conferenceObjs;
 
 @end

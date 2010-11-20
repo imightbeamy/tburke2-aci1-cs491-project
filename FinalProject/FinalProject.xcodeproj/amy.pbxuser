@@ -41,7 +41,7 @@
 			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{5332, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{5383, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{5433, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 6793}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {1132, 3094}}";
 			sepNavSelRange = "{2893, 0}";
-			sepNavVisRange = "{2155, 1317}";
+			sepNavVisRange = "{2155, 1379}";
 			sepNavWindowFrame = "{{15, 261}, {965, 512}}";
 		};
 	};
@@ -57,6 +57,20 @@
 			E12A0697128E219300B25945 /* FinalProject */,
 		);
 		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXBookmarksDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBookmarksDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					200,
+					582,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBookmarksDataSource_LocationID,
+					PBXBookmarksDataSource_NameID,
+					PBXBookmarksDataSource_CommentsID,
+				);
+			};
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
 				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
@@ -87,7 +101,7 @@
 					20,
 					748,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -163,6 +177,11 @@
 			E1F842F11298297B0094B4DC /* PBXTextBookmark */ = E1F842F11298297B0094B4DC /* PBXTextBookmark */;
 			E1F842F41298299C0094B4DC /* PBXTextBookmark */ = E1F842F41298299C0094B4DC /* PBXTextBookmark */;
 			E1F842F7129829A90094B4DC /* PBXTextBookmark */ = E1F842F7129829A90094B4DC /* PBXTextBookmark */;
+			E1F842FA129839460094B4DC /* PBXTextBookmark */ = E1F842FA129839460094B4DC /* PBXTextBookmark */;
+			E1F842FB129839460094B4DC /* PBXTextBookmark */ = E1F842FB129839460094B4DC /* PBXTextBookmark */;
+			E1F842FC129839460094B4DC /* PBXTextBookmark */ = E1F842FC129839460094B4DC /* PBXTextBookmark */;
+			E1F842FD129839460094B4DC /* PlistBookmark */ = E1F842FD129839460094B4DC /* PlistBookmark */;
+			E1F842FE129839460094B4DC /* PBXTextBookmark */ = E1F842FE129839460094B4DC /* PBXTextBookmark */;
 		};
 		sourceControlManager = E12A06B0128E219700B25945 /* Source Control */;
 		userBuildSettings = {
@@ -178,7 +197,7 @@
 	};
 	7D04514D1296F18A009589DB /* ConferenceObject.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {950, 581}}";
+			sepNavIntBoundsRect = "{{0, 0}, {950, 580}}";
 			sepNavSelRange = "{417, 0}";
 			sepNavVisRange = "{0, 417}";
 			sepNavWindowFrame = "{{38, 240}, {965, 512}}";
@@ -605,5 +624,57 @@
 		rType = 0;
 		vrLen = 1317;
 		vrLoc = 2155;
+	};
+	E1F842FA129839460094B4DC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 117";
+		rLen = 0;
+		rLoc = 2893;
+		rType = 0;
+		vrLen = 1379;
+		vrLoc = 2155;
+	};
+	E1F842FB129839460094B4DC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
+		name = "RootViewController.h: 19";
+		rLen = 14;
+		rLoc = 486;
+		rType = 0;
+		vrLen = 508;
+		vrLoc = 0;
+	};
+	E1F842FC129839460094B4DC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E16B774A1297054000D9B24B /* ConferenceObjectViewController.m */;
+		name = "ConferenceObjectViewController.m: 15";
+		rLen = 0;
+		rLoc = 272;
+		rType = 0;
+		vrLen = 1281;
+		vrLoc = 0;
+	};
+	E1F842FD129839460094B4DC /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = E1F842B6129789FE0094B4DC /* conferenceData.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			0,
+		);
+		name = "/Users/amy/Documents/SchoolStuff/Semesters/School_1011F/ioscotest/tburke2-aci1-cs491-project/FinalProject/conferenceData.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	E1F842FE129839460094B4DC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7D04514D1296F18A009589DB /* ConferenceObject.h */;
+		name = "ConferenceObject.h: 25";
+		rLen = 0;
+		rLoc = 417;
+		rType = 0;
+		vrLen = 417;
+		vrLoc = 0;
 	};
 }
