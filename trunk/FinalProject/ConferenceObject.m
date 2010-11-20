@@ -11,12 +11,31 @@
 
 @implementation ConferenceObject 
 
-@dynamic endTime;
-@dynamic title;
-@dynamic favorite;
-@dynamic image;
-@dynamic type;
-@dynamic startTime;
-@dynamic description;
+@synthesize title;
+@synthesize favorite;
+@synthesize image;
+@synthesize description;
+
+- (id) initWithTitle: (NSString *) t image: (UIImage *) i description: (NSString *) d
+{
+	if(self = [super init])
+	{
+		self.title = t;
+		self.image = i;
+		self.description = d;
+	}
+	return self;
+}
+
++ (id)ConferenceObjectFromDictionary: (NSDictionary *) dictionary
+{	
+	ConferenceObject * co = [[ConferenceObject alloc] init];
+	
+	co.title = [dictionary objectForKey:@"title"];
+	co.description = [dictionary objectForKey:@"description"];
+	co.image = [UIImage imageNamed: [dictionary objectForKey:@"image"]];
+	
+	return [co autorelease];
+}
 
 @end

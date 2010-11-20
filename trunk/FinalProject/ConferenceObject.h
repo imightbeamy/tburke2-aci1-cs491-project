@@ -9,17 +9,14 @@
 #import <CoreData/CoreData.h>
 
 
-@interface ConferenceObject :  NSManagedObject  
+@interface ConferenceObject :  NSObject  
 {
 }
 
-@property (nonatomic, retain) NSDate * endTime;
 @property (nonatomic, retain) NSString * title;
-@property (nonatomic, retain) NSNumber * favorite;
-@property (nonatomic, retain) NSString * image;
-@property (nonatomic, retain) NSString * type;
-@property (nonatomic, retain) NSDate * startTime;
+@property (nonatomic, retain) UIImage * image;
 @property (nonatomic, retain) NSString * description;
+@property bool favorite;
 
 @end
 
