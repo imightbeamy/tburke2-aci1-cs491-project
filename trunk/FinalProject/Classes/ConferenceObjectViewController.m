@@ -17,6 +17,10 @@
 @synthesize scrollView;
 @synthesize favoriteButton;
 
+@synthesize lblTime;
+@synthesize lblLocation;
+@synthesize timeLocationView;
+
 - (void)favoriteButtonPressed {
 	self.confObj.favorite = !self.confObj.favorite;
 	if(self.confObj.favorite) {
@@ -30,23 +34,29 @@
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
 	
+	self.title = self.confObj.title;
+	
 	int scrollViewHeight = 20;
 	
 	[self.image initWithImage:self.confObj.image];
 	[self.image sizeThatFits:CGSizeMake(280.0, ((280 * self.confObj.image.size.height) / self.confObj.image.size.width) )];
 	
 	scrollViewHeight += ((280 * self.confObj.image.size.height) / self.confObj.image.size.width);
-	scrollViewHeight += 20;
+	//scrollViewHeight += 20;
 	
-	//[NSString stringWithString:[self.confObj class]]
-	
-	
-	if(YES) {
+	if(self.confObj.type == EventType) {
+		scrollViewHeight += 5;
+		self.timeLocationView.center = CGPointMake(self.timeLocationView.center.x, scrollViewHeight + (self.timeLocationView.frame.size.height / 2));
+		scrollViewHeight += self.timeLocationView.frame.size.height;
+		self.timeLocationView.hidden = NO;
 		
+		self.lblTime.text = @"Time will go here";
+		self.lblLocation.text = @"Location will go here";
+		
+	} else {
+		self.timeLocationView.hidden = YES;
 	}
-	
-	
-	
+	scrollViewHeight += 5;
 	
 	[self.textView sizeToFit];
 	

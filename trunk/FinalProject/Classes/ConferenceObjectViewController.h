@@ -20,6 +20,9 @@
 @property (nonatomic, retain) IBOutlet UITextView *textView;
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *favoriteButton;
+@property (nonatomic, retain) IBOutlet UILabel *lblTime;
+@property (nonatomic, retain) IBOutlet UILabel *lblLocation;
+@property (nonatomic, retain) IBOutlet UIView *timeLocationView;
 
 
 - (void)favoriteButtonPressed;
