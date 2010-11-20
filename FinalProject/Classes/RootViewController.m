@@ -6,6 +6,7 @@
 #import "RootViewController.h"
 #import "FinalProjectAppDelegate.h"
 #import	"ConferenceObject.h"
+#import "ConferenceObjectViewController.h"
 
 @interface RootViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -105,8 +106,7 @@
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
 
 	ConferenceObject * co = [self.conferenceObjs objectAtIndex:indexPath.row];
-    cell.textLabel.text = [co typeString];
-	cell.detailTextLabel.text = [co typeString];
+    cell.textLabel.text = [co title];
 }
 
 #pragma mark -
@@ -184,12 +184,12 @@
     // Navigation logic may go here -- for example, create and push another view controller.
     
 	ConferenceObjectViewController *covc = [[ConferenceObjectViewController alloc] initWithNibName:@"ConferenceObjectViewController" bundle:nil];
-	ConferenceObject *co = [self.conferenceObjs objectAtIndexPath:indexPath.row];
+	ConferenceObject *co = [self.conferenceObjs objectAtIndex:indexPath.row];
 	
-	c
+	covc.confObj = co;
 	// Pass the selected object to the new view controller.
 	[self.navigationController pushViewController:covc animated:YES];
-	[detailViewController release];
+	[covc release];
 }
 
 /*
