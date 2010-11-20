@@ -6,7 +6,7 @@
 #import "RootViewController.h"
 #import "FinalProjectAppDelegate.h"
 #import	"ConferenceObject.h"
-#import "ConferenceObjectViewController.h"
+#import "SubMenuViewController.h"
 
 @interface RootViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -16,6 +16,7 @@
 
 @synthesize searchBar;
 @synthesize conferenceObjs;
+@synthesize menuOptions;
 
 #pragma mark -
 #pragma mark Search Bar
@@ -50,10 +51,8 @@
 		[self.conferenceObjs addObject:[[ConferenceObject ConferenceObjectFromDictionary:dic] retain]];
 	}
 	
-	NSLog(@"conferenceObjs:::::::::%@", self.conferenceObjs);
-	NSArray * filtered = [self.conferenceObjs filteredArrayUsingPredicate:[NSPredicate predicateWithFormat: @"type == 0"]];
-	NSLog(@"filtered::::::::%@", filtered);
-		 
+	self.menuOptions = [NSMutableArray arrayWithObjects: @"Events", @"Speakers", @"Sponsors",nil];
+
 	// Set up the edit and add buttons.
     //self.navigationItem.leftBarButtonItem = self.editButtonItem;
     
@@ -103,12 +102,6 @@
  */
 
 
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
-
-	ConferenceObject * co = [self.conferenceObjs objectAtIndex:indexPath.row];
-    cell.textLabel.text = [co title];
-}
-
 #pragma mark -
 #pragma mark Table view data source
 
@@ -118,9 +111,13 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.conferenceObjs count];
+    return [self.menuOptions count];
 }
 
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+	
+	cell.textLabel.text =  [self.menuOptions objectAtIndex:indexPath.row];
+}
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -131,8 +128,7 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
     
-    // Configure the cell.
-    [self configureCell:cell atIndexPath:indexPath];
+   cell.textLabel.text =  [self.menuOptions objectAtIndex:indexPath.row];
     
     return cell;
 }
@@ -148,29 +144,6 @@
 */
 
 
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the managed object for the given index path
-        NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
-        [context deleteObject:[self.fetchedResultsController objectAtIndexPath:indexPath]];
-        
-        // Save the context.
-        NSError *error = nil;
-        if (![context save:&error]) {
-            /*
-             Replace this implementation with code to handle the error appropriately.
-             
-             abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. If it is not possible to recover from the error, display an alert panel that instructs the user to quit the application by pressing the Home button.
-             */
-            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-            abort();
-        }
-    }   
-}
-
-
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
     // The table view should not be re-orderable.
     return NO;
@@ -182,14 +155,23 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic may go here -- for example, create and push another view controller.
-    
-	ConferenceObjectViewController *covc = [[ConferenceObjectViewController alloc] initWithNibName:@"ConferenceObjectViewController" bundle:nil];
-	ConferenceObject *co = [self.conferenceObjs objectAtIndex:indexPath.row];
+	NSLog(@"menu stuff %@", [self.menuOptions objectAtIndex:indexPath.row]);
+    NSString * menuchoice =  [self.menuOptions objectAtIndex:indexPath.row];
 	
-	covc.confObj = co;
+	SubMenuViewController *sm = [[SubMenuViewController alloc] initWithNibName:@"SubMenuViewController" bundle:nil];
+
+	if([menuchoice isEqualToString:@"Events"])
+		sm.conferenceObjs = [self.conferenceObjs filteredArrayUsingPredicate:[NSPredicate predicateWithFormat: @"type == 0"]];	
+	else if([menuchoice isEqualToString:@"Speakers"])
+		sm.conferenceObjs = [self.conferenceObjs filteredArrayUsingPredicate:[NSPredicate predicateWithFormat: @"type == 2"]];
+	else if([menuchoice isEqualToString:@"Sponsors"])
+		sm.conferenceObjs = [self.conferenceObjs filteredArrayUsingPredicate:[NSPredicate predicateWithFormat: @"type == 1"]];
+	else
+		sm.conferenceObjs = self.conferenceObjs;
+	
 	// Pass the selected object to the new view controller.
-	[self.navigationController pushViewController:covc animated:YES];
-	[covc release];
+	[self.navigationController pushViewController:sm animated:YES];
+	[sm release];
 }
 
 /*

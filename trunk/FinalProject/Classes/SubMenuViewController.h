@@ -13,6 +13,6 @@
 
 }
 
-@property(nonatomic,retain) NSMutableArray * conferenceObjs;
+@property(nonatomic,retain) NSArray * conferenceObjs;
 
 @end
