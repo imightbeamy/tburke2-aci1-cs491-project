@@ -50,6 +50,7 @@
 		scrollViewHeight += self.timeLocationView.frame.size.height;
 		self.timeLocationView.hidden = NO;
 		
+		// Need to work on time/date code
 		self.lblTime.text = @"Time will go here";
 		self.lblLocation.text = @"Location will go here";
 		
