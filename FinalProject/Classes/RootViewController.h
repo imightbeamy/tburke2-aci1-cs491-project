@@ -10,12 +10,10 @@
 
 }
 
-@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
-@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
-
 @property (nonatomic, retain) IBOutlet UISearchBar *searchBar;
 
 
 @property(nonatomic,retain) NSMutableArray * conferenceObjs;
+@property(nonatomic,retain) NSMutableArray * menuOptions;
 
 @end
