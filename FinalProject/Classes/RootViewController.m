@@ -25,8 +25,6 @@
 	// TO DO:
 	// Change the search code for the UITableView display to show
 	// the results of the search.
-	
-	
 }
 
 
@@ -51,6 +49,9 @@
 		[self.conferenceObjs addObject:[[ConferenceObject ConferenceObjectFromDictionary:dic] retain]];
 	}
 	
+	NSArray * filtered = [self.conferenceObjs filteredArrayUsingPredicate:[NSPredicate predicateWithFormat: @"type == 0"]];
+	NSLog(@"%@", filtered);
+		 
 	// Set up the edit and add buttons.
     //self.navigationItem.leftBarButtonItem = self.editButtonItem;
     
@@ -102,7 +103,9 @@
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
 
-    cell.textLabel.text = [[self.conferenceObjs objectAtIndex:indexPath.row] title];
+	ConferenceObject * co = [self.conferenceObjs objectAtIndex:indexPath.row];
+    cell.textLabel.text = [co typeString];
+	cell.detailTextLabel.text = [co typeString];
 }
 
 #pragma mark -
