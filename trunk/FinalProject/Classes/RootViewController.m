@@ -59,7 +59,7 @@
     //UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject)];
     //self.navigationItem.rightBarButtonItem = addButton;
     //[addButton release];
-	self.navigationItem.title = @"Conference Name";
+	self.navigationItem.title = @"Name";
 
 }
 
@@ -161,11 +161,20 @@
 	SubMenuViewController *sm = [[SubMenuViewController alloc] initWithNibName:@"SubMenuViewController" bundle:nil];
 
 	if([menuchoice isEqualToString:@"Events"])
-		sm.conferenceObjs = [self.conferenceObjs filteredArrayUsingPredicate:[NSPredicate predicateWithFormat: @"type == 0"]];	
+	{
+		sm.conferenceObjs = [self.conferenceObjs filteredArrayUsingPredicate:[NSPredicate predicateWithFormat: @"type == 0"]];
+		sm.navigationItem.title = @"Events";
+	}
 	else if([menuchoice isEqualToString:@"Speakers"])
+	{
 		sm.conferenceObjs = [self.conferenceObjs filteredArrayUsingPredicate:[NSPredicate predicateWithFormat: @"type == 2"]];
+		sm.navigationItem.title = @"Speakers";
+	}
 	else if([menuchoice isEqualToString:@"Sponsors"])
+	{
 		sm.conferenceObjs = [self.conferenceObjs filteredArrayUsingPredicate:[NSPredicate predicateWithFormat: @"type == 1"]];
+		sm.navigationItem.title = @"Sponsors";
+	}
 	else
 		sm.conferenceObjs = self.conferenceObjs;
 	
