@@ -40,9 +40,6 @@
 	{
 		self.conferenceObjs = [NSMutableArray array];
 	}
-	
-	NSLog(@"From file: %@", self.conferenceObjs);
-	
     // Add the navigation controller's view to the window and display.
     [window addSubview:navigationController.view];
     [window makeKeyAndVisible];

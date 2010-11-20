@@ -3,28 +3,54 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>Title</key>
+		<key>title</key>
 		<string>R2-D2</string>
-		<key>Description</key>
+		<key>description</key>
 		<string>R2-D2 is an awesome robot who has years of experience roaming the galaxy working with the rabble alliance. for realz.</string>
-		<key>Image</key>
+		<key>image</key>
 		<string>r2-d2</string>
+		<key>type</key>
+		<string>Speaker</string>
 	</dict>
 	<dict>
-		<key>Title</key>
+		<key>title</key>
 		<string>Russian Dancing Men</string>
-		<key>Description</key>
+		<key>description</key>
 		<string>They&apos;re Russian Dancing Men who dance with purple hens. They also have some ball-point pens and start dancing at half past ten.</string>
-		<key>Image</key>
+		<key>image</key>
 		<string>RussianDancingMen</string>
+		<key>type</key>
+		<string>Sponsor</string>
 	</dict>
 	<dict>
-		<key>Title</key>
+		<key>title</key>
 		<string>What is the meaning of life?</string>
-		<key>Description</key>
+		<key>description</key>
 		<string>Come find out what the answer to life the universe and everything is in this exciting talk!</string>
-		<key>Image</key>
+		<key>image</key>
 		<string>thumbsup</string>
+		<key>type</key>
+		<string>Event</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Russian Dancing Men Film Viewing </string>
+		<key>description</key>
+		<string>Come watch the most awesome youtube video! </string>
+		<key>image</key>
+		<string>RussianDancingMen</string>
+		<key>type</key>
+		<string>Event</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>A long time ago... </string>
+		<key>description</key>
+		<string>R2-D2 speaks on he&apos;s experience working with the rabble alliance. Translation provided by C-3PO.</string>
+		<key>image</key>
+		<string>thumbsup</string>
+		<key>type</key>
+		<string>Event</string>
 	</dict>
 </array>
 </plist>
