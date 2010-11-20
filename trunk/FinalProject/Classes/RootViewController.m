@@ -49,8 +49,9 @@
 		[self.conferenceObjs addObject:[[ConferenceObject ConferenceObjectFromDictionary:dic] retain]];
 	}
 	
+	NSLog(@"conferenceObjs:::::::::%@", self.conferenceObjs);
 	NSArray * filtered = [self.conferenceObjs filteredArrayUsingPredicate:[NSPredicate predicateWithFormat: @"type == 0"]];
-	NSLog(@"%@", filtered);
+	NSLog(@"filtered::::::::%@", filtered);
 		 
 	// Set up the edit and add buttons.
     //self.navigationItem.leftBarButtonItem = self.editButtonItem;
@@ -181,14 +182,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic may go here -- for example, create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     NSManagedObject *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+    
+	ConferenceObjectViewController *covc = [[ConferenceObjectViewController alloc] initWithNibName:@"ConferenceObjectViewController" bundle:nil];
+	ConferenceObject *co = [self.conferenceObjs objectAtIndexPath:indexPath.row];
+	
+	c
+	// Pass the selected object to the new view controller.
+	[self.navigationController pushViewController:covc animated:YES];
+	[detailViewController release];
 }
 
 /*
