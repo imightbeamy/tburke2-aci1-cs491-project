@@ -12,7 +12,6 @@
 @implementation ConferenceObjectViewController
 
 @synthesize confObj;
-@synthesize image;
 @synthesize textView;
 @synthesize scrollView;
 @synthesize favoriteButton;
@@ -35,14 +34,16 @@
 	[super viewWillAppear:animated];
 	
 	self.title = self.confObj.title;
+	self.textView.text = self.confObj.description;
 	
 	int scrollViewHeight = 20;
 	
-	[self.image initWithImage:self.confObj.image];
-	[self.image sizeThatFits:CGSizeMake(280.0, ((280 * self.confObj.image.size.height) / self.confObj.image.size.width) )];
+	int scaledImageHeight = ((280 * self.confObj.image.size.height) / self.confObj.image.size.width);
 	
-	scrollViewHeight += ((280 * self.confObj.image.size.height) / self.confObj.image.size.width);
-	//scrollViewHeight += 20;
+	UIImageView *image = [[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 280, scaledImageHeight)];
+	image.image = self.confObj.image;
+	[self.scrollView addSubview:image];
+	scrollViewHeight += scaledImageHeight;
 	
 	if(self.confObj.type == EventType) {
 		scrollViewHeight += 5;
@@ -59,21 +60,27 @@
 	}
 	scrollViewHeight += 5;
 	
-	[self.textView sizeToFit];
+	CGRect tempFrame = self.textView.frame;
+	tempFrame.size.height = self.textView.contentSize.height;
+	self.textView.frame = tempFrame;
+	
 	
 	self.textView.center = CGPointMake(self.textView.center.x, scrollViewHeight + (self.textView.frame.size.height / 2));
 	
-	[self.scrollView sizeToFit];
+	scrollViewHeight += self.textView.frame.size.height + 20;
 	
-	self.favoriteButton.title = @"F";
-	self.favoriteButton.action = @selector(favoriteButtonPressed);
+	self.scrollView.contentSize = CGSizeMake(320, scrollViewHeight);
+	
+	self.favoriteButton = [[[UIBarButtonItem alloc] initWithTitle:@"" 
+															style:UIBarButtonItemStyleBordered 
+														   target:self 
+														   action:@selector(favoriteButtonPressed)] autorelease];
+	self.navigationItem.rightBarButtonItem = self.favoriteButton;
 	if(self.confObj.favorite) {
 		self.favoriteButton.style = UIBarButtonItemStyleDone;
 	} else {
 		self.favoriteButton.style = UIBarButtonItemStyleBordered;
 	}
-	
-	self.navigationController.navigationItem.rightBarButtonItem = self.favoriteButton;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
