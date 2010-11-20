@@ -71,7 +71,7 @@
 	
 	self.scrollView.contentSize = CGSizeMake(320, scrollViewHeight);
 	
-	self.favoriteButton = [[[UIBarButtonItem alloc] initWithTitle:@"" 
+	self.favoriteButton = [[[UIBarButtonItem alloc] initWithTitle:@"F" 
 															style:UIBarButtonItemStyleBordered 
 														   target:self 
 														   action:@selector(favoriteButtonPressed)] autorelease];
