@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Title</key>
+		<string>R2-D2</string>
+		<key>Description</key>
+		<string>R2-D2 is an awesome robot who has years of experience roaming the galaxy working with the rabble alliance. for realz.</string>
+		<key>Image</key>
+		<string>r2-d2</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Russian Dancing Men</string>
+		<key>Description</key>
+		<string>They&apos;re Russian Dancing Men who dance with purple hens. They also have some ball-point pens and start dancing at half past ten.</string>
+		<key>Image</key>
+		<string>RussianDancingMen</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>What is the meaning of life?</string>
+		<key>Description</key>
+		<string>Come find out what the answer to life the universe and everything is in this exciting talk!</string>
+		<key>Image</key>
+		<string>thumbsup</string>
+	</dict>
+</array>
+</plist>
