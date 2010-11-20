@@ -11,37 +11,66 @@
 
 @implementation ConferenceObjectViewController
 
-/*
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
+@synthesize confObj;
+@synthesize image;
+@synthesize textView;
+@synthesize scrollView;
+@synthesize favoriteButton;
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)favoriteButtonPressed {
+	self.confObj.favorite = !self.confObj.favorite;
+	if(self.confObj.favorite) {
+		self.favoriteButton.style = UIBarButtonItemStyleDone;
+	} else {
+		self.favoriteButton.style = UIBarButtonItemStyleBordered;
+	}
 }
-*/
 
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
 
-- (void)didReceiveMemoryWarning {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+	
+	int scrollViewHeight = 20;
+	
+	[self.image initWithImage:self.confObj.image];
+	[self.image sizeThatFits:CGSizeMake(280.0, ((280 * self.confObj.image.size.height) / self.confObj.image.size.width) )];
+	
+	scrollViewHeight += ((280 * self.confObj.image.size.height) / self.confObj.image.size.width);
+	scrollViewHeight += 20;
+	
+	//[NSString stringWithString:[self.confObj class]]
+	
+	
+	if(YES) {
+		
+	}
+	
+	
+	
+	
+	[self.textView sizeToFit];
+	
+	self.textView.center = CGPointMake(self.textView.center.x, scrollViewHeight + (self.textView.frame.size.height / 2));
+	
+	[self.scrollView sizeToFit];
+	
+	self.favoriteButton.title = @"F";
+	self.favoriteButton.action = @selector(favoriteButtonPressed);
+	if(self.confObj.favorite) {
+		self.favoriteButton.style = UIBarButtonItemStyleDone;
+	} else {
+		self.favoriteButton.style = UIBarButtonItemStyleBordered;
+	}
+	
+	self.navigationController.navigationItem.rightBarButtonItem = self.favoriteButton;
 }
+
+- (void)viewWillDisappear:(BOOL)animated {
+	[super viewWillDisappear:animated];
+	self.navigationController.navigationItem.rightBarButtonItem = nil;
+	
+}
+
 
 - (void)viewDidUnload {
     [super viewDidUnload];
@@ -51,6 +80,7 @@
 
 
 - (void)dealloc {
+	self.confObj = nil;
     [super dealloc];
 }
 
