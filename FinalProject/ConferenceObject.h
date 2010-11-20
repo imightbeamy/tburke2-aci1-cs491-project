@@ -8,15 +8,30 @@
 
 #import <CoreData/CoreData.h>
 
+typedef enum {
+	EventType,
+	SponsorType,
+	SpeakerType,
+	UnknownType
+} ConferenceObjectType;
 
-@interface ConferenceObject :  NSObject  
+@interface ConferenceObject:  NSObject  
 {
+	
 }
 
 @property (nonatomic, retain) NSString * title;
 @property (nonatomic, retain) UIImage * image;
 @property (nonatomic, retain) NSString * description;
 @property bool favorite;
+@property (nonatomic, retain) NSDate * startTime;
+@property (nonatomic, retain) NSDate * endTime;
+@property ConferenceObjectType type;
+
+@property (readonly) NSString * typeString;
+
++ (id)ConferenceObjectFromDictionary: (NSDictionary *) dictionary;
++ (ConferenceObjectType) typeFromString: (NSString *) dicType;
 
 @end
 
