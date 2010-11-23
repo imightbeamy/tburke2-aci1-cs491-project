@@ -23,9 +23,9 @@
 - (void)favoriteButtonPressed {
 	self.confObj.favorite = !self.confObj.favorite;
 	if(self.confObj.favorite) {
-		self.favoriteButton.style = UIBarButtonItemStyleDone;
+		self.favoriteButton.image = [UIImage imageNamed:@"FavIcon_T"];
 	} else {
-		self.favoriteButton.style = UIBarButtonItemStyleBordered;
+		self.favoriteButton.image = [UIImage imageNamed:@"FavIcon_F"];
 	}
 }
 
@@ -71,15 +71,15 @@
 	
 	self.scrollView.contentSize = CGSizeMake(320, scrollViewHeight);
 	
-	self.favoriteButton = [[[UIBarButtonItem alloc] initWithTitle:@"F" 
-															style:UIBarButtonItemStyleBordered 
+	self.favoriteButton = [[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"FavIcon_F"] 
+															style:UIBarButtonItemStylePlain 
 														   target:self 
 														   action:@selector(favoriteButtonPressed)] autorelease];
 	self.navigationItem.rightBarButtonItem = self.favoriteButton;
 	if(self.confObj.favorite) {
-		self.favoriteButton.style = UIBarButtonItemStyleDone;
+		self.favoriteButton.image = [UIImage imageNamed:@"FavIcon_T"];
 	} else {
-		self.favoriteButton.style = UIBarButtonItemStyleBordered;
+		self.favoriteButton.image = [UIImage imageNamed:@"FavIcon_F"];
 	}
 }
 
