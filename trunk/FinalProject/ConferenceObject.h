@@ -29,6 +29,7 @@ typedef enum {
 @property ConferenceObjectType type;
 
 @property (readonly) NSString * typeString;
+@property (readonly) NSString * searchableText;
 
 + (id)ConferenceObjectFromDictionary: (NSDictionary *) dictionary;
 + (ConferenceObjectType) typeFromString: (NSString *) dicType;
