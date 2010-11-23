@@ -7,6 +7,7 @@
 #import "FinalProjectAppDelegate.h"
 #import	"ConferenceObject.h"
 #import "SubMenuViewController.h"
+#import "SearchViewController.h"
 
 @interface RootViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -14,29 +15,10 @@
 
 @implementation RootViewController
 
-@synthesize searchBar;
 @synthesize conferenceObjs;
 @synthesize menuOptions;
 
-#pragma mark -
-#pragma mark Search Bar
 
-- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
-	//NSLog(@"Text changed %@", searchText);
-	
-	// TO DO:
-	// Change the search code for the UITableView display to show
-	// the results of the search.
-}
-
-
-- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
-	// TO DO:
-	// Put the UITableView back ot the standard list of choices
-	
-	
-	
-}
 
 #pragma mark -
 #pragma mark View lifecycle
@@ -51,7 +33,7 @@
 		[self.conferenceObjs addObject:[[ConferenceObject ConferenceObjectFromDictionary:dic] retain]];
 	}
 	
-	self.menuOptions = [NSMutableArray arrayWithObjects: @"Events", @"Speakers", @"Sponsors",nil];
+	self.menuOptions = [NSMutableArray arrayWithObjects: @"Events", @"Speakers", @"Sponsors", @"Favorites",@"Search", nil];
 
 	// Set up the edit and add buttons.
     //self.navigationItem.leftBarButtonItem = self.editButtonItem;
@@ -76,7 +58,7 @@
 
 	// Put the search bar away when returning to this view
 	// from a subview.
-	[self searchBarCancelButtonClicked:self.searchBar];
+
 
 }
 
@@ -158,29 +140,32 @@
 	NSLog(@"menu stuff %@", [self.menuOptions objectAtIndex:indexPath.row]);
     NSString * menuchoice =  [self.menuOptions objectAtIndex:indexPath.row];
 	
-	SubMenuViewController *sm = [[SubMenuViewController alloc] initWithNibName:@"SubMenuViewController" bundle:nil];
-
 	if([menuchoice isEqualToString:@"Events"])
 	{
-		sm.conferenceObjs = [self.conferenceObjs filteredArrayUsingPredicate:[NSPredicate predicateWithFormat: @"type == 0"]];
-		sm.navigationItem.title = @"Events";
+		[self loadFilteredSubviewWithName: @"Events" andFilter: @"type == 0"];
 	}
 	else if([menuchoice isEqualToString:@"Speakers"])
 	{
-		sm.conferenceObjs = [self.conferenceObjs filteredArrayUsingPredicate:[NSPredicate predicateWithFormat: @"type == 2"]];
-		sm.navigationItem.title = @"Speakers";
+		[self loadFilteredSubviewWithName: @"Events" andFilter: @"type == 2"];
 	}
 	else if([menuchoice isEqualToString:@"Sponsors"])
 	{
-		sm.conferenceObjs = [self.conferenceObjs filteredArrayUsingPredicate:[NSPredicate predicateWithFormat: @"type == 1"]];
-		sm.navigationItem.title = @"Sponsors";
+		[self loadFilteredSubviewWithName: @"Events" andFilter: @"type == 1"];
 	}
-	else
-		sm.conferenceObjs = self.conferenceObjs;
+	else if([menuchoice isEqualToString:@"Favorites"])
+	{
+		[self loadFilteredSubviewWithName: @"Events" andFilter: @"favorite == 1"];
+	}
+	else if([menuchoice isEqualToString:@"Search"])
+	{
+		SearchViewController * sv = [[SearchViewController alloc] initWithNibName:@"SearchViewController" bundle:nil];
+		sv.navigationItem.title = @"Search";
+		sv.conferenceObjs = self.conferenceObjs;
+		[self.navigationController pushViewController:sv animated:YES];
+	}
 	
 	// Pass the selected object to the new view controller.
-	[self.navigationController pushViewController:sm animated:YES];
-	[sm release];
+	
 }
 
 /*
@@ -192,6 +177,14 @@
 }
  */
 
+- (void) loadFilteredSubviewWithName:(NSString *) name andFilter: (NSString *) filter
+{
+	SubMenuViewController *sm = [[SubMenuViewController alloc] initWithNibName:@"SubMenuViewController" bundle:nil];
+	sm.conferenceObjs = [self.conferenceObjs filteredArrayUsingPredicate:[NSPredicate predicateWithFormat: filter]];
+	sm.navigationItem.title = name;
+	[self.navigationController pushViewController:sm animated:YES];
+	[sm release];
+}
 
 #pragma mark -
 #pragma mark Memory management

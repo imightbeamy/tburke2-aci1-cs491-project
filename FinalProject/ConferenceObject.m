@@ -53,6 +53,11 @@
 		return [NSString stringWithString: @"Unknown Type"];
 }
 
+- (NSString *) searchableText
+{
+	return [NSString stringWithFormat: @"%@ %@ %@", self.title, self.description, self.typeString];
+}
+
 + (ConferenceObjectType) typeFromString: (NSString *) dicType
 {
 	if([dicType isEqualToString: @"Event"])

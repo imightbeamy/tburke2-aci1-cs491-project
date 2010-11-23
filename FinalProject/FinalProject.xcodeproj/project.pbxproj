@@ -19,6 +19,8 @@
 		7D04514F1296F18A009589DB /* ConferenceObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D04514E1296F18A009589DB /* ConferenceObject.m */; };
 		E16B774C1297054000D9B24B /* ConferenceObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B774A1297054000D9B24B /* ConferenceObjectViewController.m */; };
 		E16B774D1297054000D9B24B /* ConferenceObjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E16B774B1297054000D9B24B /* ConferenceObjectViewController.xib */; };
+		E1B5A2A9129B57D900438818 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B5A2A7129B57D900438818 /* SearchViewController.m */; };
+		E1B5A2AA129B57D900438818 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B5A2A8129B57D900438818 /* SearchViewController.xib */; };
 		E1F841C7129761180094B4DC /* r2d2.png in Resources */ = {isa = PBXBuildFile; fileRef = E1F841C6129761180094B4DC /* r2d2.png */; };
 		E1F841CB129764EA0094B4DC /* RussianDancingMen.png in Resources */ = {isa = PBXBuildFile; fileRef = E1F841CA129764EA0094B4DC /* RussianDancingMen.png */; };
 		E1F841E7129765E40094B4DC /* thumbsup.png in Resources */ = {isa = PBXBuildFile; fileRef = E1F841E6129765E40094B4DC /* thumbsup.png */; };
@@ -47,6 +49,9 @@
 		E16B77491297054000D9B24B /* ConferenceObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConferenceObjectViewController.h; sourceTree = "<group>"; };
 		E16B774A1297054000D9B24B /* ConferenceObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConferenceObjectViewController.m; sourceTree = "<group>"; };
 		E16B774B1297054000D9B24B /* ConferenceObjectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ConferenceObjectViewController.xib; path = Classes/ConferenceObjectViewController.xib; sourceTree = "<group>"; };
+		E1B5A2A6129B57D900438818 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		E1B5A2A7129B57D900438818 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		E1B5A2A8129B57D900438818 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SearchViewController.xib; path = Classes/SearchViewController.xib; sourceTree = "<group>"; };
 		E1F841C6129761180094B4DC /* r2d2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = r2d2.png; sourceTree = "<group>"; };
 		E1F841CA129764EA0094B4DC /* RussianDancingMen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RussianDancingMen.png; sourceTree = "<group>"; };
 		E1F841E6129765E40094B4DC /* thumbsup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbsup.png; sourceTree = "<group>"; };
@@ -79,10 +84,7 @@
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
 				1D3623240D0F684500981E51 /* FinalProjectAppDelegate.h */,
 				1D3623250D0F684500981E51 /* FinalProjectAppDelegate.m */,
-				E16B77491297054000D9B24B /* ConferenceObjectViewController.h */,
-				E16B774A1297054000D9B24B /* ConferenceObjectViewController.m */,
-				E1F8443C129868A10094B4DC /* SubMenuViewController.h */,
-				E1F8443D129868A10094B4DC /* SubMenuViewController.m */,
+				E1B5A2A5129B575200438818 /* Submenu Views  */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -121,6 +123,7 @@
 			children = (
 				E1F841C8129761210094B4DC /* Images */,
 				2899E55F0DE3E45000AC0155 /* RootViewController.xib */,
+				E1B5A2A8129B57D900438818 /* SearchViewController.xib */,
 				E1F8443E129868A10094B4DC /* SubMenuViewController.xib */,
 				E16B774B1297054000D9B24B /* ConferenceObjectViewController.xib */,
 				E1F842B6129789FE0094B4DC /* conferenceData.plist */,
@@ -141,11 +144,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E1B5A2A5129B575200438818 /* Submenu Views  */ = {
+			isa = PBXGroup;
+			children = (
+				E1F8443C129868A10094B4DC /* SubMenuViewController.h */,
+				E1F8443D129868A10094B4DC /* SubMenuViewController.m */,
+				E1B5A2A6129B57D900438818 /* SearchViewController.h */,
+				E1B5A2A7129B57D900438818 /* SearchViewController.m */,
+			);
+			name = "Submenu Views ";
+			sourceTree = "<group>";
+		};
 		E1F841A6129759780094B4DC /* ConferenceObjs */ = {
 			isa = PBXGroup;
 			children = (
 				7D04514D1296F18A009589DB /* ConferenceObject.h */,
 				7D04514E1296F18A009589DB /* ConferenceObject.m */,
+				E16B77491297054000D9B24B /* ConferenceObjectViewController.h */,
+				E16B774A1297054000D9B24B /* ConferenceObjectViewController.m */,
 			);
 			name = ConferenceObjs;
 			sourceTree = "<group>";
@@ -221,6 +237,7 @@
 				E1F841E7129765E40094B4DC /* thumbsup.png in Resources */,
 				E1F842B7129789FE0094B4DC /* conferenceData.plist in Resources */,
 				E1F84440129868A10094B4DC /* SubMenuViewController.xib in Resources */,
+				E1B5A2AA129B57D900438818 /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +254,7 @@
 				7D04514F1296F18A009589DB /* ConferenceObject.m in Sources */,
 				E16B774C1297054000D9B24B /* ConferenceObjectViewController.m in Sources */,
 				E1F8443F129868A10094B4DC /* SubMenuViewController.m in Sources */,
+				E1B5A2A9129B57D900438818 /* SearchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
