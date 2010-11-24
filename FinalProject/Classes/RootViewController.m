@@ -180,7 +180,8 @@
 	else if([menuchoice isEqualToString: @"Map"])
 	{
 		MapViewController *mv = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
-		[self.navigationController pushViewController: mv animated:YES];
+		mv.confObj = nil; // No object to display location here
+		[self.navigationController pushViewController:mv animated:YES];
 	}		
 }
 
