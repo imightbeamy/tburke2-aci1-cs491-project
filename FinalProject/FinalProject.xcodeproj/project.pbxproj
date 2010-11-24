@@ -17,6 +17,8 @@
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
 		7D04514F1296F18A009589DB /* ConferenceObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D04514E1296F18A009589DB /* ConferenceObject.m */; };
+		A1BA3767129D8A75002905D1 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1BA3765129D8A75002905D1 /* MapViewController.m */; };
+		A1BA3768129D8A75002905D1 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BA3766129D8A75002905D1 /* MapViewController.xib */; };
 		E16B774C1297054000D9B24B /* ConferenceObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B774A1297054000D9B24B /* ConferenceObjectViewController.m */; };
 		E16B774D1297054000D9B24B /* ConferenceObjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E16B774B1297054000D9B24B /* ConferenceObjectViewController.xib */; };
 		E1B5A2A9129B57D900438818 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B5A2A7129B57D900438818 /* SearchViewController.m */; };
@@ -46,6 +48,9 @@
 		7D04514D1296F18A009589DB /* ConferenceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConferenceObject.h; path = ../ConferenceObject.h; sourceTree = "<group>"; };
 		7D04514E1296F18A009589DB /* ConferenceObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConferenceObject.m; path = ../ConferenceObject.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* FinalProject-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FinalProject-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		A1BA3764129D8A75002905D1 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		A1BA3765129D8A75002905D1 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		A1BA3766129D8A75002905D1 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MapViewController.xib; path = Classes/MapViewController.xib; sourceTree = "<group>"; };
 		E16B77491297054000D9B24B /* ConferenceObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConferenceObjectViewController.h; sourceTree = "<group>"; };
 		E16B774A1297054000D9B24B /* ConferenceObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConferenceObjectViewController.m; sourceTree = "<group>"; };
 		E16B774B1297054000D9B24B /* ConferenceObjectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ConferenceObjectViewController.xib; path = Classes/ConferenceObjectViewController.xib; sourceTree = "<group>"; };
@@ -85,6 +90,8 @@
 				1D3623240D0F684500981E51 /* FinalProjectAppDelegate.h */,
 				1D3623250D0F684500981E51 /* FinalProjectAppDelegate.m */,
 				E1B5A2A5129B575200438818 /* Submenu Views  */,
+				A1BA3764129D8A75002905D1 /* MapViewController.h */,
+				A1BA3765129D8A75002905D1 /* MapViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -123,6 +130,7 @@
 			children = (
 				E1F841C8129761210094B4DC /* Images */,
 				2899E55F0DE3E45000AC0155 /* RootViewController.xib */,
+				A1BA3766129D8A75002905D1 /* MapViewController.xib */,
 				E1B5A2A8129B57D900438818 /* SearchViewController.xib */,
 				E1F8443E129868A10094B4DC /* SubMenuViewController.xib */,
 				E16B774B1297054000D9B24B /* ConferenceObjectViewController.xib */,
@@ -238,6 +246,7 @@
 				E1F842B7129789FE0094B4DC /* conferenceData.plist in Resources */,
 				E1F84440129868A10094B4DC /* SubMenuViewController.xib in Resources */,
 				E1B5A2AA129B57D900438818 /* SearchViewController.xib in Resources */,
+				A1BA3768129D8A75002905D1 /* MapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +264,7 @@
 				E16B774C1297054000D9B24B /* ConferenceObjectViewController.m in Sources */,
 				E1F8443F129868A10094B4DC /* SubMenuViewController.m in Sources */,
 				E1B5A2A9129B57D900438818 /* SearchViewController.m in Sources */,
+				A1BA3767129D8A75002905D1 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +307,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.1;
+				SDKROOT = iphonesimulator4.1;
 			};
 			name = Debug;
 		};
@@ -311,7 +321,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphonesimulator4.1;
 			};
 			name = Release;
 		};
