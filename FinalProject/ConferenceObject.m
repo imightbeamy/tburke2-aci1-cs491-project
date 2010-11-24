@@ -38,6 +38,9 @@
 	co.description = [dictionary objectForKey:@"description"];
 	co.image = [UIImage imageNamed: [dictionary objectForKey:@"image"]];
 	
+	//just for testing should get from plist later
+	co.startTime = [NSDate date];
+	co.endTime = [NSDate dateWithTimeIntervalSinceNow:9001];
 	return [co autorelease];
 }
 
@@ -68,6 +71,35 @@
 		return SpeakerType;
 	else
 		return UnknownType;
+}
+
+
++ (NSComparator) getEventTimeComparator
+{
+	return ^(id obj1, id obj2) {
+	
+		if([obj1 startTime] == nil || [obj2 startTime] == nil)
+			return (NSComparisonResult)NSOrderedSame;
+		
+		if ([[obj1 startTime] earlierDate:  [obj2 startTime]]){
+			return (NSComparisonResult)NSOrderedDescending;
+		}
+		
+		if ([[obj1 startTime] laterDate:  [obj2 startTime]]) {
+			return (NSComparisonResult)NSOrderedAscending;
+		}
+		return (NSComparisonResult)NSOrderedSame;
+	};	
+}
+
++ (NSComparator) getTitleComparator
+{
+	return ^(id obj1, id obj2) {
+		if ([obj1 title] == nil || [obj2 title] == nil) {
+			return (NSComparisonResult)NSOrderedSame;
+		}
+		return [[obj1 title] compare: [obj2 title]];
+	};	
 }
 
 - (void)dealloc {
