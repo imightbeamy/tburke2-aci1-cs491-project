@@ -8,6 +8,7 @@
 #import	"ConferenceObject.h"
 #import "SubMenuViewController.h"
 #import "SearchViewController.h"
+#import "MapViewController.h"
 
 @interface RootViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -178,8 +179,8 @@
 	}
 	else if([menuchoice isEqualToString: @"Map"])
 	{
-		/*LOAD MAP VIEW HERE*/
-		//[self.navigationController pushViewController: <mapview> animated:YES];
+		MapViewController *mv = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
+		[self.navigationController pushViewController: mv animated:YES];
 	}		
 }
 
