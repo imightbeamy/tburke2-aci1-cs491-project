@@ -11,11 +11,17 @@
 
 @implementation MapViewController
 
+@synthesize scrollView;
+
 @synthesize confObj;
 
 
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
+	
+	UIImageView *iv = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"map"]] autorelease];
+	
+	[self.scrollView addSubview:iv];
 	
 	if(self.confObj) {
 		// Code to draw dot will go here
@@ -23,7 +29,11 @@
 	}
 	
 	
+	
 }
+
+
+
 
 
 - (void)didReceiveMemoryWarning {
@@ -32,6 +42,11 @@
     
     // Release any cached data, images, etc that aren't in use.
 }
+
+- (void)viewDidLoad {
+	[super viewDidLoad];
+}
+
 
 - (void)viewDidUnload {
     [super viewDidUnload];
