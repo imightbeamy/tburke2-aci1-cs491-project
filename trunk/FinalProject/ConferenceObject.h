@@ -33,6 +33,8 @@ typedef enum {
 
 + (id)ConferenceObjectFromDictionary: (NSDictionary *) dictionary;
 + (ConferenceObjectType) typeFromString: (NSString *) dicType;
++ (NSComparator) getEventTimeComparator;
++ (NSComparator) getTitleComparator;
 
 @end
 
