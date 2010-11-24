@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ConferenceObject.h"
 
 @interface MapViewController : UIViewController {
 
 }
+
+@property (nonatomic, retain) ConferenceObject *confObj;
 
 @end
