@@ -14,5 +14,5 @@
 @property(nonatomic,retain) NSMutableArray * menuOptions;
 
 - (void) loadFilteredSubviewWithName:(NSString *) name andFilter: (NSString *) filter;
-
+- (void) loadScheduleView;
 @end

@@ -32,8 +32,17 @@
 	for (NSDictionary * dic in del.conferenceObjs) {
 		[self.conferenceObjs addObject:[[ConferenceObject ConferenceObjectFromDictionary:dic] retain]];
 	}
+	[self.conferenceObjs sortUsingComparator:[ConferenceObject getTitleComparator]];
 	
-	self.menuOptions = [NSMutableArray arrayWithObjects: @"Events", @"Speakers", @"Sponsors", @"Favorites",@"Search", nil];
+	
+	self.menuOptions = [NSMutableArray arrayWithObjects: 
+						@"Events", 
+						@"Speakers", 
+						@"Sponsors",
+						@"Schedule", 
+						@"Favorites",
+						@"Search",
+						@"Map", nil];
 
 	// Set up the edit and add buttons.
     //self.navigationItem.leftBarButtonItem = self.editButtonItem;
@@ -146,15 +155,15 @@
 	}
 	else if([menuchoice isEqualToString:@"Speakers"])
 	{
-		[self loadFilteredSubviewWithName: @"Events" andFilter: @"type == 2"];
+		[self loadFilteredSubviewWithName: @"Speakers" andFilter: @"type == 2"];
 	}
 	else if([menuchoice isEqualToString:@"Sponsors"])
 	{
-		[self loadFilteredSubviewWithName: @"Events" andFilter: @"type == 1"];
+		[self loadFilteredSubviewWithName: @"Sponsors" andFilter: @"type == 1"];
 	}
 	else if([menuchoice isEqualToString:@"Favorites"])
 	{
-		[self loadFilteredSubviewWithName: @"Events" andFilter: @"favorite == 1"];
+		[self loadFilteredSubviewWithName: @"Favorites" andFilter: @"favorite == 1"];
 	}
 	else if([menuchoice isEqualToString:@"Search"])
 	{
@@ -163,9 +172,15 @@
 		sv.conferenceObjs = self.conferenceObjs;
 		[self.navigationController pushViewController:sv animated:YES];
 	}
-	
-	// Pass the selected object to the new view controller.
-	
+	else if([menuchoice isEqualToString:@"Schedule"])
+	{
+		[self loadScheduleView];
+	}
+	else if([menuchoice isEqualToString: @"Map"])
+	{
+		/*LOAD MAP VIEW HERE*/
+		//[self.navigationController pushViewController: <mapview> animated:YES];
+	}		
 }
 
 /*
@@ -182,6 +197,18 @@
 	SubMenuViewController *sm = [[SubMenuViewController alloc] initWithNibName:@"SubMenuViewController" bundle:nil];
 	sm.conferenceObjs = [self.conferenceObjs filteredArrayUsingPredicate:[NSPredicate predicateWithFormat: filter]];
 	sm.navigationItem.title = name;
+	[self.navigationController pushViewController:sm animated:YES];
+	[sm release];
+}
+
+- (void) loadScheduleView
+{
+	SubMenuViewController *sm = [[SubMenuViewController alloc] initWithNibName:@"SubMenuViewController" bundle:nil];
+	NSPredicate * filter = [NSPredicate predicateWithFormat: @"type == 0"];
+	NSArray * filted = [self.conferenceObjs filteredArrayUsingPredicate:filter];
+	sm.conferenceObjs = [filted sortedArrayUsingComparator:[ConferenceObject getEventTimeComparator]];
+	sm.navigationItem.title = @"Schedule";
+	sm.scheduleView = YES;
 	[self.navigationController pushViewController:sm animated:YES];
 	[sm release];
 }
