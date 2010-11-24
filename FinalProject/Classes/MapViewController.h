@@ -9,12 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "ConferenceObject.h"
 
-@interface MapViewController : UIViewController {
+@interface MapViewController : UIViewController <UIScrollViewDelegate> {
 
 }
 
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
 
 @property (nonatomic, retain) ConferenceObject *confObj;
+
+//- (void)myZoom;
 
 @end
