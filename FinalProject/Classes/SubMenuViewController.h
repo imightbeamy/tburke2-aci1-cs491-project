@@ -14,5 +14,6 @@
 }
 
 @property(nonatomic,retain) NSArray * conferenceObjs;
+@property bool scheduleView;
 
 @end

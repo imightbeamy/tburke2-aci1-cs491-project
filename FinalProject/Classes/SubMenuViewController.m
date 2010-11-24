@@ -11,25 +11,27 @@
 #import "ConferenceObjectViewController.h"
 @implementation SubMenuViewController
 
-@synthesize conferenceObjs;
+@synthesize conferenceObjs,scheduleView;
 
 #pragma mark -
 #pragma mark View lifecycle
 
-/*
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
-*/
 
-/*
+
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+	
+//	[self.tableView reloadData];
+//	NSLog(@"reload");
 }
-*/
+
 /*
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
@@ -40,11 +42,12 @@
     [super viewWillDisappear:animated];
 }
 */
-/*
+
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
+	self.scheduleView = NO;
 }
-*/
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
@@ -61,6 +64,22 @@
 	
 	ConferenceObject * co = [self.conferenceObjs objectAtIndex:indexPath.row];
     cell.textLabel.text = [co title];
+	
+	if (self.scheduleView && co.startTime != nil) {
+		NSDateFormatter *dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
+		[dateFormatter setDateStyle:NSDateFormatterShortStyle];
+		[dateFormatter setTimeStyle:NSDateFormatterShortStyle];
+		if(co.endTime != nil)
+		{
+			NSString * st =  [dateFormatter stringFromDate:co.startTime];
+			[dateFormatter setDateStyle:NSDateFormatterNoStyle];
+			cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - %@", st,
+										 [dateFormatter stringFromDate:co.endTime]];
+		}
+		else {
+			cell.detailTextLabel.text = [dateFormatter stringFromDate:co.startTime];
+		}
+	}
 }
 
 // Customize the appearance of table view cells.
@@ -69,7 +88,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
     
     // Configure the cell.
@@ -87,6 +106,7 @@
 	covc.confObj = co;
 	// Pass the selected object to the new view controller.
 	[self.navigationController pushViewController:covc animated:YES];
+	
 	[covc release];
 }
 
