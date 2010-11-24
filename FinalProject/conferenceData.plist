@@ -14,11 +14,51 @@
 	</dict>
 	<dict>
 		<key>title</key>
+		<string>Mario</string>
+		<key>description</key>
+		<string>Mario is an awesome plumber.</string>
+		<key>image</key>
+		<string>mario</string>
+		<key>type</key>
+		<string>Speaker</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Luigi</string>
+		<key>description</key>
+		<string>Luigi is an awesome plumber.</string>
+		<key>image</key>
+		<string>luigi</string>
+		<key>type</key>
+		<string>Speaker</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Donkey Kong</string>
+		<key>description</key>
+		<string>Donkey Kong is a gorilla in who lives in the Nintendo Universe. He is roughly twice the size of a normal gorilla, weighing approximately 800 pounds. Donkey Kong first appeared in Nintendo&apos;s popular 1981 video game of the same name. Since then he has appeared in over 20 games in his own series, as well as in some games in the Mario series.</string>
+		<key>image</key>
+		<string>donkeykong</string>
+		<key>type</key>
+		<string>Speaker</string>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string>Russian Dancing Men</string>
 		<key>description</key>
 		<string>They&apos;re Russian Dancing Men who dance with purple hens. They also have some ball-point pens and start dancing at half past ten.</string>
 		<key>image</key>
 		<string>RussianDancingMen</string>
+		<key>type</key>
+		<string>Sponsor</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Nintendo </string>
+		<key>description</key>
+		<string>Nintendo need very little introduction. From their beginnings as humble toy and playing card manufacturers, they cunningly stepped in to re-ignite the home video game market from the ashes of the defunct Atari, turning their Family Computer console (known as the &apos;Nintendo Entertainment System&apos; in the West) into the most successful home entertainment device of the 80s.</string>
+		<key>image</key>
+		<string>nintendo_logo</string>
 		<key>type</key>
 		<string>Sponsor</string>
 	</dict>
@@ -46,9 +86,9 @@
 		<key>title</key>
 		<string>A long time ago... </string>
 		<key>description</key>
-		<string>R2-D2 speaks on he&apos;s experience working with the rabble alliance. Translation provided by C-3PO.</string>
+		<string>R2-D2 speaks on he&apos;s experience working with the rebel alliance. Translation provided by C-3PO.</string>
 		<key>image</key>
-		<string>thumbsup</string>
+		<string>Rebel_Alliance</string>
 		<key>type</key>
 		<string>Event</string>
 	</dict>
