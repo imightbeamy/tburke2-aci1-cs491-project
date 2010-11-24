@@ -19,6 +19,14 @@
 		7D04514F1296F18A009589DB /* ConferenceObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D04514E1296F18A009589DB /* ConferenceObject.m */; };
 		A1BA3767129D8A75002905D1 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1BA3765129D8A75002905D1 /* MapViewController.m */; };
 		A1BA3768129D8A75002905D1 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BA3766129D8A75002905D1 /* MapViewController.xib */; };
+		A1E92105129D8D4A00D6B97D /* donkeykong.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E920FE129D8D4A00D6B97D /* donkeykong.png */; };
+		A1E92106129D8D4A00D6B97D /* FavIcon_F.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E920FF129D8D4A00D6B97D /* FavIcon_F.png */; };
+		A1E92107129D8D4A00D6B97D /* FavIcon_T.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E92100129D8D4A00D6B97D /* FavIcon_T.png */; };
+		A1E92108129D8D4A00D6B97D /* luigi.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E92101129D8D4A00D6B97D /* luigi.png */; };
+		A1E92109129D8D4A00D6B97D /* mario.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E92102129D8D4A00D6B97D /* mario.png */; };
+		A1E9210A129D8D4A00D6B97D /* nintendo_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E92103129D8D4A00D6B97D /* nintendo_logo.png */; };
+		A1E9210B129D8D4A00D6B97D /* Rebel_Alliance.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E92104129D8D4A00D6B97D /* Rebel_Alliance.png */; };
+		A1E9210D129D8D5D00D6B97D /* conferenceData.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1E9210C129D8D5D00D6B97D /* conferenceData.plist */; };
 		E16B774C1297054000D9B24B /* ConferenceObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B774A1297054000D9B24B /* ConferenceObjectViewController.m */; };
 		E16B774D1297054000D9B24B /* ConferenceObjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E16B774B1297054000D9B24B /* ConferenceObjectViewController.xib */; };
 		E1B5A2A9129B57D900438818 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B5A2A7129B57D900438818 /* SearchViewController.m */; };
@@ -26,7 +34,6 @@
 		E1F841C7129761180094B4DC /* r2d2.png in Resources */ = {isa = PBXBuildFile; fileRef = E1F841C6129761180094B4DC /* r2d2.png */; };
 		E1F841CB129764EA0094B4DC /* RussianDancingMen.png in Resources */ = {isa = PBXBuildFile; fileRef = E1F841CA129764EA0094B4DC /* RussianDancingMen.png */; };
 		E1F841E7129765E40094B4DC /* thumbsup.png in Resources */ = {isa = PBXBuildFile; fileRef = E1F841E6129765E40094B4DC /* thumbsup.png */; };
-		E1F842B7129789FE0094B4DC /* conferenceData.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1F842B6129789FE0094B4DC /* conferenceData.plist */; };
 		E1F8443F129868A10094B4DC /* SubMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F8443D129868A10094B4DC /* SubMenuViewController.m */; };
 		E1F84440129868A10094B4DC /* SubMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1F8443E129868A10094B4DC /* SubMenuViewController.xib */; };
 /* End PBXBuildFile section */
@@ -51,6 +58,14 @@
 		A1BA3764129D8A75002905D1 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		A1BA3765129D8A75002905D1 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		A1BA3766129D8A75002905D1 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MapViewController.xib; path = Classes/MapViewController.xib; sourceTree = "<group>"; };
+		A1E920FE129D8D4A00D6B97D /* donkeykong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donkeykong.png; sourceTree = "<group>"; };
+		A1E920FF129D8D4A00D6B97D /* FavIcon_F.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FavIcon_F.png; sourceTree = "<group>"; };
+		A1E92100129D8D4A00D6B97D /* FavIcon_T.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FavIcon_T.png; sourceTree = "<group>"; };
+		A1E92101129D8D4A00D6B97D /* luigi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = luigi.png; sourceTree = "<group>"; };
+		A1E92102129D8D4A00D6B97D /* mario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mario.png; sourceTree = "<group>"; };
+		A1E92103129D8D4A00D6B97D /* nintendo_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nintendo_logo.png; sourceTree = "<group>"; };
+		A1E92104129D8D4A00D6B97D /* Rebel_Alliance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rebel_Alliance.png; sourceTree = "<group>"; };
+		A1E9210C129D8D5D00D6B97D /* conferenceData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = conferenceData.plist; sourceTree = "<group>"; };
 		E16B77491297054000D9B24B /* ConferenceObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConferenceObjectViewController.h; sourceTree = "<group>"; };
 		E16B774A1297054000D9B24B /* ConferenceObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConferenceObjectViewController.m; sourceTree = "<group>"; };
 		E16B774B1297054000D9B24B /* ConferenceObjectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ConferenceObjectViewController.xib; path = Classes/ConferenceObjectViewController.xib; sourceTree = "<group>"; };
@@ -60,7 +75,6 @@
 		E1F841C6129761180094B4DC /* r2d2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = r2d2.png; sourceTree = "<group>"; };
 		E1F841CA129764EA0094B4DC /* RussianDancingMen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RussianDancingMen.png; sourceTree = "<group>"; };
 		E1F841E6129765E40094B4DC /* thumbsup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbsup.png; sourceTree = "<group>"; };
-		E1F842B6129789FE0094B4DC /* conferenceData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = conferenceData.plist; sourceTree = "<group>"; };
 		E1F8443C129868A10094B4DC /* SubMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubMenuViewController.h; sourceTree = "<group>"; };
 		E1F8443D129868A10094B4DC /* SubMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubMenuViewController.m; sourceTree = "<group>"; };
 		E1F8443E129868A10094B4DC /* SubMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SubMenuViewController.xib; path = Classes/SubMenuViewController.xib; sourceTree = "<group>"; };
@@ -128,13 +142,20 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A1E9210C129D8D5D00D6B97D /* conferenceData.plist */,
+				A1E920FE129D8D4A00D6B97D /* donkeykong.png */,
+				A1E920FF129D8D4A00D6B97D /* FavIcon_F.png */,
+				A1E92100129D8D4A00D6B97D /* FavIcon_T.png */,
+				A1E92101129D8D4A00D6B97D /* luigi.png */,
+				A1E92102129D8D4A00D6B97D /* mario.png */,
+				A1E92103129D8D4A00D6B97D /* nintendo_logo.png */,
+				A1E92104129D8D4A00D6B97D /* Rebel_Alliance.png */,
 				E1F841C8129761210094B4DC /* Images */,
 				2899E55F0DE3E45000AC0155 /* RootViewController.xib */,
 				A1BA3766129D8A75002905D1 /* MapViewController.xib */,
 				E1B5A2A8129B57D900438818 /* SearchViewController.xib */,
 				E1F8443E129868A10094B4DC /* SubMenuViewController.xib */,
 				E16B774B1297054000D9B24B /* ConferenceObjectViewController.xib */,
-				E1F842B6129789FE0094B4DC /* conferenceData.plist */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* FinalProject-Info.plist */,
 			);
@@ -243,10 +264,17 @@
 				E1F841C7129761180094B4DC /* r2d2.png in Resources */,
 				E1F841CB129764EA0094B4DC /* RussianDancingMen.png in Resources */,
 				E1F841E7129765E40094B4DC /* thumbsup.png in Resources */,
-				E1F842B7129789FE0094B4DC /* conferenceData.plist in Resources */,
 				E1F84440129868A10094B4DC /* SubMenuViewController.xib in Resources */,
 				E1B5A2AA129B57D900438818 /* SearchViewController.xib in Resources */,
 				A1BA3768129D8A75002905D1 /* MapViewController.xib in Resources */,
+				A1E92105129D8D4A00D6B97D /* donkeykong.png in Resources */,
+				A1E92106129D8D4A00D6B97D /* FavIcon_F.png in Resources */,
+				A1E92107129D8D4A00D6B97D /* FavIcon_T.png in Resources */,
+				A1E92108129D8D4A00D6B97D /* luigi.png in Resources */,
+				A1E92109129D8D4A00D6B97D /* mario.png in Resources */,
+				A1E9210A129D8D4A00D6B97D /* nintendo_logo.png in Resources */,
+				A1E9210B129D8D4A00D6B97D /* Rebel_Alliance.png in Resources */,
+				A1E9210D129D8D5D00D6B97D /* conferenceData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
