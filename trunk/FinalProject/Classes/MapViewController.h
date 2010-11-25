@@ -9,14 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "ConferenceObject.h"
 
-@interface MapViewController : UIViewController <UIScrollViewDelegate> {
+@interface MapViewController : UIViewController <UIScrollViewDelegate, UIGestureRecognizerDelegate> {
 
 }
 
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, retain) UIImageView *imageView;
+@property (nonatomic, retain) UITapGestureRecognizer *gestureRecognizer;
 
 @property (nonatomic, retain) ConferenceObject *confObj;
 
-//- (void)myZoom;
+- (void)setCenter:(CGPoint)point animated:(BOOL)animated;
 
 @end
