@@ -20,6 +20,7 @@
 		A1523270129DA41F000DCD83 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = A152326F129DA41F000DCD83 /* map.png */; };
 		A1BA3767129D8A75002905D1 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1BA3765129D8A75002905D1 /* MapViewController.m */; };
 		A1BA3768129D8A75002905D1 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BA3766129D8A75002905D1 /* MapViewController.xib */; };
+		A1E02456129F44BA000FCC30 /* light_world-1.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E02455129F44BA000FCC30 /* light_world-1.png */; };
 		A1E92105129D8D4A00D6B97D /* donkeykong.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E920FE129D8D4A00D6B97D /* donkeykong.png */; };
 		A1E92106129D8D4A00D6B97D /* FavIcon_F.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E920FF129D8D4A00D6B97D /* FavIcon_F.png */; };
 		A1E92107129D8D4A00D6B97D /* FavIcon_T.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E92100129D8D4A00D6B97D /* FavIcon_T.png */; };
@@ -60,6 +61,7 @@
 		A1BA3764129D8A75002905D1 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		A1BA3765129D8A75002905D1 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		A1BA3766129D8A75002905D1 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MapViewController.xib; path = Classes/MapViewController.xib; sourceTree = "<group>"; };
+		A1E02455129F44BA000FCC30 /* light_world-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "light_world-1.png"; sourceTree = "<group>"; };
 		A1E920FE129D8D4A00D6B97D /* donkeykong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donkeykong.png; sourceTree = "<group>"; };
 		A1E920FF129D8D4A00D6B97D /* FavIcon_F.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FavIcon_F.png; sourceTree = "<group>"; };
 		A1E92100129D8D4A00D6B97D /* FavIcon_T.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FavIcon_T.png; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 		E1F841C8129761210094B4DC /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A1E02455129F44BA000FCC30 /* light_world-1.png */,
 				A1E920FE129D8D4A00D6B97D /* donkeykong.png */,
 				A1E920FF129D8D4A00D6B97D /* FavIcon_F.png */,
 				A1E92100129D8D4A00D6B97D /* FavIcon_T.png */,
@@ -279,6 +282,7 @@
 				A1E9210B129D8D4A00D6B97D /* Rebel_Alliance.png in Resources */,
 				A1E9210D129D8D5D00D6B97D /* conferenceData.plist in Resources */,
 				A1523270129DA41F000DCD83 /* map.png in Resources */,
+				A1E02456129F44BA000FCC30 /* light_world-1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +357,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
-				SDKROOT = iphonesimulator4.1;
+				SDKROOT = iphoneos4.2;
 			};
 			name = Release;
 		};
