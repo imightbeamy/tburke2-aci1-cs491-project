@@ -16,6 +16,7 @@
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, retain) UIImageView *imageView;
 @property (nonatomic, retain) UITapGestureRecognizer *gestureRecognizer;
+@property (nonatomic, retain) UIImageView *imagePointer;
 
 @property (nonatomic, retain) ConferenceObject *confObj;
 

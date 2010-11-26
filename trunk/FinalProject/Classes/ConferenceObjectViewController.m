@@ -7,9 +7,12 @@
 //
 
 #import "ConferenceObjectViewController.h"
-
+#import "MapViewController.h"
 
 @implementation ConferenceObjectViewController
+
+#pragma mark -
+#pragma mark IVars
 
 @synthesize confObj;
 @synthesize textView;
@@ -17,8 +20,11 @@
 @synthesize favoriteButton;
 
 @synthesize lblTime;
-@synthesize lblLocation;
 @synthesize timeLocationView;
+@synthesize locationButton;
+
+#pragma mark -
+#pragma mark IBActions
 
 - (void)favoriteButtonPressed {
 	self.confObj.favorite = !self.confObj.favorite;
@@ -29,6 +35,14 @@
 	}
 }
 
+- (IBAction)locationButtonPressed {
+	MapViewController *mv = [[[MapViewController alloc] init] autorelease];
+	mv.confObj = self.confObj;
+	[self.navigationController pushViewController:mv animated:YES];
+}
+
+#pragma mark -
+#pragma mark Initialization
 
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
@@ -53,7 +67,9 @@
 		
 		// Need to work on time/date code
 		self.lblTime.text = @"Time will go here";
-		self.lblLocation.text = @"Location will go here";
+		
+		[self.locationButton setTitle:@"Location Name" forState:UIControlStateNormal];
+		[self.locationButton setTitle:@"Location Name" forState:UIControlStateHighlighted];
 		
 	} else {
 		self.timeLocationView.hidden = YES;
@@ -83,6 +99,10 @@
 	}
 }
 
+
+#pragma mark -
+#pragma mark Memory Management
+
 - (void)viewWillDisappear:(BOOL)animated {
 	[super viewWillDisappear:animated];
 	self.navigationController.navigationItem.rightBarButtonItem = nil;
@@ -99,6 +119,12 @@
 
 - (void)dealloc {
 	self.confObj = nil;
+	self.textView = nil;
+	self.scrollView = nil;
+	self.favoriteButton = nil;
+	self.lblTime = nil;
+	self.timeLocationView = nil;
+	self.locationButton = nil;
     [super dealloc];
 }
 
