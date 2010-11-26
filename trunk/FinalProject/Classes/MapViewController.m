@@ -45,7 +45,7 @@
 	self.scrollView.delegate = self;
 	
 	// Initialize the map image
-	self.imageView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"map"]] autorelease];
+	self.imageView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"test"]] autorelease];
 	
 	// Add the image to the scrollview
 	[self.scrollView addSubview:self.imageView];
@@ -57,7 +57,7 @@
 	[self setCenter:CGPointMake(self.imageView.image.size.width / 2, self.imageView.image.size.height / 2) animated:NO];
 	 
 	// Set the zoom scale for the scrollview
-	self.scrollView.minimumZoomScale = 0.4;
+	self.scrollView.minimumZoomScale = 0.2;
 	self.scrollView.maximumZoomScale = 3.0;
 	
 	// Draw the pointer on the image if there is a location associated
