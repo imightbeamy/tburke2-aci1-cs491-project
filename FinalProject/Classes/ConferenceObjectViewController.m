@@ -65,8 +65,20 @@
 		scrollViewHeight += self.timeLocationView.frame.size.height;
 		self.timeLocationView.hidden = NO;
 		
-		// Need to work on time/date code
-		self.lblTime.text = @"Time will go here";
+		// Display time/date
+		NSDateFormatter *dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
+		[dateFormatter setDateStyle:NSDateFormatterShortStyle];
+		[dateFormatter setTimeStyle:NSDateFormatterShortStyle];		
+		if(confObj.endTime != nil)
+		{
+			NSString * st =  [dateFormatter stringFromDate:confObj.startTime];
+			[dateFormatter setDateStyle:NSDateFormatterNoStyle];
+			self.lblTime.text = [NSString stringWithFormat:@"%@ - %@", st,
+										 [dateFormatter stringFromDate:confObj.endTime]];
+		}
+		else {
+			self.lblTime.text = [dateFormatter stringFromDate:confObj.startTime];
+		}
 		
 		[self.locationButton setTitle:@"Location Name" forState:UIControlStateNormal];
 		[self.locationButton setTitle:@"Location Name" forState:UIControlStateHighlighted];
