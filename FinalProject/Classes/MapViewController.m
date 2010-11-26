@@ -11,22 +11,31 @@
 
 @implementation MapViewController
 
+#pragma mark -
+#pragma mark IVars
+
 @synthesize scrollView;
 @synthesize imageView;
 @synthesize gestureRecognizer;
-
+@synthesize imagePointer;
 @synthesize confObj;
 
+#pragma mark -
+#pragma mark Initialization
 
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
 	
+	// Init the gestureRecognizer as a UITapGestureRecognizer
 	self.gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
 	
+	// Set it to recognize doubletap
 	[(UITapGestureRecognizer *)self.gestureRecognizer setNumberOfTapsRequired:2];
 	
+	// Set the gestureRecognizer delegate
 	self.gestureRecognizer.delegate = self;
 	
+	// Add the gestureRecognizer to the current view
 	[self.view addGestureRecognizer:self.gestureRecognizer];
 	
 	// Set the title
@@ -38,12 +47,6 @@
 	// Initialize the map image
 	self.imageView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"map"]] autorelease];
 	
-	// Draw the dot on the image if there is a location associated
-	if(self.confObj) {
-		// Code to draw dot will go here
-		
-	}
-	
 	// Add the image to the scrollview
 	[self.scrollView addSubview:self.imageView];
 	
@@ -53,16 +56,26 @@
 	// scroll to the center of the image
 	[self setCenter:CGPointMake(self.imageView.image.size.width / 2, self.imageView.image.size.height / 2) animated:NO];
 	 
-		// Set the zoom scale for the scrollview
-	self.scrollView.minimumZoomScale = 0.5;
+	// Set the zoom scale for the scrollview
+	self.scrollView.minimumZoomScale = 0.35;
 	self.scrollView.maximumZoomScale = 3.0;
-
 	
+	// Draw the pointer on the image if there is a location associated
+	if(self.confObj) {
+		// Init the pointer image and add to the imageview
+		self.imagePointer = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"FavIcon_T"]] autorelease];
+		[self.imageView addSubview:self.imagePointer];
+		
+		// Move the pointer image to the location spot and center the map there
+		[self.imagePointer setCenter:CGPointMake(560, 685)];
+		[self setCenter:CGPointMake(560, 685) animated:NO];
+	}
 }
 
+#pragma mark -
+#pragma mark Pan/Zoom/Scroll
+
 - (void)setCenter:(CGPoint)point animated:(BOOL)animated {
-	//[self.scrollView setCenter:point];
-	
 	// Translate the point into a content offset
 	int x = point.x - (self.scrollView.frame.size.width / 2);
 	int y = point.y - (self.scrollView.frame.size.height / 2);
@@ -91,31 +104,31 @@
 }
 
 
-
 - (void)handleGesture:(UIGestureRecognizer *)gestureRecognizerr {
-	//NSLog(@"Double Tap!");
-	
+	// Get the touch point
 	CGPoint temp = [gestureRecognizerr locationInView:self.scrollView];
 	
-	NSLog(@"%f - %f", temp.x, temp.y);
-	
+	// Set the map center
 	[self setCenter:temp animated:NO];
 	
+	// Zoom in
 	float scale = self.scrollView.zoomScale * 2.0;
 	[self.scrollView setZoomScale:scale animated:YES];
 }
 
 
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
+	// This function required for zooming
 	return self.imageView;
 }
 
 - (void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(float)scale {
-	//NSLog(@"scale:%f", scale);
+	// This function required for zooming
 }
 
 
-
+#pragma mark -
+#pragma mark Memory Management
 
 
 - (void)didReceiveMemoryWarning {
@@ -133,6 +146,10 @@
 - (void)viewDidUnload {
     [super viewDidUnload];
 	self.confObj = nil;
+	self.scrollView = nil;
+	self.imageView = nil;
+	self.gestureRecognizer = nil;
+	self.imagePointer = nil;
 }
 
 
@@ -140,6 +157,8 @@
 	self.confObj = nil;
 	self.scrollView = nil;
 	self.imageView = nil;
+	self.gestureRecognizer = nil;
+	self.imagePointer = nil;
     [super dealloc];
 }
 
