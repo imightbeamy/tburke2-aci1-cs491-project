@@ -27,6 +27,7 @@ typedef enum {
 @property (nonatomic, retain) NSDate * startTime;
 @property (nonatomic, retain) NSDate * endTime;
 @property ConferenceObjectType type;
+@property int IDnum;
 
 @property (readonly) NSString * typeString;
 @property (readonly) NSString * searchableText;

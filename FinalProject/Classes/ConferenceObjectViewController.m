@@ -23,6 +23,8 @@
 @synthesize timeLocationView;
 @synthesize locationButton;
 
+@synthesize defaults;
+
 #pragma mark -
 #pragma mark IBActions
 
@@ -33,6 +35,8 @@
 	} else {
 		self.favoriteButton.image = [UIImage imageNamed:@"FavIcon_F"];
 	}
+	[self.defaults setBool:self.confObj.favorite forKey:[NSString stringWithFormat:@"%d", self.confObj.IDnum]];
+	[self.defaults synchronize]; 
 }
 
 - (IBAction)locationButtonPressed {
@@ -104,6 +108,13 @@
 														   target:self 
 														   action:@selector(favoriteButtonPressed)] autorelease];
 	self.navigationItem.rightBarButtonItem = self.favoriteButton;
+	
+	if (self.defaults == nil) 
+	{
+		self.defaults = [NSUserDefaults standardUserDefaults];
+	}
+	
+	self.confObj.favorite = [self.defaults boolForKey:[NSString stringWithFormat:@"%d", self.confObj.IDnum]];
 	if(self.confObj.favorite) {
 		self.favoriteButton.image = [UIImage imageNamed:@"FavIcon_T"];
 	} else {
@@ -118,7 +129,6 @@
 - (void)viewWillDisappear:(BOOL)animated {
 	[super viewWillDisappear:animated];
 	self.navigationController.navigationItem.rightBarButtonItem = nil;
-	
 }
 
 

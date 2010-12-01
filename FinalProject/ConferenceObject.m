@@ -17,6 +17,7 @@
 @synthesize description;
 @synthesize startTime, endTime;
 @synthesize type;
+@synthesize IDnum;
 
 - (id) initWithTitle: (NSString *) t image: (UIImage *) i description: (NSString *) d
 {
@@ -37,10 +38,18 @@
 	co.title = [dictionary objectForKey:@"title"];
 	co.description = [dictionary objectForKey:@"description"];
 	co.image = [UIImage imageNamed: [dictionary objectForKey:@"image"]];
+	co.IDnum = [[dictionary objectForKey:@"id"] intValue];
 	
-	//just for testing should get from plist later
-	co.startTime = [NSDate date];
-	co.endTime = [NSDate dateWithTimeIntervalSinceNow:9001];
+	if(co.type == EventType)
+	{		
+		NSDateFormatter *dateFormat = [[[NSDateFormatter alloc] init] autorelease];
+		[dateFormat setDateFormat:@"yyyy-MM-dd HH:mm"];
+		co.startTime  = [dateFormat dateFromString: [dictionary objectForKey:@"start"]]; 
+		co.endTime  = [dateFormat dateFromString: [dictionary objectForKey:@"end"]]; 
+	}
+	
+	co.favorite = [[NSUserDefaults standardUserDefaults] boolForKey:[NSString stringWithFormat:@"%d", co.IDnum]];
+	
 	return [co autorelease];
 }
 

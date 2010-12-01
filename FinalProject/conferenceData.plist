@@ -11,6 +11,8 @@
 		<string>r2d2</string>
 		<key>type</key>
 		<string>Speaker</string>
+		<key>id</key>
+		<integer>1</integer>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -21,6 +23,8 @@
 		<string>mario</string>
 		<key>type</key>
 		<string>Speaker</string>
+		<key>id</key>
+		<integer>2</integer>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -31,6 +35,8 @@
 		<string>luigi</string>
 		<key>type</key>
 		<string>Speaker</string>
+		<key>id</key>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -41,6 +47,8 @@
 		<string>donkeykong</string>
 		<key>type</key>
 		<string>Speaker</string>
+		<key>id</key>
+		<integer>3</integer>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -51,6 +59,8 @@
 		<string>RussianDancingMen</string>
 		<key>type</key>
 		<string>Sponsor</string>
+		<key>id</key>
+		<integer>18</integer>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -61,6 +71,8 @@
 		<string>nintendo_logo</string>
 		<key>type</key>
 		<string>Sponsor</string>
+		<key>id</key>
+		<integer>4</integer>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -71,6 +83,12 @@
 		<string>thumbsup</string>
 		<key>type</key>
 		<string>Event</string>
+		<key>start</key>
+		<string>2011-03-14 12:01</string>
+		<key>end</key>
+		<string>2011-03-14 14:00</string>
+		<key>id</key>
+		<integer>5</integer>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -81,6 +99,12 @@
 		<string>RussianDancingMen</string>
 		<key>type</key>
 		<string>Event</string>
+		<key>start</key>
+		<string>2011-03-14 11:00</string>
+		<key>end</key>
+		<string>2011-03-14 12:00</string>
+		<key>id</key>
+		<integer>6</integer>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -91,6 +115,12 @@
 		<string>Rebel_Alliance</string>
 		<key>type</key>
 		<string>Event</string>
+		<key>start</key>
+		<string>2011-03-14 15:20</string>
+		<key>end</key>
+		<string>2011-03-14 16:00</string>
+		<key>id</key>
+		<integer>17</integer>
 	</dict>
 </array>
 </plist>
