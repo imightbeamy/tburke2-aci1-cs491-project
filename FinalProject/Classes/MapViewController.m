@@ -45,7 +45,7 @@
 	self.scrollView.delegate = self;
 	
 	// Initialize the map image
-	self.imageView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"test"]] autorelease];
+	self.imageView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"map"]] autorelease];
 	
 	// Add the image to the scrollview
 	[self.scrollView addSubview:self.imageView];
@@ -63,12 +63,12 @@
 	// Draw the pointer on the image if there is a location associated
 	if(self.confObj) {
 		// Init the pointer image and add to the imageview
-		self.imagePointer = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"FavIcon_T"]] autorelease];
+		self.imagePointer = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"pointer"]] autorelease];
 		[self.imageView addSubview:self.imagePointer];
 		
 		// Move the pointer image to the location spot and center the map there
-		[self.imagePointer setCenter:CGPointMake(560, 690)];
-		[self setCenter:CGPointMake(560, 690) animated:NO];
+		[self.imagePointer setCenter:CGPointMake(560, 640 + 30)];
+		[self setCenter:CGPointMake(560, 640 + 30) animated:NO];
 	}
 	
 	// Zoom out a little
@@ -127,6 +127,21 @@
 
 - (void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(float)scale {
 	// This function required for zooming
+	
+	
+	if(self.confObj) {
+		[self.imagePointer removeFromSuperview];
+		self.imagePointer = nil;
+		UIImage *temp = [UIImage imageNamed:@"pointer"];
+		self.imagePointer = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, temp.size.width / scale, temp.size.height / scale)];
+		[self.imagePointer setImage:temp];
+		//[self.imagePointer setBackgroundColor:[UIColor greenColor]];
+		[self.imageView addSubview:self.imagePointer];
+		
+		// Move the pointer image to the location spot and center the map there
+		[self.imagePointer setCenter:CGPointMake(560, 640 + 30)];
+	}
+	
 }
 
 

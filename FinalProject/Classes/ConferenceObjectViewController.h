@@ -22,6 +22,7 @@
 @property (nonatomic, retain) IBOutlet UILabel *lblTime;
 @property (nonatomic, retain) IBOutlet UIView *timeLocationView;
 @property (nonatomic, retain) IBOutlet UIButton *locationButton;
+@property (nonatomic, retain) IBOutlet UILabel *objTitle;
 
 @property (nonatomic, retain) NSUserDefaults * defaults;
 
