@@ -27,21 +27,8 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-	
-//	[self.tableView reloadData];
-//	NSLog(@"reload");
 }
 
-/*
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-}
-*/
-/*
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-}
-*/
 
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
@@ -59,6 +46,7 @@
     // Return the number of rows in the section.
     return [conferenceObjs count];
 }
+
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
 	
@@ -81,12 +69,15 @@
 		}
 	}
 	
+	// Used this method instead of using the imageView that coems with the cell because
+	// there is no way to resize that imageView textLabel and detailTextLabel are also
+	// read-only so they cannot be repositioned, hence the spaces
 	UIImageView *img = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.height, cell.frame.size.height)];
 	[img setImage:co.image];
 	[img setContentMode:UIViewContentModeScaleAspectFit];
 	[cell.contentView addSubview:img];
-	
 }
+
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -102,6 +93,7 @@
     
     return cell;
 }
+
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	// Navigation logic may go here -- for example, create and push another view controller.
@@ -134,6 +126,7 @@
 
 
 - (void)dealloc {
+	self.conferenceObjs = nil;
     [super dealloc];
 }
 
