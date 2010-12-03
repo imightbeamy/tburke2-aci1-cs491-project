@@ -51,7 +51,15 @@
     //UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject)];
     //self.navigationItem.rightBarButtonItem = addButton;
     //[addButton release];
-	self.navigationItem.title = @"Name";
+	
+	// Set the first displayed Title
+	self.navigationItem.title = @"Conference";
+	
+	// Use any color for navigation bar, no gradient.  Also sets buttons same color.
+	//self.navigationController.navigationBar.tintColor = [UIColor greenColor];
+	
+	// Alternate Black Style built in with gradient
+	//self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
 
 }
 

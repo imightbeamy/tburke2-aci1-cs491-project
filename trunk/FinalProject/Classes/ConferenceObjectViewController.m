@@ -22,6 +22,7 @@
 @synthesize lblTime;
 @synthesize timeLocationView;
 @synthesize locationButton;
+@synthesize objTitle;
 
 @synthesize defaults;
 
@@ -42,6 +43,9 @@
 - (IBAction)locationButtonPressed {
 	MapViewController *mv = [[[MapViewController alloc] init] autorelease];
 	mv.confObj = self.confObj;
+	
+	
+	
 	[self.navigationController pushViewController:mv animated:YES];
 }
 
@@ -51,14 +55,31 @@
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
 	
-	self.title = self.confObj.title;
+	switch (self.confObj.type) {
+		case EventType:
+			self.title = @"Event";
+			break;
+		case SponsorType:
+			self.title = @"Sponsor";
+			break;
+		case SpeakerType:
+			self.title = @"Speaker";
+			break;
+		default:
+			self.title = @"Unknown";
+			break;
+	}
+	
+	self.objTitle.text = self.confObj.title;
 	self.textView.text = self.confObj.description;
 	
-	int scrollViewHeight = 20;
+	int scrollViewHeight = 40;
 	
 	int scaledImageHeight = ((280 * self.confObj.image.size.height) / self.confObj.image.size.width);
 	
-	UIImageView *image = [[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 280, scaledImageHeight)];
+	//CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)
+	
+	UIImageView *image = [[UIImageView alloc] initWithFrame:CGRectMake(20, 40, 280, scaledImageHeight)];
 	image.image = self.confObj.image;
 	[self.scrollView addSubview:image];
 	scrollViewHeight += scaledImageHeight;
@@ -147,6 +168,7 @@
 	self.lblTime = nil;
 	self.timeLocationView = nil;
 	self.locationButton = nil;
+	self.objTitle = nil;
     [super dealloc];
 }
 
