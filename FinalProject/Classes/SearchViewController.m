@@ -65,7 +65,7 @@
 	cell.textLabel.text =  [NSString stringWithFormat:@"         %@", co.title];
 	cell.detailTextLabel.text = [NSString stringWithFormat:@"           %@", co.typeString];
 	
-	// Used this method instead of using the imageView that coems with the cell because
+	// Used this method instead of using the imageView that comes with the cell because
 	// there is no way to resize that imageView textLabel and detailTextLabel are also
 	// read-only so they cannot be repositioned, hence the spaces
 	UIImageView *img = [[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.height, cell.frame.size.height)] autorelease];
