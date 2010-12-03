@@ -63,8 +63,8 @@
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
 	
 	ConferenceObject * co = [self.conferenceObjs objectAtIndex:indexPath.row];
-    cell.textLabel.text = [co title];
-	
+    cell.textLabel.text = [NSString stringWithFormat:@"        %@", co.title];
+
 	if (self.scheduleView && co.startTime != nil) {
 		NSDateFormatter *dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
 		[dateFormatter setDateStyle:NSDateFormatterShortStyle];
@@ -73,13 +73,19 @@
 		{
 			NSString * st =  [dateFormatter stringFromDate:co.startTime];
 			[dateFormatter setDateStyle:NSDateFormatterNoStyle];
-			cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - %@", st,
+			cell.detailTextLabel.text = [NSString stringWithFormat:@"           %@ - %@", st,
 										 [dateFormatter stringFromDate:co.endTime]];
 		}
 		else {
 			cell.detailTextLabel.text = [dateFormatter stringFromDate:co.startTime];
 		}
 	}
+	
+	UIImageView *img = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.height, cell.frame.size.height)];
+	[img setImage:co.image];
+	[img setContentMode:UIViewContentModeScaleAspectFit];
+	[cell.contentView addSubview:img];
+	
 }
 
 // Customize the appearance of table view cells.

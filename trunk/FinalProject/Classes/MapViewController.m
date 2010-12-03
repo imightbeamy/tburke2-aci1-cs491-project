@@ -44,7 +44,7 @@
 	// Set scrollview delegate
 	self.scrollView.delegate = self;
 	
-	// Initialize the map image
+	// Initialize the large map image
 	self.imageView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"map"]] autorelease];
 	
 	// Add the image to the scrollview
@@ -57,7 +57,7 @@
 	[self setCenter:CGPointMake(self.imageView.image.size.width / 2, self.imageView.image.size.height / 2) animated:NO];
 	 
 	// Set the zoom scale for the scrollview
-	self.scrollView.minimumZoomScale = 0.2;
+	self.scrollView.minimumZoomScale =  0.8 - log10(log10(self.imageView.image.size.width));
 	self.scrollView.maximumZoomScale = 3.0;
 	
 	// Draw the pointer on the image if there is a location associated
@@ -68,15 +68,14 @@
 		[self.imagePointer setImage:temp];
 		[self.imageView addSubview:self.imagePointer];
 		
+		// Calculate the adjustment necessary to correctly position the pointer image
+		// based on the zoom scale. 
 		int zoomAdjust = - (temp.size.height / 2) / self.scrollView.zoomScale;
 		
 		// Move the pointer image to the location spot and center the map there
 		[self.imagePointer setCenter:CGPointMake(560, 690 + zoomAdjust )];
 		[self setCenter:CGPointMake(560, 690 + zoomAdjust ) animated:NO];
 	}
-	
-	// Zoom out a little
-	//[self.scrollView setZoomScale:.4 animated:NO];
 }
 
 #pragma mark -
@@ -119,7 +118,7 @@
 	[self setCenter:temp animated:NO];
 	
 	// Zoom in
-	float scale = self.scrollView.zoomScale * 2.0;
+	float scale = self.scrollView.zoomScale * 1.5;
 	[self.scrollView setZoomScale:scale animated:YES];
 }
 
@@ -132,19 +131,35 @@
 - (void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(float)scale {
 	// This function required for zooming
 	
+	// If a pin is on the map, adjust the position accordingly - pin image stays
+	// the same size on map image regardless of scale, the bottom of the pin stays in 
+	// the same spot
 	if(self.confObj) {
+		
+		// Remove the pin from the view.
 		[self.imagePointer removeFromSuperview];
+		
+		// Release the pin image so it can be reinitialized at a new size
 		self.imagePointer = nil;
+		
+		// Make a new UIImage
 		UIImage *temp = [UIImage imageNamed:@"pointer"];
+		
+		// Reinitialize the pin image with the new size
 		self.imagePointer = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, temp.size.width / scale, temp.size.height / scale)];
+		
+		// Add the UIImage back to the pin
 		[self.imagePointer setImage:temp];
-		//[self.imagePointer setBackgroundColor:[UIColor greenColor]];
+		
+		// Add the pin back to the imageview
 		[self.imageView addSubview:self.imagePointer];
 		
+		// Calculate the adjustment necessary to correctly position the pin image
+		// based on the zoom scale. 
 		int zoomAdjust = - (temp.size.height / 2) / scale;
 		
-		// Move the pointer image to the location spot and center the map there
-		[self.imagePointer setCenter:CGPointMake(560, 690 + zoomAdjust )];
+		// Move the pin image to the location spot
+		[self.imagePointer setCenter:CGPointMake(560, 690 + zoomAdjust)];
 	}
 	
 }
@@ -167,12 +182,12 @@
 
 
 - (void)viewDidUnload {
-    [super viewDidUnload];
 	self.confObj = nil;
 	self.scrollView = nil;
 	self.imageView = nil;
 	self.gestureRecognizer = nil;
 	self.imagePointer = nil;
+    [super viewDidUnload];
 }
 
 
