@@ -60,19 +60,19 @@
 	self.scrollView.minimumZoomScale =  0.8 - log10(log10(self.imageView.image.size.width));
 	self.scrollView.maximumZoomScale = 3.0;
 	
-	// Draw the pointer on the image if there is a location associated
+	// Draw the pin on the image if there is a location associated
 	if(self.confObj) {
-		// Init the pointer image and add to the imageview
+		// Init the pin image and add to the imageview
 		UIImage *temp = [UIImage imageNamed:@"pointer"];
 		self.imagePointer = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, temp.size.width / self.scrollView.zoomScale, temp.size.height / self.scrollView.zoomScale)];
 		[self.imagePointer setImage:temp];
 		[self.imageView addSubview:self.imagePointer];
 		
-		// Calculate the adjustment necessary to correctly position the pointer image
+		// Calculate the adjustment necessary to correctly position the pin image
 		// based on the zoom scale. 
 		int zoomAdjust = - (temp.size.height / 2) / self.scrollView.zoomScale;
 		
-		// Move the pointer image to the location spot and center the map there
+		// Move the pin image to the location spot and center the map there
 		[self.imagePointer setCenter:CGPointMake(560, 690 + zoomAdjust )];
 		[self setCenter:CGPointMake(560, 690 + zoomAdjust ) animated:NO];
 	}
