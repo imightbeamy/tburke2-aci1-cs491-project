@@ -18,68 +18,28 @@
 #pragma mark -
 #pragma mark Search Bar
 
+
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
-	//NSLog(@"Text changed %@", searchText);
-	
-	// TO DO:
-	// Change the search code for the UITableView display to show
-	// the results of the search.
 }
 
 
 - (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
-	// TO DO:
-	// Put the UITableView back ot the standard list of choices
-	
-	
-	
 }
+
 
 #pragma mark -
 #pragma mark View lifecycle
 
-
-/*
-- (void)viewDidLoad {
-    [super viewDidLoad];
-
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-*/
-
-/*
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-}
-*/
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
 	[self searchBarCancelButtonClicked:self.searchBar];
 }
 
-/*
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-}
-*/
-/*
-- (void)viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
-}
-*/
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
-
 
 #pragma mark -
 #pragma mark Table view data source
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
@@ -98,14 +58,21 @@
     
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
-    }
+	// Always create new cells to clear image contents
+    UITableViewCell *cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     
 	ConferenceObject * co = [self.filtered objectAtIndex:indexPath.row];
-	cell.textLabel.text =  co.title;
-	cell.detailTextLabel.text = co.typeString;
+	cell.textLabel.text =  [NSString stringWithFormat:@"         %@", co.title];
+	cell.detailTextLabel.text = [NSString stringWithFormat:@"           %@", co.typeString];
+	
+	// Used this method instead of using the imageView that coems with the cell because
+	// there is no way to resize that imageView textLabel and detailTextLabel are also
+	// read-only so they cannot be repositioned, hence the spaces
+	UIImageView *img = [[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.height, cell.frame.size.height)] autorelease];
+	[img setImage:co.image];
+	[img setContentMode:UIViewContentModeScaleAspectFit];
+	[cell.contentView addSubview:img];
+	
     return cell;
 }
 
@@ -125,6 +92,7 @@ shouldReloadTableForSearchString:(NSString *)searchString
 #pragma mark -
 #pragma mark Table view delegate
 
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	// Navigation logic may go here -- for example, create and push another view controller.
     
@@ -142,12 +110,14 @@ shouldReloadTableForSearchString:(NSString *)searchString
 #pragma mark -
 #pragma mark Memory management
 
+
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
     
     // Relinquish ownership any cached data, images, etc that aren't in use.
 }
+
 
 - (void)viewDidUnload {
     // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
@@ -156,6 +126,10 @@ shouldReloadTableForSearchString:(NSString *)searchString
 
 
 - (void)dealloc {
+	self.searchBar = nil;
+	self.conferenceObjs = nil;
+	self.filtered = nil;
+	self.searchDisplayController = nil;
     [super dealloc];
 }
 
