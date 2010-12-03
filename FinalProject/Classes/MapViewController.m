@@ -56,7 +56,7 @@
 	// scroll to the center of the image
 	[self setCenter:CGPointMake(self.imageView.image.size.width / 2, self.imageView.image.size.height / 2) animated:NO];
 	 
-	// Set the zoom scale for the scrollview
+	// Set the zoom scale for the scrollview - image widths between 1024 and 4096
 	self.scrollView.minimumZoomScale =  0.8 - log10(log10(self.imageView.image.size.width));
 	self.scrollView.maximumZoomScale = 3.0;
 	

@@ -243,6 +243,8 @@
 
 
 - (void)dealloc {
+	self.conferenceObjs = nil;
+	self.menuOptions = nil;
     [super dealloc];
 }
 

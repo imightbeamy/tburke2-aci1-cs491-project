@@ -189,6 +189,7 @@
 	self.timeLocationView = nil;
 	self.locationButton = nil;
 	self.objTitle = nil;
+	self.defaults = nil;
     [super dealloc];
 }
 

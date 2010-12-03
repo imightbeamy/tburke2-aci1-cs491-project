@@ -113,8 +113,10 @@
 
 - (void)dealloc {
 	self.title = nil;
-	self.description = nil;
 	self.image = nil;
+	self.description = nil;
+	self.startTime = nil;
+	self.endTime = nil;
 	[super dealloc];
 }
 
