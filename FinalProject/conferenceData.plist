@@ -89,6 +89,12 @@
 		<string>2011-03-14 14:00</string>
 		<key>id</key>
 		<integer>5</integer>
+		<key>location</key>
+		<string>Link&apos;s house</string>
+		<key>x</key>
+		<integer>560</integer>
+		<key>y</key>
+		<integer>695</integer>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -105,6 +111,12 @@
 		<string>2011-03-14 12:00</string>
 		<key>id</key>
 		<integer>6</integer>
+		<key>location</key>
+		<string>Meadow</string>
+		<key>y</key>
+		<integer>724</integer>
+		<key>x</key>
+		<integer>322</integer>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -121,6 +133,12 @@
 		<string>2011-03-14 16:00</string>
 		<key>id</key>
 		<integer>17</integer>
+		<key>location</key>
+		<string>Tree house</string>
+		<key>x</key>
+		<integer>828</integer>
+		<key>y</key>
+		<integer>342</integer>
 	</dict>
 </array>
 </plist>
