@@ -29,6 +29,11 @@ typedef enum {
 @property ConferenceObjectType type;
 @property int IDnum;
 
+@property (nonatomic, retain) NSString * loction;
+@property int x;
+@property int y;
+
+
 @property (readonly) NSString * typeString;
 @property (readonly) NSString * searchableText;
 

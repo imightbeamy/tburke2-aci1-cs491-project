@@ -18,6 +18,7 @@
 @synthesize startTime, endTime;
 @synthesize type;
 @synthesize IDnum;
+@synthesize loction, x, y;
 
 - (id) initWithTitle: (NSString *) t image: (UIImage *) i description: (NSString *) d
 {
@@ -45,8 +46,14 @@
 		NSDateFormatter *dateFormat = [[[NSDateFormatter alloc] init] autorelease];
 		[dateFormat setDateFormat:@"yyyy-MM-dd HH:mm"];
 		co.startTime  = [dateFormat dateFromString: [dictionary objectForKey:@"start"]]; 
-		co.endTime  = [dateFormat dateFromString: [dictionary objectForKey:@"end"]]; 
+		co.endTime  = [dateFormat dateFromString: [dictionary objectForKey:@"end"]];
+		
+		co.x = [[dictionary objectForKey:@"x"] intValue];
+		co.y = [[dictionary objectForKey:@"y"] intValue];
+		co.loction = [dictionary objectForKey:@"loction"];
 	}
+	
+	NSLog(@"%@:: %d, %d",co.loction, co.x, co.y);
 	
 	co.favorite = [[NSUserDefaults standardUserDefaults] boolForKey:[NSString stringWithFormat:@"%d", co.IDnum]];
 	
