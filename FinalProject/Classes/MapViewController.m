@@ -73,8 +73,8 @@
 		int zoomAdjust = - (temp.size.height / 2) / self.scrollView.zoomScale;
 		
 		// Move the pin image to the location spot and center the map there
-		[self.imagePointer setCenter:CGPointMake(560, 690 + zoomAdjust )];
-		[self setCenter:CGPointMake(560, 690 + zoomAdjust ) animated:NO];
+		[self.imagePointer setCenter:CGPointMake(self.confObj.x, self.confObj.y + zoomAdjust )];
+		[self setCenter:CGPointMake(self.confObj.x, self.confObj.y + zoomAdjust ) animated:NO];
 	}
 }
 
@@ -159,7 +159,7 @@
 		int zoomAdjust = - (temp.size.height / 2) / scale;
 		
 		// Move the pin image to the location spot
-		[self.imagePointer setCenter:CGPointMake(560, 690 + zoomAdjust)];
+		[self.imagePointer setCenter:CGPointMake(self.confObj.x, self.confObj.y + zoomAdjust)];
 	}
 	
 }
