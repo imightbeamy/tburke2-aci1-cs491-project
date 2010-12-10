@@ -50,11 +50,9 @@
 		
 		co.x = [[dictionary objectForKey:@"x"] intValue];
 		co.y = [[dictionary objectForKey:@"y"] intValue];
-		co.loction = [dictionary objectForKey:@"loction"];
+		co.loction = [dictionary objectForKey:@"location"];
 	}
-	
-	NSLog(@"%@:: %d, %d",co.loction, co.x, co.y);
-	
+
 	co.favorite = [[NSUserDefaults standardUserDefaults] boolForKey:[NSString stringWithFormat:@"%d", co.IDnum]];
 	
 	return [co autorelease];
