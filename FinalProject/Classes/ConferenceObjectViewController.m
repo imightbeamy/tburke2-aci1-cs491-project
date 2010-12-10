@@ -117,8 +117,8 @@
 		}
 		
 		// Set the map button to the name of the location
-		[self.locationButton setTitle:@"Location Name" forState:UIControlStateNormal];
-		[self.locationButton setTitle:@"Location Name" forState:UIControlStateHighlighted];
+		[self.locationButton setTitle:self.confObj.loction forState:UIControlStateNormal];
+		[self.locationButton setTitle:self.confObj.loction forState:UIControlStateHighlighted];
 		
 	} else {
 		self.timeLocationView.hidden = YES;
