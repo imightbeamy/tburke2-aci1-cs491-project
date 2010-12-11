@@ -41,7 +41,7 @@
 	co.image = [UIImage imageNamed: [dictionary objectForKey:@"image"]];
 	co.IDnum = [[dictionary objectForKey:@"id"] intValue];
 	
-	if(co.type == EventType)
+	if(co.type == kEventType)
 	{		
 		NSDateFormatter *dateFormat = [[[NSDateFormatter alloc] init] autorelease];
 		[dateFormat setDateFormat:@"yyyy-MM-dd HH:mm"];
@@ -60,11 +60,11 @@
 
 - (NSString *) typeString
 {
-	if(type == EventType)
+	if(type == kEventType)
 		return [NSString stringWithString: @"Event"];
-	else if(type == SponsorType)
+	else if(type == kSponsorType)
 		return [NSString stringWithString: @"Sponsor"];
-	else if(type == SpeakerType)
+	else if(type == kSpeakerType)
 		return [NSString stringWithString: @"Speaker"];
 	else
 		return [NSString stringWithString: @"Unknown Type"];
@@ -78,13 +78,13 @@
 + (ConferenceObjectType) typeFromString: (NSString *) dicType
 {
 	if([dicType isEqualToString: @"Event"])
-		return EventType;
+		return kEventType;
 	else if([dicType isEqualToString: @"Sponsor"])
-		return SponsorType;
+		return kSponsorType;
 	else if([dicType isEqualToString: @"Speaker"])
-		return SpeakerType;
+		return kSpeakerType;
 	else
-		return UnknownType;
+		return kUnknownConfType;
 }
 
 
