@@ -59,13 +59,13 @@
 	
 	// Set the title of the view to the type of Conference Object (saves space over name)
 	switch (self.confObj.type) {
-		case EventType:
+		case kEventType:
 			self.title = @"Event";
 			break;
-		case SponsorType:
+		case kSponsorType:
 			self.title = @"Sponsor";
 			break;
-		case SpeakerType:
+		case kSpeakerType:
 			self.title = @"Speaker";
 			break;
 		default:
@@ -93,7 +93,7 @@
 	
 	// If the object type is event, display a subview containing the times of event
 	// and a location button to bring up the map of hte location
-	if(self.confObj.type == EventType) {
+	if(self.confObj.type == kEventType) {
 		scrollViewHeight += 5;
 		
 		// Put the subview in the correct position in the subview

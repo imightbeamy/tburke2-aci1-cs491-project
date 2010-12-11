@@ -9,10 +9,10 @@
 #import <CoreData/CoreData.h>
 
 typedef enum {
-	EventType,
-	SponsorType,
-	SpeakerType,
-	UnknownType
+	kEventType,
+	kSponsorType,
+	kSpeakerType,
+	kUnknownConfType
 } ConferenceObjectType;
 
 @interface ConferenceObject:  NSObject  
