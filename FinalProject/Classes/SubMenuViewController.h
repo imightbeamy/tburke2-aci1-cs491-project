@@ -14,6 +14,7 @@
 }
 
 @property(nonatomic,retain) NSArray * conferenceObjs;
+@property bool favsView;
 @property bool scheduleView;
 
 @end
