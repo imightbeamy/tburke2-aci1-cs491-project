@@ -12,6 +12,7 @@
 
 @interface RootViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
+- (void) loadFavoritesView;
 @end
 
 @implementation RootViewController
@@ -141,7 +142,7 @@
 	}
 	else if([menuchoice isEqualToString:@"Favorites"])
 	{
-		[self loadFilteredSubviewWithName: @"Favorites" andFilter: @"favorite == 1"];
+		[self loadFavoritesView];
 	}
 	else if([menuchoice isEqualToString:@"Search"])
 	{
@@ -168,6 +169,17 @@
 	SubMenuViewController *sm = [[SubMenuViewController alloc] initWithNibName:@"SubMenuViewController" bundle:nil];
 	sm.conferenceObjs = [self.conferenceObjs filteredArrayUsingPredicate:[NSPredicate predicateWithFormat: filter]];
 	sm.navigationItem.title = name;
+	[self.navigationController pushViewController:sm animated:YES];
+	[sm release];
+}
+
+
+- (void) loadFavoritesView
+{
+	SubMenuViewController *sm = [[SubMenuViewController alloc] initWithNibName:@"SubMenuViewController" bundle:nil];
+	sm.conferenceObjs = [self.conferenceObjs filteredArrayUsingPredicate:[NSPredicate predicateWithFormat: @"favorite == 1"]];
+	sm.navigationItem.title = @"Favorites";
+	sm.favsView = YES;
 	[self.navigationController pushViewController:sm animated:YES];
 	[sm release];
 }

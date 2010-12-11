@@ -11,7 +11,7 @@
 #import "ConferenceObjectViewController.h"
 @implementation SubMenuViewController
 
-@synthesize conferenceObjs,scheduleView;
+@synthesize conferenceObjs,scheduleView, favsView;
 
 #pragma mark -
 #pragma mark View lifecycle
@@ -19,7 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+ 
+	// Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
@@ -27,6 +28,12 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+	
+	if(favsView)
+	{
+		self.conferenceObjs = [self.conferenceObjs filteredArrayUsingPredicate: [NSPredicate predicateWithFormat:@"favorite == 1"]];
+		[self.tableView reloadData];
+	}
 }
 
 
@@ -94,8 +101,7 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	// Navigation logic may go here -- for example, create and push another view controller.
-    
+	
 	ConferenceObjectViewController *covc = [[ConferenceObjectViewController alloc] initWithNibName:@"ConferenceObjectViewController" bundle:nil];
 	ConferenceObject *co = [self.conferenceObjs objectAtIndex:indexPath.row];
 	
