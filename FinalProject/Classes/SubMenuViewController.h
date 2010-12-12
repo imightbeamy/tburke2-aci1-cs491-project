@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-
+/**
+ A view controller for most of the submenus including Events, Sponsors
+ Speakers, Schedule and Favorites. 
+ */
 @interface SubMenuViewController : UITableViewController {
 
 }
@@ -20,9 +23,15 @@
 @property(nonatomic,retain) NSArray * conferenceObjs;
 
 /**
- Sets view as favorites view, the data is reflitered whenever the view loads.
+ Sets view as favorites view. This makes the data be reflitered whenever 
+ the view loads.
  */
 @property bool favsView;
+
+/**
+ Sets view as schedule view. This makes the date and time show up as the 
+ detail text on each cell.
+ */
 @property bool scheduleView;
 
 @end
