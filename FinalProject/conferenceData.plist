@@ -100,14 +100,14 @@
 	{
 		type = Sponsor;
 		title = Google;
-		image = "google.gif";
+		image = google;
 		description = "Google Inc. is a multinational public corporation invested in Internet search, cloud computing, and advertising technologies. Google hosts and develops a number of Internet-based services and products, and generates profit primarily from advertising through its AdWords program. The company was founded by Larry Page and Sergey Brin, often dubbed the \"Google Guys\", while the two were attending Stanford University as Ph.D. candidates. It was first incorporated as a privately held company on September 4, 1998, and its initial public offering followed on August 19, 2004. The company's stated mission from the outset was \"to organize the world's information and make it universally accessible and useful\", and the company's unofficial slogan \\u2013 coined by Google engineer Paul Buchheit \\u2013 is \"Don't be evil\". In 2006, the company moved to their current headquarters in Mountain View, California.\n";
 		id = 15;
 	},
 	{
 		type = Sponsor;
-		title = NSF;
-		image = "NSF.jpg";
+		title = "National Science Foundation";
+		image = NSF;
 		description = "The National Science Foundation (NSF) is a United States government agency that supports fundamental research and education in all the non-medical fields of science and engineering. Its medical counterpart is the National Institutes of Health. With an annual budget of about US$6.87 billion (fiscal year 2010), the NSF funds approximately 20 percent of all federally supported basic research conducted by the United States' colleges and universities. In some fields, such as mathematics, computer science, economics and the social sciences, the NSF is the major source of federal backing.\n";
 		id = 16;
 	},
@@ -142,14 +142,14 @@
 	{
 		type = Sponsor;
 		title = Intel;
-		image = "intel-logo.jpg";
+		image = "intel-logo";
 		description = "Intel Corporation is an American global technology company and the world's largest semiconductor chip maker, based on revenue. It is the inventor of the x86 series of microprocessors, the processors found in most personal computers. Intel was founded on July 18, 1968, as Integrated Electronics Corporation (though a common misconception is that \"Intel\" is from the word intelligence) and is based in Santa Clara, California, USA. Intel also makes motherboard chipsets, network interface controllers and integrated circuits, flash memory, graphic chips, embedded processors and other devices related to communications and computing. Founded by semiconductor pioneers Robert Noyce and Gordon Moore and widely associated with the executive leadership and vision of Andrew Grove, Intel combines advanced chip design capability with a leading-edge manufacturing capability. Originally known primarily to engineers and technologists, Intel's \"Intel Inside\" advertising campaign of the 1990s made it and its Pentium processor household names.";
 		id = 21;
 	},
 	{
 		type = Sponsor;
 		title = "Georgia Tech";
-		image = "GeorgiaTech.jpg";
+		image = GeorgiaTech;
 		description = "The Georgia Institute of Technology (commonly called Georgia Tech, Tech, and GT) is a public research university in Atlanta, Georgia, in the United States. It is a part of the University System of Georgia and has satellite campuses in Savannah, Georgia; Metz, France; Athlone, Ireland; Shanghai, China; and Singapore.";
 		id = 22;
 	},
