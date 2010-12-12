@@ -13,7 +13,15 @@
 
 }
 
+/**
+ The items that should be displyed in this subview. Gets set by the root
+ view when loading the sub view.
+ */
 @property(nonatomic,retain) NSArray * conferenceObjs;
+
+/**
+ Sets view as favorites view, the data is reflitered whenever the view loads.
+ */
 @property bool favsView;
 @property bool scheduleView;
 

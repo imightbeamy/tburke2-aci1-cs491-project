@@ -87,11 +87,11 @@
 		if([obj1 startTime] == nil || [obj2 startTime] == nil)
 			return (NSComparisonResult)NSOrderedSame;
 		
-		if ([[obj1 startTime] earlierDate:  [obj2 startTime]]){
+		if ([[obj1 startTime] earlierDate:  [obj2 startTime]] == [obj2 startTime]){
 			return (NSComparisonResult)NSOrderedDescending;
 		}
 		
-		if ([[obj1 startTime] laterDate:  [obj2 startTime]]) {
+		if ([[obj1 startTime] laterDate:  [obj2 startTime]] == [obj2 startTime]) {
 			return (NSComparisonResult)NSOrderedAscending;
 		}
 		return (NSComparisonResult)NSOrderedSame;
