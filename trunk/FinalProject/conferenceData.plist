@@ -2,7 +2,7 @@
 	{
 		type = Speaker;
 		title = "Genevieve Bell, PhD";
-		image = r2d2;
+		image = "bell.jpg";
 		description = "Born and raised in Australia, today Dr. Genevieve Bell is the Director of the User Experience Group within Intel Corporation\\u2019s Digital Home Group in Portland, Oregon. She is the driving force behind Intel\\u2019s emerging consumer centred focus. Gathering a team of anthropologists, interaction designers and human factors engineers to transform consumer-centric product innovation, she has fundamentally changed how Intel envisions, plans and develops its platforms. Her team is responsible for setting research directions, conducting global comparative qualitative and quantitative research, leading new product strategy and definition and championing consumer-centric innovation and thinking in Intel\\u2019s Consumer Electronics business and across all of Intel\\u2019s platforms. Dr. Bell has a PhD in anthropology from Stanford University and a new book forthcoming from MIT Press. She was recently recognised by Fast Company magazine as one of the 100 most innovative people in business.\n";
 		id = 1;
 	},

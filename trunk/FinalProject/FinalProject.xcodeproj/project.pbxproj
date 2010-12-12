@@ -20,15 +20,6 @@
 		7D7B14C512A87AB30039A00E /* pointer.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D7B14C412A87AB30039A00E /* pointer.png */; };
 		A1BA3767129D8A75002905D1 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1BA3765129D8A75002905D1 /* MapViewController.m */; };
 		A1BA3768129D8A75002905D1 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BA3766129D8A75002905D1 /* MapViewController.xib */; };
-		A1E024C8129F759D000FCC30 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E024C7129F759D000FCC30 /* test.png */; };
-		A1E92105129D8D4A00D6B97D /* donkeykong.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E920FE129D8D4A00D6B97D /* donkeykong.png */; };
-		A1E92106129D8D4A00D6B97D /* FavIcon_F.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E920FF129D8D4A00D6B97D /* FavIcon_F.png */; };
-		A1E92107129D8D4A00D6B97D /* FavIcon_T.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E92100129D8D4A00D6B97D /* FavIcon_T.png */; };
-		A1E92108129D8D4A00D6B97D /* luigi.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E92101129D8D4A00D6B97D /* luigi.png */; };
-		A1E92109129D8D4A00D6B97D /* mario.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E92102129D8D4A00D6B97D /* mario.png */; };
-		A1E9210A129D8D4A00D6B97D /* nintendo_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E92103129D8D4A00D6B97D /* nintendo_logo.png */; };
-		A1E9210B129D8D4A00D6B97D /* Rebel_Alliance.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E92104129D8D4A00D6B97D /* Rebel_Alliance.png */; };
-		A1E9210D129D8D5D00D6B97D /* oldData.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1E9210C129D8D5D00D6B97D /* oldData.plist */; };
 		E16B774C1297054000D9B24B /* ConferenceObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B774A1297054000D9B24B /* ConferenceObjectViewController.m */; };
 		E16B774D1297054000D9B24B /* ConferenceObjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E16B774B1297054000D9B24B /* ConferenceObjectViewController.xib */; };
 		E1B5A2A9129B57D900438818 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B5A2A7129B57D900438818 /* SearchViewController.m */; };
@@ -37,9 +28,22 @@
 		E1DFCA4E12B4249300231C66 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA4C12B4249300231C66 /* Default@2x.png */; };
 		E1DFCA5612B4352500231C66 /* conferenceData.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA5512B4352500231C66 /* conferenceData.plist */; };
 		E1DFCA9112B436CA00231C66 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA9012B436CA00231C66 /* map.png */; };
-		E1F841C7129761180094B4DC /* r2d2.png in Resources */ = {isa = PBXBuildFile; fileRef = E1F841C6129761180094B4DC /* r2d2.png */; };
-		E1F841CB129764EA0094B4DC /* RussianDancingMen.png in Resources */ = {isa = PBXBuildFile; fileRef = E1F841CA129764EA0094B4DC /* RussianDancingMen.png */; };
-		E1F841E7129765E40094B4DC /* thumbsup.png in Resources */ = {isa = PBXBuildFile; fileRef = E1F841E6129765E40094B4DC /* thumbsup.png */; };
+		E1DFCB3712B47E5900231C66 /* bell.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA7A12B4369400231C66 /* bell.jpg */; };
+		E1DFCB3812B47E5900231C66 /* autodesk.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA7912B4369400231C66 /* autodesk.png */; };
+		E1DFCB3912B47E5900231C66 /* bioluminescense.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA7B12B4369400231C66 /* bioluminescense.jpg */; };
+		E1DFCB3A12B47E5900231C66 /* birnholtz.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA7C12B4369500231C66 /* birnholtz.jpg */; };
+		E1DFCB3B12B47E5900231C66 /* bloomberg.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA7D12B4369500231C66 /* bloomberg.png */; };
+		E1DFCB3C12B47E5900231C66 /* brandt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA7E12B4369500231C66 /* brandt.jpg */; };
+		E1DFCB3D12B47E5900231C66 /* bresee.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA7F12B4369500231C66 /* bresee.png */; };
+		E1DFCB3E12B47E5900231C66 /* dancedraw.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA8012B4369500231C66 /* dancedraw.png */; };
+		E1DFCB3F12B47E5900231C66 /* dubois.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA8112B4369500231C66 /* dubois.jpg */; };
+		E1DFCB4012B47E5900231C66 /* GeorgiaTech.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA8212B4369500231C66 /* GeorgiaTech.jpg */; };
+		E1DFCB4112B47E5900231C66 /* google.gif in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA8312B4369500231C66 /* google.gif */; };
+		E1DFCB4212B47E5900231C66 /* gutwin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA8412B4369500231C66 /* gutwin.jpg */; };
+		E1DFCB4312B47E5900231C66 /* IBM_Research.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA8512B4369500231C66 /* IBM_Research.jpg */; };
+		E1DFCB4412B47E5900231C66 /* intel-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA8612B4369500231C66 /* intel-logo.jpg */; };
+		E1DFCB4512B47E5900231C66 /* lank.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA8712B4369500231C66 /* lank.jpg */; };
+		E1DFCB4612B47E5900231C66 /* latulipe.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA8812B4369500231C66 /* latulipe.png */; };
 		E1F8443F129868A10094B4DC /* SubMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F8443D129868A10094B4DC /* SubMenuViewController.m */; };
 		E1F84440129868A10094B4DC /* SubMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1F8443E129868A10094B4DC /* SubMenuViewController.xib */; };
 /* End PBXBuildFile section */
@@ -327,26 +331,30 @@
 				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
 				2899E5600DE3E45000AC0155 /* RootViewController.xib in Resources */,
 				E16B774D1297054000D9B24B /* ConferenceObjectViewController.xib in Resources */,
-				E1F841C7129761180094B4DC /* r2d2.png in Resources */,
-				E1F841CB129764EA0094B4DC /* RussianDancingMen.png in Resources */,
-				E1F841E7129765E40094B4DC /* thumbsup.png in Resources */,
 				E1F84440129868A10094B4DC /* SubMenuViewController.xib in Resources */,
 				E1B5A2AA129B57D900438818 /* SearchViewController.xib in Resources */,
 				A1BA3768129D8A75002905D1 /* MapViewController.xib in Resources */,
-				A1E92105129D8D4A00D6B97D /* donkeykong.png in Resources */,
-				A1E92106129D8D4A00D6B97D /* FavIcon_F.png in Resources */,
-				A1E92107129D8D4A00D6B97D /* FavIcon_T.png in Resources */,
-				A1E92108129D8D4A00D6B97D /* luigi.png in Resources */,
-				A1E92109129D8D4A00D6B97D /* mario.png in Resources */,
-				A1E9210A129D8D4A00D6B97D /* nintendo_logo.png in Resources */,
-				A1E9210B129D8D4A00D6B97D /* Rebel_Alliance.png in Resources */,
-				A1E9210D129D8D5D00D6B97D /* oldData.plist in Resources */,
-				A1E024C8129F759D000FCC30 /* test.png in Resources */,
 				7D7B14C512A87AB30039A00E /* pointer.png in Resources */,
 				E1DFCA4D12B4249300231C66 /* Default.png in Resources */,
 				E1DFCA4E12B4249300231C66 /* Default@2x.png in Resources */,
 				E1DFCA5612B4352500231C66 /* conferenceData.plist in Resources */,
 				E1DFCA9112B436CA00231C66 /* map.png in Resources */,
+				E1DFCB3712B47E5900231C66 /* bell.jpg in Resources */,
+				E1DFCB3812B47E5900231C66 /* autodesk.png in Resources */,
+				E1DFCB3912B47E5900231C66 /* bioluminescense.jpg in Resources */,
+				E1DFCB3A12B47E5900231C66 /* birnholtz.jpg in Resources */,
+				E1DFCB3B12B47E5900231C66 /* bloomberg.png in Resources */,
+				E1DFCB3C12B47E5900231C66 /* brandt.jpg in Resources */,
+				E1DFCB3D12B47E5900231C66 /* bresee.png in Resources */,
+				E1DFCB3E12B47E5900231C66 /* dancedraw.png in Resources */,
+				E1DFCB3F12B47E5900231C66 /* dubois.jpg in Resources */,
+				E1DFCB4012B47E5900231C66 /* GeorgiaTech.jpg in Resources */,
+				E1DFCB4112B47E5900231C66 /* google.gif in Resources */,
+				E1DFCB4212B47E5900231C66 /* gutwin.jpg in Resources */,
+				E1DFCB4312B47E5900231C66 /* IBM_Research.jpg in Resources */,
+				E1DFCB4412B47E5900231C66 /* intel-logo.jpg in Resources */,
+				E1DFCB4512B47E5900231C66 /* lank.jpg in Resources */,
+				E1DFCB4612B47E5900231C66 /* latulipe.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
