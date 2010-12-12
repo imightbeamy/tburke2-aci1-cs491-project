@@ -1,144 +1,312 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<array>
-	<dict>
-		<key>title</key>
-		<string>R2-D2</string>
-		<key>description</key>
-		<string>R2-D2 is an awesome robot who has years of experience roaming the galaxy working with the rabble alliance. for realz.</string>
-		<key>image</key>
-		<string>r2d2</string>
-		<key>type</key>
-		<string>Speaker</string>
-		<key>id</key>
-		<integer>1</integer>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Mario</string>
-		<key>description</key>
-		<string>Mario is an awesome plumber.</string>
-		<key>image</key>
-		<string>mario</string>
-		<key>type</key>
-		<string>Speaker</string>
-		<key>id</key>
-		<integer>2</integer>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Luigi</string>
-		<key>description</key>
-		<string>Luigi is an awesome plumber.</string>
-		<key>image</key>
-		<string>luigi</string>
-		<key>type</key>
-		<string>Speaker</string>
-		<key>id</key>
-		<integer>3</integer>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Donkey Kong</string>
-		<key>description</key>
-		<string>Donkey Kong is a gorilla in who lives in the Nintendo Universe. He is roughly twice the size of a normal gorilla, weighing approximately 800 pounds. Donkey Kong first appeared in Nintendo&apos;s popular 1981 video game of the same name. Since then he has appeared in over 20 games in his own series, as well as in some games in the Mario series.</string>
-		<key>image</key>
-		<string>donkeykong</string>
-		<key>type</key>
-		<string>Speaker</string>
-		<key>id</key>
-		<integer>3</integer>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Russian Dancing Men</string>
-		<key>description</key>
-		<string>They&apos;re Russian Dancing Men who dance with purple hens. They also have some ball-point pens and start dancing at half past ten.</string>
-		<key>image</key>
-		<string>RussianDancingMen</string>
-		<key>type</key>
-		<string>Sponsor</string>
-		<key>id</key>
-		<integer>18</integer>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Nintendo </string>
-		<key>description</key>
-		<string>Nintendo need very little introduction. From their beginnings as humble toy and playing card manufacturers, they cunningly stepped in to re-ignite the home video game market from the ashes of the defunct Atari, turning their Family Computer console (known as the &apos;Nintendo Entertainment System&apos; in the West) into the most successful home entertainment device of the 80s.</string>
-		<key>image</key>
-		<string>nintendo_logo</string>
-		<key>type</key>
-		<string>Sponsor</string>
-		<key>id</key>
-		<integer>4</integer>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>What is the meaning of life?</string>
-		<key>description</key>
-		<string>Come find out what the answer to life the universe and everything is in this exciting talk!</string>
-		<key>image</key>
-		<string>thumbsup</string>
-		<key>type</key>
-		<string>Event</string>
-		<key>start</key>
-		<string>2011-03-14 12:01</string>
-		<key>end</key>
-		<string>2011-03-14 14:00</string>
-		<key>id</key>
-		<integer>5</integer>
-		<key>location</key>
-		<string>Link&apos;s house</string>
-		<key>x</key>
-		<integer>560</integer>
-		<key>y</key>
-		<integer>695</integer>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Russian Dancing Men Film Viewing </string>
-		<key>description</key>
-		<string>Come watch the most awesome youtube video! </string>
-		<key>image</key>
-		<string>RussianDancingMen</string>
-		<key>type</key>
-		<string>Event</string>
-		<key>start</key>
-		<string>2011-03-14 11:00</string>
-		<key>end</key>
-		<string>2011-03-14 12:00</string>
-		<key>id</key>
-		<integer>6</integer>
-		<key>location</key>
-		<string>Meadow</string>
-		<key>y</key>
-		<integer>724</integer>
-		<key>x</key>
-		<integer>322</integer>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>A long time ago... </string>
-		<key>description</key>
-		<string>R2-D2 speaks on he&apos;s experience working with the rebel alliance. Translation provided by C-3PO.</string>
-		<key>image</key>
-		<string>Rebel_Alliance</string>
-		<key>type</key>
-		<string>Event</string>
-		<key>start</key>
-		<string>2011-03-14 15:20</string>
-		<key>end</key>
-		<string>2011-03-14 16:00</string>
-		<key>id</key>
-		<integer>17</integer>
-		<key>location</key>
-		<string>Tree house</string>
-		<key>x</key>
-		<integer>828</integer>
-		<key>y</key>
-		<integer>342</integer>
-	</dict>
-</array>
-</plist>
+(
+	{
+		type = Speaker;
+		title = "Genevieve Bell, PhD";
+		image = r2d2;
+		description = "Born and raised in Australia, today Dr. Genevieve Bell is the Director of the User Experience Group within Intel Corporation\\u2019s Digital Home Group in Portland, Oregon. She is the driving force behind Intel\\u2019s emerging consumer centred focus. Gathering a team of anthropologists, interaction designers and human factors engineers to transform consumer-centric product innovation, she has fundamentally changed how Intel envisions, plans and develops its platforms. Her team is responsible for setting research directions, conducting global comparative qualitative and quantitative research, leading new product strategy and definition and championing consumer-centric innovation and thinking in Intel\\u2019s Consumer Electronics business and across all of Intel\\u2019s platforms. Dr. Bell has a PhD in anthropology from Stanford University and a new book forthcoming from MIT Press. She was recently recognised by Fast Company magazine as one of the 100 most innovative people in business.\n";
+		id = 1;
+	},
+	{
+		type = Speaker;
+		title = "Edward Lank, PhD";
+		image = "lank.jpg";
+		description = "Assistant Professor in the David R. Cheriton School of Computer Science at the University of Waterloo. Joined the faculty at Waterloo in June, 2006. Prior to joining the faculty at Waterloo.  Ph.D. in Computer Science from Queen's University in 2001 under the supervision of Dorothea Blostein.\n";
+		id = 2;
+	},
+	{
+		type = Speaker;
+		title = "Jeremy Birnholtz, PhD";
+		image = "birnholtz.jpg";
+		description = "Dr. Jeremy Birnholtz received his Ph. D. from the School of Information at the University of Michigan in 2005. He is interested in improving the usefulness and usability of collaboration technologies through a focus on human attention, and in the intersections of social science theory and technology design. He uses both laboratory and field methods and has conducted field research in a diverse range of settings including civil engineering laboratories around the US, the CERN particle accelerator in Geneva, and a children's summer camp in northern Michigan. His work has been presented at the ACM CHI, CSCW, and GROUP conferences, and published in Organization Science, JASIST, JCMC and Social Science Computer Review. Jeremy also received a B.S. degree in Radio/TV/Film from Northwestern University in 1996 and an MS in Information from the University of Michigan in 2001.\n";
+		id = 3;
+	},
+	{
+		type = Speaker;
+		title = "Celine Latulipe, PhD";
+		image = "latulipe.png";
+		description = "My research is in the area of novel interaction techniques and creativity support tools. I get very excited about designing and evaluating two-handed interaction techniques, embodied interaction techniques and creativity support tools.  I am interested in the aesthetic and ethical norms that are implicitly or explicitly designed into our digital artifacts, including the normative values at play in the underlying architecture of our systems.\n";
+		id = 4;
+	},
+	{
+		type = Speaker;
+		title = "R. Luke DuBois, Doctor of Musical Arts";
+		image = "dubois.jpg";
+		description = "R. Luke DuBois is a composer, artist, and performer who explores the temporal, verbal, and visual structures of cultural and personal ephemera. He holds a doctorate in music composition from Columbia University, and has lectured and taught worldwide on interactive sound and video performance. He has collaborated on interactive performance, installation, and music production work with many artists and organizations including Toni Dove, Matthew Ritchie, Todd Reynolds, Michael Joaquin Grey, Elliott Sharp, Michael Gordon, Maya Lin, Bang on a Can, Engine27, Harvestworks, and LEMUR, and was the director of the Princeton Laptop Orchestra for its 2007 season.\n";
+		id = 5;
+	},
+	{
+		type = Speaker;
+		title = "Joanna Bresee";
+		image = bresee;
+		description = "I am an interaction designer based in San Francisco. Currently I work at Ames Research Center where I design applications that help NASA crew members track mission data. I enjoy working with a brilliant team to create usable, useful and beautiful online experiences. Please check out some of my design projects.\n";
+		id = 6;
+	},
+	{
+		type = Speaker;
+		title = "Gil Weinberg";
+		image = "weinberg.jpg";
+		description = "Gil Weinberg is the Director of Music Technology at Georgia Institute of Technology, where he founded the Master of Science in Music Technology program and the Georgia Tech Research Center for Music Technology. He holds professorship positions in the Music Department and the College of Computation. Weinberg received his M.S. and Ph.D. degrees in Media Arts and Sciences from MIT, after co-founding and holding positions in music and media software industry in his home country of Israel.\n";
+		id = 7;
+	},
+	{
+		type = Speaker;
+		title = "David R Millen, IBM Research";
+		image = "millen.jpg";
+		description = "David R. Millen is a research manager in the Collaborative User Experience group at IBM Research in Cambridge, MA. His group develops new social software applications, and explores the social, business, and technological implications of these new tools through field studies with small teams and communities. Recent projects include Instant Collaboration/Activity Explorer, dogear social bookmarking service, cattail personal file sharing and the beehive social networking application. Prior to joining IBM, David worked at ATT Labs, where he explored how new technologies changed employee work activities, organizational roles, and patterns of communication.\n";
+		id = 8;
+	},
+	{
+		type = Speaker;
+		title = "Susan  Wiedenbeck,  Ph.D.";
+		image = "wiedenbeck.jpg";
+		description = "Dr. Wiedenbeck teaches in the area of human-computer interaction. Her research interests include human-computer interaction, empirical studies of end-user programming, including collaborative aspects of end-user programming, and computer training and individual factors that affect learning and use of end users.\n";
+		id = 9;
+	},
+	{
+		type = Speaker;
+		title = "Joel Brandt";
+		image = "brandt.jpg";
+		description = "Joel Brandt is a PhD Candidate in the Stanford Human-Computer Interaction Group, anticipating graduation in Summer 2010. Through a mixture of empirical work and systems building, he studies the task of programming. His thesis work explores the role that information resources play during software development. Tools built as part of this research are now used by thousands of programmers on a daily basis. He received a BS with majors in Computer Science and Mathematics and an MS in Computer Science from Washington University in St. Louis. Joel is currently advised by Professor Scott Klemmer.\n";
+		id = 10;
+	},
+	{
+		type = Speaker;
+		title = "Carl Gutwin, PhD";
+		image = "gutwin.jpg";
+		description = "Dr. Carl Gutwin is a professor in the Department of Computer Science and the director of the HCI lab. His main research areas are computer-supported cooperative work, interaction techniques, and surface computing.\n";
+		id = 11;
+	},
+	{
+		type = Speaker;
+		title = "Ruy F. Cervantes Fregoso";
+		image = "ruy.jpg";
+		description = "I am part of the TechDeC at UC Irvine, anthropologically inspired approaches coupled with design techniques to study digital technology use across cultures and social groups. My advisor is Bonnie Nardi\n";
+		id = 12;
+	},
+	{
+		type = Speaker;
+		title = "Noel Sharkey, PhD";
+		image = "sharkey.png";
+		description = "Noel Sharkey BA PhD FIET, FBCS CITP FRIN FRSA is a Professor of AI and Robotics and Professor of Public Engagement at the University of Sheffield (Department of Computer Science), He has held a number of research and teaching positions in the UK (Essex, Exeter, Sheffield) and the USA (Yale, Stanford, Berkeley). Noel has moved freely across academic disciplines, lecturing in departments of engineering, philosophy, psychology, cognitive science, linguistics, artificial intelligence and computer science. He holds a Doctorate in Experimental Psychology and an honorary Doctorate of Science. He is a chartered electrical engineer, a chartered information technology professional, and a Fellow of The Royal Institution of Navigation (FRIN), the Royal Society for the encouragement of Arts (FRSA), the Institution of Engineering and Technology (FIET), the British Computer Society (FBCS), is a member of both the Experimental Psychology Society and Equity (the actor's union). In addition to editing several journal special issues on modern robotics, Noel is Editor-in-Chief of the journal Connection Science and an editorial board member of several journals. His main research interests are in bio-inspired robotics, cognitive processes, history of automata (from ancient to modern), Human-Robot interaction and communication, representations of emotion, machine learning and the ethics of robot applications.\n";
+		id = 13;
+	},
+	{
+		type = Sponsor;
+		title = Microsoft;
+		image = "microsoft.jpg";
+		description = "Microsoft Corporation is a public multinational corporation headquartered in Redmond, Washington, USA that develops, manufactures, licenses, and supports a wide range of products and services predominantly related to computing through its various product divisions. Established on April 4, 1975 to develop and sell BASIC interpreters for the Altair 8800, Microsoft rose to dominate the home computer operating system (OS) market with MS-DOS in the mid-1980s, followed by the Microsoft Windows line of OSs. Microsoft would also come to dominate the office suite market with Microsoft Office. The company has diversified in recent years into the video game industry with the Xbox and its successor, the Xbox 360 as well as into the consumer electronics market with Zune and the Windows Phone OS. The ensuing rise of stock in the company's 1986 initial public offering (IPO) made an estimated four billionaires and 12,000 millionaires from Microsoft employees.\n";
+		id = 14;
+	},
+	{
+		type = Sponsor;
+		title = Google;
+		image = "google.gif";
+		description = "Google Inc. is a multinational public corporation invested in Internet search, cloud computing, and advertising technologies. Google hosts and develops a number of Internet-based services and products, and generates profit primarily from advertising through its AdWords program. The company was founded by Larry Page and Sergey Brin, often dubbed the \"Google Guys\", while the two were attending Stanford University as Ph.D. candidates. It was first incorporated as a privately held company on September 4, 1998, and its initial public offering followed on August 19, 2004. The company's stated mission from the outset was \"to organize the world's information and make it universally accessible and useful\", and the company's unofficial slogan \\u2013 coined by Google engineer Paul Buchheit \\u2013 is \"Don't be evil\". In 2006, the company moved to their current headquarters in Mountain View, California.\n";
+		id = 15;
+	},
+	{
+		type = Sponsor;
+		title = NSF;
+		image = "NSF.jpg";
+		description = "The National Science Foundation (NSF) is a United States government agency that supports fundamental research and education in all the non-medical fields of science and engineering. Its medical counterpart is the National Institutes of Health. With an annual budget of about US$6.87 billion (fiscal year 2010), the NSF funds approximately 20 percent of all federally supported basic research conducted by the United States' colleges and universities. In some fields, such as mathematics, computer science, economics and the social sciences, the NSF is the major source of federal backing.\n";
+		id = 16;
+	},
+	{
+		type = Sponsor;
+		title = Yahoo;
+		image = "yahoo.png";
+		description = "Yahoo! Inc. is an American public corporation with headquarters in Sunnyvale, California, (in Silicon Valley), that provides services via the Internet worldwide. The company is perhaps best known for its web portal, search engine (Yahoo! Search), Yahoo! Directory, Yahoo! Mail, Yahoo! News, advertising, online mapping (Yahoo! Maps), video sharing (Yahoo! Video), and social media websites and services.";
+		id = 17;
+	},
+	{
+		type = Sponsor;
+		title = Autodesk;
+		image = "autodesk.png";
+		description = "Autodesk, Inc. is an American multinational corporation that focuses on 2D and 3D design software for use in architecture, engineering and building construction, manufacturing, and media and entertainment. Autodesk was founded in 1982 by John Walker, a coauthor of early versions of the company's flagship CAD software product AutoCAD, and twelve others. It is headquartered in San Rafael, California.";
+		id = 18;
+	},
+	{
+		type = Sponsor;
+		title = Bloomberg;
+		image = "bloomberg.png";
+		description = "Bloomberg L.P. is a privately held financial software, media, and data company. Bloomberg makes up one third of the $16 billion global financial data market with estimated revenue of $6.6 billion. Bloomberg L.P. was founded by Michael Bloomberg (current Mayor of New York City) with the help of Thomas Secunda, Duncan MacMillan, and Charles Zegar in 1981 and a 30% ownership investment by Merrill Lynch. The company provides financial software tools such as analytics and equity trading platform, data services and news to financial companies and organizations around the world through the Bloomberg Terminal (via its Bloomberg Professional Service), its core money-generating product. Many customers use only a small fraction of the machines\\u2019 30,146 functions. Bloomberg L.P. has grown to include a global news service, including television, radio, the Internet and printed publications.";
+		id = 19;
+	},
+	{
+		type = Sponsor;
+		title = "IBM Research";
+		image = "IBM_Research.jpg";
+		description = "IBM Research, a division of IBM, is a research and advanced development organization and currently consists of eight locations throughout the world and hundreds of projects. Its origins can be traced to the establishment in 1945 of the Watson Scientific Computing Laboratory at Columbia University which later expanded into other research labs in Westchester County, New York beginning in the 1950s. Some major activities include the invention of innovative materials and structures, high-performance microprocessors and computers, analytical methods and tools, algorithms, software architectures, and methods for managing, searching and deriving meaning from data.";
+		id = 20;
+	},
+	{
+		type = Sponsor;
+		title = Intel;
+		image = "intel-logo.jpg";
+		description = "Intel Corporation is an American global technology company and the world's largest semiconductor chip maker, based on revenue. It is the inventor of the x86 series of microprocessors, the processors found in most personal computers. Intel was founded on July 18, 1968, as Integrated Electronics Corporation (though a common misconception is that \"Intel\" is from the word intelligence) and is based in Santa Clara, California, USA. Intel also makes motherboard chipsets, network interface controllers and integrated circuits, flash memory, graphic chips, embedded processors and other devices related to communications and computing. Founded by semiconductor pioneers Robert Noyce and Gordon Moore and widely associated with the executive leadership and vision of Andrew Grove, Intel combines advanced chip design capability with a leading-edge manufacturing capability. Originally known primarily to engineers and technologists, Intel's \"Intel Inside\" advertising campaign of the 1990s made it and its Pentium processor household names.";
+		id = 21;
+	},
+	{
+		type = Sponsor;
+		title = "Georgia Tech";
+		image = "GeorgiaTech.jpg";
+		description = "The Georgia Institute of Technology (commonly called Georgia Tech, Tech, and GT) is a public research university in Atlanta, Georgia, in the United States. It is a part of the University System of Georgia and has satellite campuses in Savannah, Georgia; Metz, France; Athlone, Ireland; Shanghai, China; and Singapore.";
+		id = 22;
+	},
+	{
+		type = Event;
+		title = "Opening Plenary";
+		image = "bell.jpg";
+		description = "In 1998, Americans represented nearly three-quarters of the world\\u2019s internet users. Today, they are less than 15%. The complexion of the web \\u2013 its users, their desires, their languages, points of entry and experiences \\u2013 has subtly and not so subtly changed over that period. All these new online participants bring with them potential different conceptual models of information, knowledge and knowledge systems with profound consequences for the ideological basis of the net. These new participants also operate within different regulatory and legislative regimes which will bring markedly different ideas about how to shape what happens online. And in this same time period, the internet itself has become feral, appearing as a data source, connectivity backbone or content stream for mobile devices, cell phones, connected consumer electronics, gaming consoles, personal health devices, smart electrical meters and city-scapes. Devices have proliferated with device ensembles and debris collecting in the bottom of backpacks, on the dashboards of dusty trucks and in drawers, cabinets and baskets. Convergence didn\\u2019t really happen the way it was anticipated and not everyone got online, got connected or having been connected, stayed connected. And the paperless office and the cashless society, well they ran up against the stubborn materiality of paper in its many guises, and e-government proved even more complicated than just regular government. And that was just the last ten years.";
+		start = "4/12/2010 9:00 AM";
+		end = "4/12/2010 10:30 AM";
+		location = "Peachtree Center";
+		x = 555;
+		y = 250;
+		id = 23;
+	},
+	{
+		type = Event;
+		title = "Papers/Notes: EPIC #FAIL";
+		image = "lank.jpg";
+		description = "Describes the use of artificial errors to callibrate human performance when verifying handwriting recognition. Demonstrates that human performance on artificial errors and recognition errors is similar.";
+		start = "4/12/2010 11:30 AM";
+		end = "4/12/2010 1:00 PM";
+		location = "Hampton Inn";
+		x = 451;
+		y = 346;
+		id = 24;
+	},
+	{
+		type = Event;
+		title = "Privacy Awareness and Attitudes";
+		image = "birnholtz.jpg";
+		description = "Designing for aging in place brings new twists to classic tensions between privacy and awareness. Interviews show that seniors mitigate these tensions via physical environments, temporal structures, and technology mediation.";
+		start = "4/12/2010 11:30 AM";
+		end = "4/12/2010 1:00 PM";
+		location = "Georgia Aquarium";
+		x = 198;
+		y = 129;
+		id = 25;
+	},
+	{
+		type = Event;
+		title = "Augmented Dance (Dance.Draw)";
+		image = "dancedraw.png";
+		description = "This performance is part of an ongoing Dance.Draw project at the University of North Carolina at Charlotte, which investigates lightweight methods for integrating dance motion with interactive visualizations and enhancing audience interaction with dance.";
+		start = "4/12/2010 11:30 AM";
+		end = "4/12/2010 1:00 PM";
+		location = "Hyatt Regency";
+		x = 570;
+		y = 197;
+		id = 26;
+	},
+	{
+		type = Event;
+		title = Bioluminescence;
+		image = "bioluminescense.jpg";
+		description = "Bioluminescence is a performance by R. Luke DuBois and Lesley Flanigan that explores the modality of human voice. The voice has a unique role in our musical culture, bridging the linguistic and the semiotic in a way that transcends instrumentality through a highly personal embodiment of musicianship. DuBois and Flanigan investigate the possibilities of the improvised voice in tandem with electroacoustic processing. The interplay between the two performers (one singing, one processing) engages the metaphor of the voice as impulse and the computer as filter, creating a dense palette of evocative sounds and images derived entirely from the voice of the singer. Using custom software written by DuBois, Flanigan\\u2019s voice is restructured live and in real time through spectral processing. While the two performers partake in a \\u201cdialogue\\u201d of sounds and words, the changing shape of the voice is traced visually through live video, leaving trails that evoke the memory of voice. These visuals act as a sonogram, allowing us to see what is heard in relation to how we are listening.";
+		start = "4/12/2010 6:30 PM";
+		end = "4/12/2010 9:00 PM";
+		location = "Georgia Aquarium";
+		x = 198;
+		y = 129;
+		id = 27;
+	},
+	{
+		type = Event;
+		title = "Home Data Sharing: Attitudes, Needs and Practices";
+		image = "bresee.png";
+		description = "Presents results from interviews with non-expert households concerning attitudes and practices regarding controlling access to home-centered data. Provides guidelines for designing usable access-control systems for home environments.";
+		start = "4/13/2010 9:00 AM";
+		end = "4/13/2010 10:30 AM";
+		location = "Peachtree Center";
+		x = 555;
+		y = 250;
+		id = 28;
+	},
+	{
+		type = Event;
+		title = "Mobile Tactile Stimulation For Passive Learning";
+		image = "weinberg.jpg";
+		description = "We introduce Passive Haptic Learning through Mobile Music Touch, a glove with embedded vibrators and music player, which trains users to play simple piano melodies while they attend other tasks.";
+		start = "4/13/2010 9:00 AM";
+		end = "4/13/2010 10:30 AM";
+		location = "Days Inn";
+		x = 364;
+		y = 141;
+		id = 29;
+	},
+	{
+		type = Event;
+		title = "Publicizing, Discovering, and Telling the News";
+		image = "millen.jpg";
+		description = "Describes four user activity patterns in a large-scale enterprise file-sharing system. Goals are to inform social-software research, and to influence service user interface design.";
+		start = "4/13/2010 9:00 AM";
+		end = "4/13/2010 10:30 AM";
+		location = "Hampton Inn";
+		x = 451;
+		y = 346;
+		id = 30;
+	},
+	{
+		type = Event;
+		title = "End-User Mashup Programming";
+		image = "wiedenbeck.jpg";
+		description = "We use design theories as a lens on end-user mashup programming, revealing insights into programming as a design activity and implications for the design of end-user programming environments.";
+		start = "4/13/2010 11:30 AM";
+		end = "4/13/2010 1:00 PM";
+		location = "Days Inn";
+		x = 364;
+		y = 141;
+		id = 31;
+	},
+	{
+		type = Event;
+		title = "Suggesting Solutions to Error Messages";
+		image = "brandt.jpg";
+		description = "Introduces HelpMeOut, a social recommender system that aids the debugging of error messages during programming by suggesting solutions that peers have applied in the past.";
+		start = "4/13/2010 11:30 AM";
+		end = "4/13/2010 1:00 PM";
+		location = "Peachtree Center";
+		x = 555;
+		y = 250;
+		id = 32;
+	},
+	{
+		type = Event;
+		title = "Where Are You Pointing?";
+		image = "gutwin.jpg";
+		description = "We investigate how well people can point and interpret the direction of another person's pointing gesture. Our results show that deixis can be successful in CVEs for many pointing situations.";
+		start = "4/13/2010 2:30 PM";
+		end = "4/13/2010 4:00 PM";
+		location = "Hyatt Regency";
+		x = 570;
+		y = 197;
+		id = 33;
+	},
+	{
+		type = Event;
+		title = "Embodied Social Proxy";
+		image = "ruy.jpg";
+		description = "We developed a telepresence device which represents a remote coworker in his otherwise-collocated team. We found that the device's continuous physical presence made the remote worker more socially present.";
+		start = "4/13/2010 2:30 PM";
+		end = "4/13/2010 4:00 PM";
+		location = "Days Inn";
+		x = 364;
+		y = 141;
+		id = 34;
+	},
+	{
+		type = Event;
+		title = "Closing Plenary";
+		image = "sharkey.png";
+		description = "Would you let robots care for your children, mind your aging parents, perform surgery on you, protect your home and fight your wars? Since the turn of the century, sales of professional and personal service robots have risen sharply to an estimated 11.5 million by 2011. Their numbers already far outstrip the 1.2 million operational industrial robots on the planet. Service robots are good at dull, dangerous, and dirty work, such as cleaning sewers and performing domestic duties. They harvest fruit, pump gasoline, assist doctors and surgeons, dispose of bombs, police us, entertain us, have sex with us and even kill us. This talk will briefly overview today's service robots and their benefits and then focus on the near-future ethical dangers that they pose.";
+		start = "4/13/2010 5:00 PM";
+		end = "4/13/2010 7:00 PM";
+		location = "Georgia Aquarium";
+		x = 198;
+		y = 129;
+		id = 35;
+	},
+)
