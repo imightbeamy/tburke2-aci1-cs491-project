@@ -37,13 +37,21 @@
 		E1DFCB3D12B47E5900231C66 /* bresee.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA7F12B4369500231C66 /* bresee.png */; };
 		E1DFCB3E12B47E5900231C66 /* dancedraw.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA8012B4369500231C66 /* dancedraw.png */; };
 		E1DFCB3F12B47E5900231C66 /* dubois.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA8112B4369500231C66 /* dubois.jpg */; };
-		E1DFCB4012B47E5900231C66 /* GeorgiaTech.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA8212B4369500231C66 /* GeorgiaTech.jpg */; };
-		E1DFCB4112B47E5900231C66 /* google.gif in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA8312B4369500231C66 /* google.gif */; };
 		E1DFCB4212B47E5900231C66 /* gutwin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA8412B4369500231C66 /* gutwin.jpg */; };
-		E1DFCB4312B47E5900231C66 /* IBM_Research.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA8512B4369500231C66 /* IBM_Research.jpg */; };
-		E1DFCB4412B47E5900231C66 /* intel-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA8612B4369500231C66 /* intel-logo.jpg */; };
 		E1DFCB4512B47E5900231C66 /* lank.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA8712B4369500231C66 /* lank.jpg */; };
 		E1DFCB4612B47E5900231C66 /* latulipe.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA8812B4369500231C66 /* latulipe.png */; };
+		E1DFCB5812B4802600231C66 /* weinberg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCB5712B4802600231C66 /* weinberg.jpg */; };
+		E1DFCB6112B4803900231C66 /* millen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCB5A12B4803900231C66 /* millen.jpg */; };
+		E1DFCB6312B4803900231C66 /* ruy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCB5C12B4803900231C66 /* ruy.jpg */; };
+		E1DFCB6412B4803900231C66 /* sharkey.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCB5D12B4803900231C66 /* sharkey.png */; };
+		E1DFCB6512B4803900231C66 /* wiedenbeck.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCB5E12B4803900231C66 /* wiedenbeck.jpg */; };
+		E1DFCB7E12B483B100231C66 /* google.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCB7B12B483B100231C66 /* google.png */; };
+		E1DFCB7F12B483B100231C66 /* NSF.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCB7C12B483B100231C66 /* NSF.png */; };
+		E1DFCB8012B483B100231C66 /* yahoo.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCB7D12B483B100231C66 /* yahoo.png */; };
+		E1DFCB8212B483D800231C66 /* intel-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCB8112B483D800231C66 /* intel-logo.png */; };
+		E1DFCB8412B483F900231C66 /* GeorgiaTech.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCB8312B483F900231C66 /* GeorgiaTech.png */; };
+		E1DFCB8612B4842700231C66 /* microsoft.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCB8512B4842700231C66 /* microsoft.jpg */; };
+		E1DFCB8812B4843B00231C66 /* IBM_Research.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCB8712B4843B00231C66 /* IBM_Research.jpg */; };
 		E1F8443F129868A10094B4DC /* SubMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F8443D129868A10094B4DC /* SubMenuViewController.m */; };
 		E1F84440129868A10094B4DC /* SubMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1F8443E129868A10094B4DC /* SubMenuViewController.xib */; };
 /* End PBXBuildFile section */
@@ -96,14 +104,22 @@
 		E1DFCA7F12B4369500231C66 /* bresee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bresee.png; sourceTree = "<group>"; };
 		E1DFCA8012B4369500231C66 /* dancedraw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dancedraw.png; sourceTree = "<group>"; };
 		E1DFCA8112B4369500231C66 /* dubois.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dubois.jpg; sourceTree = "<group>"; };
-		E1DFCA8212B4369500231C66 /* GeorgiaTech.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GeorgiaTech.jpg; sourceTree = "<group>"; };
-		E1DFCA8312B4369500231C66 /* google.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = google.gif; sourceTree = "<group>"; };
 		E1DFCA8412B4369500231C66 /* gutwin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gutwin.jpg; sourceTree = "<group>"; };
-		E1DFCA8512B4369500231C66 /* IBM_Research.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IBM_Research.jpg; sourceTree = "<group>"; };
-		E1DFCA8612B4369500231C66 /* intel-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "intel-logo.jpg"; sourceTree = "<group>"; };
 		E1DFCA8712B4369500231C66 /* lank.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lank.jpg; sourceTree = "<group>"; };
 		E1DFCA8812B4369500231C66 /* latulipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = latulipe.png; sourceTree = "<group>"; };
 		E1DFCA9012B436CA00231C66 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		E1DFCB5712B4802600231C66 /* weinberg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = weinberg.jpg; sourceTree = "<group>"; };
+		E1DFCB5A12B4803900231C66 /* millen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = millen.jpg; sourceTree = "<group>"; };
+		E1DFCB5C12B4803900231C66 /* ruy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ruy.jpg; sourceTree = "<group>"; };
+		E1DFCB5D12B4803900231C66 /* sharkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sharkey.png; sourceTree = "<group>"; };
+		E1DFCB5E12B4803900231C66 /* wiedenbeck.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wiedenbeck.jpg; sourceTree = "<group>"; };
+		E1DFCB7B12B483B100231C66 /* google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = google.png; sourceTree = "<group>"; };
+		E1DFCB7C12B483B100231C66 /* NSF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NSF.png; sourceTree = "<group>"; };
+		E1DFCB7D12B483B100231C66 /* yahoo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yahoo.png; sourceTree = "<group>"; };
+		E1DFCB8112B483D800231C66 /* intel-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "intel-logo.png"; sourceTree = "<group>"; };
+		E1DFCB8312B483F900231C66 /* GeorgiaTech.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GeorgiaTech.png; sourceTree = "<group>"; };
+		E1DFCB8512B4842700231C66 /* microsoft.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = microsoft.jpg; sourceTree = "<group>"; };
+		E1DFCB8712B4843B00231C66 /* IBM_Research.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IBM_Research.jpg; sourceTree = "<group>"; };
 		E1F841C6129761180094B4DC /* r2d2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = r2d2.png; sourceTree = "<group>"; };
 		E1F841CA129764EA0094B4DC /* RussianDancingMen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RussianDancingMen.png; sourceTree = "<group>"; };
 		E1F841E6129765E40094B4DC /* thumbsup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbsup.png; sourceTree = "<group>"; };
@@ -154,6 +170,7 @@
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				E1DFCB8312B483F900231C66 /* GeorgiaTech.png */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -233,12 +250,19 @@
 				E1DFCA7E12B4369500231C66 /* brandt.jpg */,
 				E1DFCA7F12B4369500231C66 /* bresee.png */,
 				E1DFCA8012B4369500231C66 /* dancedraw.png */,
+				E1DFCB5A12B4803900231C66 /* millen.jpg */,
+				E1DFCB5C12B4803900231C66 /* ruy.jpg */,
+				E1DFCB8512B4842700231C66 /* microsoft.jpg */,
+				E1DFCB7B12B483B100231C66 /* google.png */,
+				E1DFCB7C12B483B100231C66 /* NSF.png */,
+				E1DFCB7D12B483B100231C66 /* yahoo.png */,
+				E1DFCB8712B4843B00231C66 /* IBM_Research.jpg */,
+				E1DFCB5D12B4803900231C66 /* sharkey.png */,
+				E1DFCB5E12B4803900231C66 /* wiedenbeck.jpg */,
 				E1DFCA8112B4369500231C66 /* dubois.jpg */,
-				E1DFCA8212B4369500231C66 /* GeorgiaTech.jpg */,
-				E1DFCA8312B4369500231C66 /* google.gif */,
+				E1DFCB5712B4802600231C66 /* weinberg.jpg */,
 				E1DFCA8412B4369500231C66 /* gutwin.jpg */,
-				E1DFCA8512B4369500231C66 /* IBM_Research.jpg */,
-				E1DFCA8612B4369500231C66 /* intel-logo.jpg */,
+				E1DFCB8112B483D800231C66 /* intel-logo.png */,
 				E1DFCA8712B4369500231C66 /* lank.jpg */,
 				E1DFCA8812B4369500231C66 /* latulipe.png */,
 			);
@@ -348,13 +372,21 @@
 				E1DFCB3D12B47E5900231C66 /* bresee.png in Resources */,
 				E1DFCB3E12B47E5900231C66 /* dancedraw.png in Resources */,
 				E1DFCB3F12B47E5900231C66 /* dubois.jpg in Resources */,
-				E1DFCB4012B47E5900231C66 /* GeorgiaTech.jpg in Resources */,
-				E1DFCB4112B47E5900231C66 /* google.gif in Resources */,
 				E1DFCB4212B47E5900231C66 /* gutwin.jpg in Resources */,
-				E1DFCB4312B47E5900231C66 /* IBM_Research.jpg in Resources */,
-				E1DFCB4412B47E5900231C66 /* intel-logo.jpg in Resources */,
 				E1DFCB4512B47E5900231C66 /* lank.jpg in Resources */,
 				E1DFCB4612B47E5900231C66 /* latulipe.png in Resources */,
+				E1DFCB5812B4802600231C66 /* weinberg.jpg in Resources */,
+				E1DFCB6112B4803900231C66 /* millen.jpg in Resources */,
+				E1DFCB6312B4803900231C66 /* ruy.jpg in Resources */,
+				E1DFCB6412B4803900231C66 /* sharkey.png in Resources */,
+				E1DFCB6512B4803900231C66 /* wiedenbeck.jpg in Resources */,
+				E1DFCB7E12B483B100231C66 /* google.png in Resources */,
+				E1DFCB7F12B483B100231C66 /* NSF.png in Resources */,
+				E1DFCB8012B483B100231C66 /* yahoo.png in Resources */,
+				E1DFCB8212B483D800231C66 /* intel-logo.png in Resources */,
+				E1DFCB8412B483F900231C66 /* GeorgiaTech.png in Resources */,
+				E1DFCB8612B4842700231C66 /* microsoft.jpg in Resources */,
+				E1DFCB8812B4843B00231C66 /* IBM_Research.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
