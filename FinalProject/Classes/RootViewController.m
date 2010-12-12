@@ -12,7 +12,6 @@
 
 @interface RootViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
-- (void) loadFavoritesView;
 @end
 
 @implementation RootViewController
@@ -46,15 +45,8 @@
 						@"Search",
 						@"Map", nil];
 
-	// Set up the edit and add buttons.
-    //self.navigationItem.leftBarButtonItem = self.editButtonItem;
-    
-    //UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject)];
-    //self.navigationItem.rightBarButtonItem = addButton;
-    //[addButton release];
-	
 	// Set the first displayed Title
-	self.navigationItem.title = @"Conference";
+	self.navigationItem.title = @"CHI 2010";
 	
 	// Use any color for navigation bar, no gradient.  Also sets buttons same color.
 	//self.navigationController.navigationBar.tintColor = [UIColor greenColor];
@@ -63,24 +55,6 @@
 	//self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
 
 }
-
-
-// Implement viewWillAppear: to do additional setup before the view is presented.
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-}
-
-
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-
-	// Put the search bar away when returning to this view
-	// from a subview.
-
-
-}
-
 
 #pragma mark -
 #pragma mark Table view data source
@@ -98,6 +72,7 @@
 	
 	cell.textLabel.text =  [self.menuOptions objectAtIndex:indexPath.row];
 }
+
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -108,7 +83,8 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
     
-   cell.textLabel.text =  [self.menuOptions objectAtIndex:indexPath.row];
+	//Set cell text to menu option
+   	cell.textLabel.text =  [self.menuOptions objectAtIndex:indexPath.row];
     
     return cell;
 }
@@ -124,8 +100,7 @@
 #pragma mark Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here -- for example, create and push another view controller.
-	NSLog(@"menu stuff %@", [self.menuOptions objectAtIndex:indexPath.row]);
+
     NSString * menuchoice =  [self.menuOptions objectAtIndex:indexPath.row];
 	
 	if([menuchoice isEqualToString:@"Events"])
@@ -146,10 +121,7 @@
 	}
 	else if([menuchoice isEqualToString:@"Search"])
 	{
-		SearchViewController * sv = [[SearchViewController alloc] initWithNibName:@"SearchViewController" bundle:nil];
-		sv.navigationItem.title = @"Search";
-		sv.conferenceObjs = self.conferenceObjs;
-		[self.navigationController pushViewController:sv animated:YES];
+		[self loadSearchView];
 	}
 	else if([menuchoice isEqualToString:@"Schedule"])
 	{
@@ -157,9 +129,7 @@
 	}
 	else if([menuchoice isEqualToString: @"Map"])
 	{
-		MapViewController *mv = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
-		mv.confObj = nil; // No object to display location here
-		[self.navigationController pushViewController:mv animated:YES];
+		
 	}		
 }
 
@@ -184,6 +154,7 @@
 	[sm release];
 }
 
+
 - (void) loadScheduleView
 {
 	SubMenuViewController *sm = [[SubMenuViewController alloc] initWithNibName:@"SubMenuViewController" bundle:nil];
@@ -196,6 +167,23 @@
 	[sm release];
 }
 
+- (void) loadSearchView
+{
+	SearchViewController * sv = [[SearchViewController alloc] initWithNibName:@"SearchViewController" bundle:nil];
+	sv.navigationItem.title = @"Search";
+	sv.conferenceObjs = self.conferenceObjs;
+	[self.navigationController pushViewController:sv animated:YES];
+	[sv release];
+}
+
+- (void) loadMapView
+{
+	MapViewController *mv = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
+	mv.confObj = nil; // No object to display location here
+	[self.navigationController pushViewController:mv animated:YES];
+	[mv release];
+}
+
 #pragma mark -
 #pragma mark Memory management
 
@@ -205,15 +193,6 @@
     
     // Relinquish ownership any cached data, images, etc that aren't in use.
 }
-
-
-
-
-- (void)viewDidUnload {
-    // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
-    // For example: self.myOutlet = nil;
-}
-
 
 - (void)dealloc {
 	self.conferenceObjs = nil;
