@@ -18,18 +18,8 @@
 @synthesize startTime, endTime;
 @synthesize type;
 @synthesize IDnum;
-@synthesize loction, x, y;
+@synthesize location, x, y;
 
-- (id) initWithTitle: (NSString *) t image: (UIImage *) i description: (NSString *) d
-{
-	if(self = [super init])
-	{
-		self.title = t;
-		self.image = i;
-		self.description = d;
-	}
-	return self;
-}
 
 + (id)ConferenceObjectFromDictionary: (NSDictionary *) dictionary
 {	
@@ -50,11 +40,10 @@
 		
 		co.x = [[dictionary objectForKey:@"x"] intValue];
 		co.y = [[dictionary objectForKey:@"y"] intValue];
-		co.loction = [dictionary objectForKey:@"location"];
+		co.location = [dictionary objectForKey:@"location"];
 	}
 	
-	NSLog(@"%@ %@", [dictionary objectForKey:@"image"],co.image);
-
+	//Get favorite value stored in defaults
 	co.favorite = [[NSUserDefaults standardUserDefaults] boolForKey:[NSString stringWithFormat:@"%d", co.IDnum]];
 	
 	return [co autorelease];
@@ -79,12 +68,12 @@
 
 + (ConferenceObjectType) typeFromString: (NSString *) dicType
 {
-	dicType = [dicType uppercaseString];	
-	if([dicType isEqualToString: @"EVENT"])
+	NSString * dicTypeU = [dicType uppercaseString];	
+	if([dicTypeU isEqualToString: @"EVENT"])
 		return kEventType;
-	else if([dicType isEqualToString: @"SPONSOR"])
+	else if([dicTypeU isEqualToString: @"SPONSOR"])
 		return kSponsorType;
-	else if([dicType isEqualToString: @"SPEAKER"])
+	else if([dicTypeU isEqualToString: @"SPEAKER"])
 		return kSpeakerType;
 	else
 		return kUnknownConfType;
@@ -112,6 +101,7 @@
 + (NSComparator) getTitleComparator
 {
 	return ^(id obj1, id obj2) {
+		//Title should never be nil but just in case...
 		if ([obj1 title] == nil || [obj2 title] == nil) {
 			return (NSComparisonResult)NSOrderedSame;
 		}
@@ -125,6 +115,7 @@
 	self.description = nil;
 	self.startTime = nil;
 	self.endTime = nil;
+	self.location = nil;
 	[super dealloc];
 }
 
