@@ -46,8 +46,8 @@
 						@"Map", nil];
 
 	// Set the first displayed Title
-	self.navigationItem.title = @"CHI 2010";
-	
+	self.navigationItem.titleView = [[[UIImageView alloc] initWithImage: [UIImage imageNamed: @"CHI_titlebar"]] autorelease];
+	self.navigationItem.title = @"Menu";
 	// Use any color for navigation bar, no gradient.  Also sets buttons same color.
 	//self.navigationController.navigationBar.tintColor = [UIColor greenColor];
 	
