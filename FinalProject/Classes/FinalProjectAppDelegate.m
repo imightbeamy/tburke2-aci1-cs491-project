@@ -35,7 +35,7 @@
     
     // Override point for customization after application launch.
 	self.conferenceObjs = [NSMutableArray arrayWithContentsOfFile:[self getFilePath]];
-	
+	NSLog(@"%@",[self getFilePath]);
 	if (self.conferenceObjs == nil) 
 	{
 		self.conferenceObjs = [NSMutableArray array];
