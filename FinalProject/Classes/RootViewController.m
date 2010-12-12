@@ -129,7 +129,7 @@
 	}
 	else if([menuchoice isEqualToString: @"Map"])
 	{
-		
+		[self loadMapView];
 	}		
 }
 
