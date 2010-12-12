@@ -22,6 +22,11 @@
 		A1BA3768129D8A75002905D1 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BA3766129D8A75002905D1 /* MapViewController.xib */; };
 		E16B774C1297054000D9B24B /* ConferenceObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E16B774A1297054000D9B24B /* ConferenceObjectViewController.m */; };
 		E16B774D1297054000D9B24B /* ConferenceObjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E16B774B1297054000D9B24B /* ConferenceObjectViewController.xib */; };
+		E19C21FA12B583A5003720D2 /* CHI_titlebar.png in Resources */ = {isa = PBXBuildFile; fileRef = E19C21F912B583A5003720D2 /* CHI_titlebar.png */; };
+		E19C220812B58559003720D2 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E19C220712B58559003720D2 /* Icon.png */; };
+		E19C220E12B58612003720D2 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E19C220B12B58612003720D2 /* Icon@2x.png */; };
+		E19C220F12B58612003720D2 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = E19C220C12B58612003720D2 /* Icon-Small.png */; };
+		E19C221012B58612003720D2 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E19C220D12B58612003720D2 /* Icon-Small@2x.png */; };
 		E1B5A2A9129B57D900438818 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B5A2A7129B57D900438818 /* SearchViewController.m */; };
 		E1B5A2AA129B57D900438818 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B5A2A8129B57D900438818 /* SearchViewController.xib */; };
 		E1DFCA4D12B4249300231C66 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA4B12B4249300231C66 /* Default.png */; };
@@ -89,6 +94,11 @@
 		E16B77491297054000D9B24B /* ConferenceObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConferenceObjectViewController.h; sourceTree = "<group>"; };
 		E16B774A1297054000D9B24B /* ConferenceObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConferenceObjectViewController.m; sourceTree = "<group>"; };
 		E16B774B1297054000D9B24B /* ConferenceObjectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ConferenceObjectViewController.xib; path = Classes/ConferenceObjectViewController.xib; sourceTree = "<group>"; };
+		E19C21F912B583A5003720D2 /* CHI_titlebar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CHI_titlebar.png; sourceTree = "<group>"; };
+		E19C220712B58559003720D2 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		E19C220B12B58612003720D2 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		E19C220C12B58612003720D2 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		E19C220D12B58612003720D2 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		E1B5A2A6129B57D900438818 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		E1B5A2A7129B57D900438818 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		E1B5A2A8129B57D900438818 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SearchViewController.xib; path = Classes/SearchViewController.xib; sourceTree = "<group>"; };
@@ -231,6 +241,11 @@
 		E1DFCA6B12B4364C00231C66 /* App images */ = {
 			isa = PBXGroup;
 			children = (
+				E19C21F912B583A5003720D2 /* CHI_titlebar.png */,
+				E19C220712B58559003720D2 /* Icon.png */,
+				E19C220B12B58612003720D2 /* Icon@2x.png */,
+				E19C220C12B58612003720D2 /* Icon-Small.png */,
+				E19C220D12B58612003720D2 /* Icon-Small@2x.png */,
 				E1DFCA4B12B4249300231C66 /* Default.png */,
 				E1DFCA4C12B4249300231C66 /* Default@2x.png */,
 				7D7B14C412A87AB30039A00E /* pointer.png */,
@@ -387,6 +402,11 @@
 				E1DFCB8412B483F900231C66 /* GeorgiaTech.png in Resources */,
 				E1DFCB8612B4842700231C66 /* microsoft.jpg in Resources */,
 				E1DFCB8812B4843B00231C66 /* IBM_Research.jpg in Resources */,
+				E19C21FA12B583A5003720D2 /* CHI_titlebar.png in Resources */,
+				E19C220812B58559003720D2 /* Icon.png in Resources */,
+				E19C220E12B58612003720D2 /* Icon@2x.png in Resources */,
+				E19C220F12B58612003720D2 /* Icon-Small.png in Resources */,
+				E19C221012B58612003720D2 /* Icon-Small@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
