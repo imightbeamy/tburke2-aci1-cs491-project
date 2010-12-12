@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>R2-D2</string>
+		<key>description</key>
+		<string>R2-D2 is an awesome robot who has years of experience roaming the galaxy working with the rabble alliance. for realz.</string>
+		<key>image</key>
+		<string>r2d2</string>
+		<key>type</key>
+		<string>Speaker</string>
+		<key>id</key>
+		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Mario</string>
+		<key>description</key>
+		<string>Mario is an awesome plumber.</string>
+		<key>image</key>
+		<string>mario</string>
+		<key>type</key>
+		<string>Speaker</string>
+		<key>id</key>
+		<integer>2</integer>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Luigi</string>
+		<key>description</key>
+		<string>Luigi is an awesome plumber.</string>
+		<key>image</key>
+		<string>luigi</string>
+		<key>type</key>
+		<string>Speaker</string>
+		<key>id</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Donkey Kong</string>
+		<key>description</key>
+		<string>Donkey Kong is a gorilla in who lives in the Nintendo Universe. He is roughly twice the size of a normal gorilla, weighing approximately 800 pounds. Donkey Kong first appeared in Nintendo&apos;s popular 1981 video game of the same name. Since then he has appeared in over 20 games in his own series, as well as in some games in the Mario series.</string>
+		<key>image</key>
+		<string>donkeykong</string>
+		<key>type</key>
+		<string>Speaker</string>
+		<key>id</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Russian Dancing Men</string>
+		<key>description</key>
+		<string>They&apos;re Russian Dancing Men who dance with purple hens. They also have some ball-point pens and start dancing at half past ten.</string>
+		<key>image</key>
+		<string>RussianDancingMen</string>
+		<key>type</key>
+		<string>Sponsor</string>
+		<key>id</key>
+		<integer>18</integer>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Nintendo </string>
+		<key>description</key>
+		<string>Nintendo need very little introduction. From their beginnings as humble toy and playing card manufacturers, they cunningly stepped in to re-ignite the home video game market from the ashes of the defunct Atari, turning their Family Computer console (known as the &apos;Nintendo Entertainment System&apos; in the West) into the most successful home entertainment device of the 80s.</string>
+		<key>image</key>
+		<string>nintendo_logo</string>
+		<key>type</key>
+		<string>Sponsor</string>
+		<key>id</key>
+		<integer>4</integer>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>What is the meaning of life?</string>
+		<key>description</key>
+		<string>Come find out what the answer to life the universe and everything is in this exciting talk!</string>
+		<key>image</key>
+		<string>thumbsup</string>
+		<key>type</key>
+		<string>Event</string>
+		<key>start</key>
+		<string>2011-03-14 12:01</string>
+		<key>end</key>
+		<string>2011-03-14 14:00</string>
+		<key>id</key>
+		<integer>5</integer>
+		<key>location</key>
+		<string>Link&apos;s house</string>
+		<key>x</key>
+		<integer>560</integer>
+		<key>y</key>
+		<integer>695</integer>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Russian Dancing Men Film Viewing </string>
+		<key>description</key>
+		<string>Come watch the most awesome youtube video! </string>
+		<key>image</key>
+		<string>RussianDancingMen</string>
+		<key>type</key>
+		<string>Event</string>
+		<key>start</key>
+		<string>2011-03-14 11:00</string>
+		<key>end</key>
+		<string>2011-03-14 12:00</string>
+		<key>id</key>
+		<integer>6</integer>
+		<key>location</key>
+		<string>Meadow</string>
+		<key>y</key>
+		<integer>724</integer>
+		<key>x</key>
+		<integer>322</integer>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>A long time ago... </string>
+		<key>description</key>
+		<string>R2-D2 speaks on he&apos;s experience working with the rebel alliance. Translation provided by C-3PO.</string>
+		<key>image</key>
+		<string>Rebel_Alliance</string>
+		<key>type</key>
+		<string>Event</string>
+		<key>start</key>
+		<string>2011-03-14 15:20</string>
+		<key>end</key>
+		<string>2011-03-14 16:00</string>
+		<key>id</key>
+		<integer>17</integer>
+		<key>location</key>
+		<string>Tree house</string>
+		<key>x</key>
+		<integer>828</integer>
+		<key>y</key>
+		<integer>342</integer>
+	</dict>
+</array>
+</plist>

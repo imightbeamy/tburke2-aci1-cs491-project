@@ -52,6 +52,8 @@
 		co.y = [[dictionary objectForKey:@"y"] intValue];
 		co.loction = [dictionary objectForKey:@"location"];
 	}
+	
+	NSLog(@"%@ %@", [dictionary objectForKey:@"image"],co.image);
 
 	co.favorite = [[NSUserDefaults standardUserDefaults] boolForKey:[NSString stringWithFormat:@"%d", co.IDnum]];
 	
@@ -77,11 +79,12 @@
 
 + (ConferenceObjectType) typeFromString: (NSString *) dicType
 {
-	if([dicType isEqualToString: @"Event"])
+	dicType = [dicType uppercaseString];	
+	if([dicType isEqualToString: @"EVENT"])
 		return kEventType;
-	else if([dicType isEqualToString: @"Sponsor"])
+	else if([dicType isEqualToString: @"SPONSOR"])
 		return kSponsorType;
-	else if([dicType isEqualToString: @"Speaker"])
+	else if([dicType isEqualToString: @"SPEAKER"])
 		return kSpeakerType;
 	else
 		return kUnknownConfType;
