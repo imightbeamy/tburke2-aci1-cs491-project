@@ -34,7 +34,7 @@
 	if(co.type == kEventType)
 	{		
 		NSDateFormatter *dateFormat = [[[NSDateFormatter alloc] init] autorelease];
-		[dateFormat setDateFormat:@"MM/dd/yyyy HH:mm a"];
+		[dateFormat setDateFormat:@"MM/dd/yyyy hh:mm a"];
 		co.startTime  = [dateFormat dateFromString: [dictionary objectForKey:@"start"]]; 
 		co.endTime  = [dateFormat dateFromString: [dictionary objectForKey:@"end"]];
 		
