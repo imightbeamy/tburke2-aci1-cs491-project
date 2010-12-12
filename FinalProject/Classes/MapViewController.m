@@ -54,11 +54,12 @@
 	self.scrollView.contentSize = CGSizeMake(self.imageView.image.size.height, self.imageView.image.size.width);
 	
 	// scroll to the center of the image
-	[self setCenter:CGPointMake(self.imageView.image.size.width / 2, self.imageView.image.size.height / 2) animated:NO];
+	//[self setCenter:CGPointMake(self.imageView.image.size.width / 2, self.imageView.image.size.height / 2) animated:NO];
 	 
 	// Set the zoom scale for the scrollview - image widths between 1024 and 4096
-	self.scrollView.minimumZoomScale =  0.8 - log10(log10(self.imageView.image.size.width));
+	self.scrollView.minimumZoomScale =  0.9 - log10(log10(self.imageView.image.size.width));
 	self.scrollView.maximumZoomScale = 3.0;
+	[self.scrollView setZoomScale:.9];
 	
 	// Draw the pin on the image if there is a location associated
 	if(self.confObj) {
