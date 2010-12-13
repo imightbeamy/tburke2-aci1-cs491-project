@@ -100,13 +100,10 @@ shouldReloadTableForSearchString:(NSString *)searchString
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	// Navigation logic may go here -- for example, create and push another view controller.
-    
 	ConferenceObjectViewController *covc = [[ConferenceObjectViewController alloc] initWithNibName:@"ConferenceObjectViewController" bundle:nil];
 	ConferenceObject *co = [self.filtered objectAtIndex:indexPath.row];
 	
 	covc.confObj = co;
-	// Pass the selected object to the new view controller.
 	[self.navigationController pushViewController:covc animated:YES];
 	[covc release];
 }
