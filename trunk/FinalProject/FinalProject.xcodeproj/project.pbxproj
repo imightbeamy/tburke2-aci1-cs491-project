@@ -180,7 +180,6 @@
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
-				E1DFCB8312B483F900231C66 /* GeorgiaTech.png */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -256,6 +255,7 @@
 		E1DFCA6C12B4366D00231C66 /* NewImages */ = {
 			isa = PBXGroup;
 			children = (
+				E1DFCB8312B483F900231C66 /* GeorgiaTech.png */,
 				E1DFCA9012B436CA00231C66 /* map.png */,
 				E1DFCA7A12B4369400231C66 /* bell.jpg */,
 				E1DFCA7912B4369400231C66 /* autodesk.png */,

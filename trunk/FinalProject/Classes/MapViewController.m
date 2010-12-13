@@ -23,8 +23,8 @@
 #pragma mark -
 #pragma mark Initialization
 
-- (void)viewWillAppear:(BOOL)animated {
-	[super viewWillAppear:animated];
+- (void)viewDidLoad {
+	[super viewDidLoad];
 	
 	// Init the gestureRecognizer as a UITapGestureRecognizer
 	self.gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
@@ -175,10 +175,6 @@
     [super didReceiveMemoryWarning];
     
     // Release any cached data, images, etc that aren't in use.
-}
-
-- (void)viewDidLoad {
-	[super viewDidLoad];
 }
 
 
