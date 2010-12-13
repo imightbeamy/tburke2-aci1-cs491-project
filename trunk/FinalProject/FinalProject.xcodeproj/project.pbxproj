@@ -82,15 +82,6 @@
 		A1BA3764129D8A75002905D1 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		A1BA3765129D8A75002905D1 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		A1BA3766129D8A75002905D1 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MapViewController.xib; path = Classes/MapViewController.xib; sourceTree = "<group>"; };
-		A1E024C7129F759D000FCC30 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
-		A1E920FE129D8D4A00D6B97D /* donkeykong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donkeykong.png; sourceTree = "<group>"; };
-		A1E920FF129D8D4A00D6B97D /* FavIcon_F.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FavIcon_F.png; sourceTree = "<group>"; };
-		A1E92100129D8D4A00D6B97D /* FavIcon_T.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FavIcon_T.png; sourceTree = "<group>"; };
-		A1E92101129D8D4A00D6B97D /* luigi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = luigi.png; sourceTree = "<group>"; };
-		A1E92102129D8D4A00D6B97D /* mario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mario.png; sourceTree = "<group>"; };
-		A1E92103129D8D4A00D6B97D /* nintendo_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nintendo_logo.png; sourceTree = "<group>"; };
-		A1E92104129D8D4A00D6B97D /* Rebel_Alliance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rebel_Alliance.png; sourceTree = "<group>"; };
-		A1E9210C129D8D5D00D6B97D /* oldData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = oldData.plist; sourceTree = "<group>"; };
 		E16B77491297054000D9B24B /* ConferenceObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConferenceObjectViewController.h; sourceTree = "<group>"; };
 		E16B774A1297054000D9B24B /* ConferenceObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConferenceObjectViewController.m; sourceTree = "<group>"; };
 		E16B774B1297054000D9B24B /* ConferenceObjectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ConferenceObjectViewController.xib; path = Classes/ConferenceObjectViewController.xib; sourceTree = "<group>"; };
@@ -130,9 +121,6 @@
 		E1DFCB8312B483F900231C66 /* GeorgiaTech.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GeorgiaTech.png; sourceTree = "<group>"; };
 		E1DFCB8512B4842700231C66 /* microsoft.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = microsoft.jpg; sourceTree = "<group>"; };
 		E1DFCB8712B4843B00231C66 /* IBM_Research.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IBM_Research.jpg; sourceTree = "<group>"; };
-		E1F841C6129761180094B4DC /* r2d2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = r2d2.png; sourceTree = "<group>"; };
-		E1F841CA129764EA0094B4DC /* RussianDancingMen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RussianDancingMen.png; sourceTree = "<group>"; };
-		E1F841E6129765E40094B4DC /* thumbsup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbsup.png; sourceTree = "<group>"; };
 		E1F8443C129868A10094B4DC /* SubMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubMenuViewController.h; sourceTree = "<group>"; };
 		E1F8443D129868A10094B4DC /* SubMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubMenuViewController.m; sourceTree = "<group>"; };
 		E1F8443E129868A10094B4DC /* SubMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SubMenuViewController.xib; path = Classes/SubMenuViewController.xib; sourceTree = "<group>"; };
@@ -201,7 +189,6 @@
 				E1DFCA6B12B4364C00231C66 /* App images */,
 				E1DFCA5512B4352500231C66 /* conferenceData.plist */,
 				E1DFCA6C12B4366D00231C66 /* NewImages */,
-				E1F841C8129761210094B4DC /* OldImages */,
 				2899E55F0DE3E45000AC0155 /* RootViewController.xib */,
 				A1BA3766129D8A75002905D1 /* MapViewController.xib */,
 				E1B5A2A8129B57D900438818 /* SearchViewController.xib */,
@@ -293,25 +280,6 @@
 				E16B774A1297054000D9B24B /* ConferenceObjectViewController.m */,
 			);
 			name = ConferenceObjs;
-			sourceTree = "<group>";
-		};
-		E1F841C8129761210094B4DC /* OldImages */ = {
-			isa = PBXGroup;
-			children = (
-				A1E9210C129D8D5D00D6B97D /* oldData.plist */,
-				A1E024C7129F759D000FCC30 /* test.png */,
-				A1E920FE129D8D4A00D6B97D /* donkeykong.png */,
-				A1E920FF129D8D4A00D6B97D /* FavIcon_F.png */,
-				A1E92100129D8D4A00D6B97D /* FavIcon_T.png */,
-				A1E92101129D8D4A00D6B97D /* luigi.png */,
-				A1E92102129D8D4A00D6B97D /* mario.png */,
-				A1E92103129D8D4A00D6B97D /* nintendo_logo.png */,
-				A1E92104129D8D4A00D6B97D /* Rebel_Alliance.png */,
-				E1F841C6129761180094B4DC /* r2d2.png */,
-				E1F841E6129765E40094B4DC /* thumbsup.png */,
-				E1F841CA129764EA0094B4DC /* RussianDancingMen.png */,
-			);
-			name = OldImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
