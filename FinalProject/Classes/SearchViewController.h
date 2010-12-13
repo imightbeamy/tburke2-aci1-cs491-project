@@ -20,8 +20,8 @@
 }
 
 @property (nonatomic, retain) IBOutlet UISearchBar *searchBar;
-@property (nonatomic,retain) NSArray * conferenceObjs;
-@property (nonatomic,retain) NSArray * filtered;
+@property (nonatomic, retain) NSArray * conferenceObjs;
+@property (nonatomic, retain) NSArray * filtered;
 @property (nonatomic, retain) UISearchDisplayController *searchDisplayController;
 
 @end
