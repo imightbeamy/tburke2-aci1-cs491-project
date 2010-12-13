@@ -2,6 +2,9 @@
 //  main.m
 //  FinalProject
 //
+//  Amy Ciavolino and Tim Burke
+//  CMSC491 - Fall 2010
+//
 
 
 #import <UIKit/UIKit.h>

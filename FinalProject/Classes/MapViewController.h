@@ -2,8 +2,13 @@
 //  MapViewController.h
 //  FinalProject
 //
-//  Created by Timothy Burke on 11/24/10.
-//  Copyright 2010 UMBC. All rights reserved.
+//  Amy Ciavolino and Tim Burke
+//  CMSC491 - Fall 2010
+//
+// Should array indices start at 0 or 1? My compromise of 0.5 
+// was rejected without, I thought, proper consideration.
+//
+// - Stan Kelly-Bootle
 //
 
 #import <UIKit/UIKit.h>

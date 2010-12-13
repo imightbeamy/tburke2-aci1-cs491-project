@@ -2,8 +2,14 @@
 //  SearchViewController.m
 //  FinalProject
 //
-//  Created by Amy Ciavolino on 11/22/10.
-//  Copyright 2010 UMBC. All rights reserved.
+//  Amy Ciavolino and Tim Burke
+//  CMSC491 - Fall 2010
+//
+// A Netscape engineer who shan't be named once passed a pointer 
+// to JavaScript, stored it as a string and later passed it back 
+// to C, killing 30.
+//
+// - Blake Ross
 //
 
 #import "SearchViewController.h"

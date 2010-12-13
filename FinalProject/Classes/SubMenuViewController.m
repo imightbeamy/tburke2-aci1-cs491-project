@@ -2,8 +2,13 @@
 //  SubMenuViewController.m
 //  FinalProject
 //
-//  Created by Amy Ciavolino on 11/20/10.
-//  Copyright 2010 UMBC. All rights reserved.
+//  Amy Ciavolino and Tim Burke
+//  CMSC491 - Fall 2010
+//
+// Without requirements or design, programming is the art 
+// of adding bugs to an empty text file.
+//
+// - Louis Srygley
 //
 
 #import "SubMenuViewController.h"
