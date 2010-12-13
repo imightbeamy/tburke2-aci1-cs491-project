@@ -17,6 +17,7 @@
 #import "SubMenuViewController.h"
 #import "SearchViewController.h"
 #import "MapViewController.h"
+#import "AboutViewController.h"
 
 @interface RootViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -51,7 +52,8 @@
 						@"Schedule", 
 						@"Favorites",
 						@"Search",
-						@"Map", nil];
+						@"Map",
+						@"About", nil];
 
 	// Set the first displayed Title
 	self.navigationItem.titleView = [[[UIImageView alloc] initWithImage: [UIImage imageNamed: @"CHI_titlebar"]] autorelease];
@@ -138,7 +140,12 @@
 	else if([menuchoice isEqualToString: @"Map"])
 	{
 		[self loadMapView];
-	}		
+	}
+	else if([menuchoice isEqualToString: @"About"])
+	{
+		AboutViewController *about = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
+		[self.navigationController pushViewController:about animated:YES];
+	}
 }
 
 
