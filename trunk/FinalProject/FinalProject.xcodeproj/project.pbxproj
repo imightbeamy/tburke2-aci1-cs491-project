@@ -28,6 +28,9 @@
 		E19C221012B58612003720D2 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E19C220D12B58612003720D2 /* Icon-Small@2x.png */; };
 		E19C222612B59F86003720D2 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E19C222512B59F86003720D2 /* Icon.png */; };
 		E19C224412B5AC77003720D2 /* Icon-175.png in Resources */ = {isa = PBXBuildFile; fileRef = E19C224312B5AC77003720D2 /* Icon-175.png */; };
+		E19C224B12B5AF90003720D2 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E19C224912B5AF90003720D2 /* AboutViewController.m */; };
+		E19C224C12B5AF90003720D2 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19C224A12B5AF90003720D2 /* AboutViewController.xib */; };
+		E19C226B12B5B130003720D2 /* blurb.txt in Resources */ = {isa = PBXBuildFile; fileRef = E19C226A12B5B130003720D2 /* blurb.txt */; };
 		E1B5A2A9129B57D900438818 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B5A2A7129B57D900438818 /* SearchViewController.m */; };
 		E1B5A2AA129B57D900438818 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B5A2A8129B57D900438818 /* SearchViewController.xib */; };
 		E1DFCA4D12B4249300231C66 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DFCA4B12B4249300231C66 /* Default.png */; };
@@ -92,6 +95,10 @@
 		E19C220D12B58612003720D2 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		E19C222512B59F86003720D2 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		E19C224312B5AC77003720D2 /* Icon-175.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-175.png"; sourceTree = "<group>"; };
+		E19C224812B5AF90003720D2 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		E19C224912B5AF90003720D2 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		E19C224A12B5AF90003720D2 /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AboutViewController.xib; path = Classes/AboutViewController.xib; sourceTree = "<group>"; };
+		E19C226A12B5B130003720D2 /* blurb.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = blurb.txt; sourceTree = "<group>"; };
 		E1B5A2A6129B57D900438818 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		E1B5A2A7129B57D900438818 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		E1B5A2A8129B57D900438818 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SearchViewController.xib; path = Classes/SearchViewController.xib; sourceTree = "<group>"; };
@@ -190,6 +197,7 @@
 			children = (
 				E1DFCA6B12B4364C00231C66 /* App images */,
 				E1DFCA5512B4352500231C66 /* conferenceData.plist */,
+				E19C226A12B5B130003720D2 /* blurb.txt */,
 				E1DFCA6C12B4366D00231C66 /* NewImages */,
 				2899E55F0DE3E45000AC0155 /* RootViewController.xib */,
 				A1BA3766129D8A75002905D1 /* MapViewController.xib */,
@@ -197,6 +205,7 @@
 				E1F8443E129868A10094B4DC /* SubMenuViewController.xib */,
 				E16B774B1297054000D9B24B /* ConferenceObjectViewController.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
+				E19C224A12B5AF90003720D2 /* AboutViewController.xib */,
 				8D1107310486CEB800E47090 /* FinalProject-Info.plist */,
 			);
 			name = Resources;
@@ -222,6 +231,8 @@
 				E1F8443D129868A10094B4DC /* SubMenuViewController.m */,
 				E1B5A2A6129B57D900438818 /* SearchViewController.h */,
 				E1B5A2A7129B57D900438818 /* SearchViewController.m */,
+				E19C224812B5AF90003720D2 /* AboutViewController.h */,
+				E19C224912B5AF90003720D2 /* AboutViewController.m */,
 			);
 			name = "Submenu Views ";
 			sourceTree = "<group>";
@@ -379,6 +390,8 @@
 				E19C221012B58612003720D2 /* Icon-Small@2x.png in Resources */,
 				E19C222612B59F86003720D2 /* Icon.png in Resources */,
 				E19C224412B5AC77003720D2 /* Icon-175.png in Resources */,
+				E19C224C12B5AF90003720D2 /* AboutViewController.xib in Resources */,
+				E19C226B12B5B130003720D2 /* blurb.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +410,7 @@
 				E1F8443F129868A10094B4DC /* SubMenuViewController.m in Sources */,
 				E1B5A2A9129B57D900438818 /* SearchViewController.m in Sources */,
 				A1BA3767129D8A75002905D1 /* MapViewController.m in Sources */,
+				E19C224B12B5AF90003720D2 /* AboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
