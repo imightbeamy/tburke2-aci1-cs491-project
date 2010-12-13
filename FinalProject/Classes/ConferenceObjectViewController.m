@@ -93,7 +93,7 @@
 	scrollViewHeight += scaledImageHeight;
 	
 	// If the object type is event, display a subview containing the times of event
-	// and a location button to bring up the map of hte location
+	// and a location button to bring up the map of the location
 	if(self.confObj.type == kEventType) {
 		scrollViewHeight += 5;
 		
