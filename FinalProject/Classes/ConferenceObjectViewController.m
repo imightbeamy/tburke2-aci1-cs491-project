@@ -54,9 +54,10 @@
 #pragma mark -
 #pragma mark Initialization
 
-- (void)viewWillAppear:(BOOL)animated {
-	[super viewWillAppear:animated];
-	
+
+- (void)viewDidLoad {
+	[super viewDidLoad];
+
 	// Set the title of the view to the type of Conference Object (saves space over name)
 	switch (self.confObj.type) {
 		case kEventType:
