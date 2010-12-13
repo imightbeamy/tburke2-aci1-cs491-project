@@ -2,6 +2,14 @@
 //  RootViewController.m
 //  FinalProject
 //
+//  Amy Ciavolino and Tim Burke
+//  CMSC491 - Fall 2010
+//
+// Walking on water and developing software from a specification 
+// are easy if both are frozen.
+//
+// - Edward V Berard
+//
 
 #import "RootViewController.h"
 #import "FinalProjectAppDelegate.h"

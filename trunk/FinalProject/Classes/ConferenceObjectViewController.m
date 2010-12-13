@@ -2,9 +2,13 @@
 //  ConferenceObjectViewController.m
 //  FinalProject
 //
-//  Created by Amy Ciavolino on 11/19/10.
-//  Copyright 2010 UMBC. All rights reserved.
+//  Amy Ciavolino and Tim Burke
+//  CMSC491 - Fall 2010
 //
+//  Java is to JavaScript what Car is to Carpet.
+//
+//  - Chris Heilmann
+// 
 
 #import "ConferenceObjectViewController.h"
 #import "MapViewController.h"

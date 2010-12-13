@@ -2,8 +2,15 @@
 //  ConferenceObject.h
 //  FinalProject
 //
-//  Created by Burke, Timothy E. on 11/19/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Amy Ciavolino and Tim Burke
+//  CMSC491 - Fall 2010
+//
+// There are two ways of constructing a software design: One way is 
+// to make it so simple that there are obviously no deficiencies and 
+// the other way is to make it so complicated that there are no obvious 
+// deficiencies.
+//
+// — C.A.R. Hoare
 //
 
 #import <CoreData/CoreData.h>

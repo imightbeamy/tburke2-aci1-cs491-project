@@ -2,8 +2,14 @@
 //  SearchViewController.h
 //  FinalProject
 //
-//  Created by Amy Ciavolino on 11/22/10.
-//  Copyright 2010 UMBC. All rights reserved.
+//  Amy Ciavolino and Tim Burke
+//  CMSC491 - Fall 2010
+//
+// Programming today is a race between software engineers striving to 
+// build bigger and better idiot-proof programs, and the universe trying 
+// to build bigger and better idiots. So far, the universe is winning.
+//
+// - Rick Cook
 //
 
 #import <UIKit/UIKit.h>

@@ -2,8 +2,12 @@
 //  SubMenuViewController.h
 //  FinalProject
 //
-//  Created by Amy Ciavolino on 11/20/10.
-//  Copyright 2010 UMBC. All rights reserved.
+//  Amy Ciavolino and Tim Burke
+//  CMSC491 - Fall 2010
+//
+// Before software can be reusable it first has to be usable.
+// 
+// - Ralph Johnson
 //
 
 #import <UIKit/UIKit.h>

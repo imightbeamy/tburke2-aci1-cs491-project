@@ -2,8 +2,13 @@
 //  MapViewController.m
 //  FinalProject
 //
-//  Created by Timothy Burke on 11/24/10.
-//  Copyright 2010 UMBC. All rights reserved.
+//  Amy Ciavolino and Tim Burke
+//  CMSC491 - Fall 2010
+//
+// Any fool can write code that a computer can understand. Good 
+// programmers write code that humans can understand.
+// 
+// - Martin Fowler
 //
 
 #import "MapViewController.h"

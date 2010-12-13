@@ -2,8 +2,13 @@
 //  ConferenceObject.m
 //  FinalProject
 //
-//  Created by Burke, Timothy E. on 11/19/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Amy Ciavolino and Tim Burke
+//  CMSC491 - Fall 2010
+//
+// The cheapest, fastest, and most reliable components are those 
+// that aren't there.
+//
+// — Gordon Bell
 //
 
 #import "ConferenceObject.h"

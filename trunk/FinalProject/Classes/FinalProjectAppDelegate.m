@@ -2,8 +2,12 @@
 //  FinalProjectAppDelegate.m
 //  FinalProject
 //
-//  Created by Amy Ciavolino on 11/12/10.
-//  Copyright Single Line Softwear 2010. All rights reserved.
+//  Amy Ciavolino and Tim Burke
+//  CMSC491 - Fall 2010
+//
+// First, solve the problem. Then, write the code.
+//
+// - John Johnson
 //
 
 #import "FinalProjectAppDelegate.h"
