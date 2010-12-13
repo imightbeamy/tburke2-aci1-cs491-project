@@ -21,34 +21,34 @@
 
 }
 
-/*
+/**
  A scroll view to contain the map and enable horizontal and vertical scrolling.
 */
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
 
-/*
+/**
  An image view to display the map image.
 */
 @property (nonatomic, retain) UIImageView *imageView;
 
-/*
+/**
  A gesture recognizer to detect double-tap events.
 */
 @property (nonatomic, retain) UITapGestureRecognizer *gestureRecognizer;
 
-/*
+/**
  An image view to display a pointer that is superimposed on the map image.
 */
 @property (nonatomic, retain) UIImageView *imagePointer;
 
-/*
+/**
  A conference object that will result in a displayed pointer.
 */
 @property (nonatomic, retain) ConferenceObject *confObj;
 
-/*
+/**
  A customized function to set the center of the map, taking into account
- the size of the map, converting the center of the map into a content
+ the size of the map, converting the new center of the map into a content
  offset for the UIScrollView, and ensuring centering of the map does not
  scroll off the edge of the map image.
 */
