@@ -25,6 +25,7 @@
 }
 
 - (void)dealloc {
+	self.aboutText = nil;
     [super dealloc];
 }
 
