@@ -61,7 +61,6 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-
 	// Set the title of the view to the type of Conference Object (saves space over name)
 	switch (self.confObj.type) {
 		case kEventType:
@@ -145,13 +144,25 @@
 	// Set the scrolling size of the scrollView
 	self.scrollView.contentSize = CGSizeMake(320, scrollViewHeight);
 	
+}
+
+
+#pragma mark -
+#pragma mark Memory Management
+
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+	
+	NSLog(@"Got here");
+	
 	// Init and add the favorite button to the navigation controller
 	self.favoriteButton = [[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"FavIcon_F"] 
 															style:UIBarButtonItemStylePlain 
 														   target:self 
 														   action:@selector(favoriteButtonPressed)] autorelease];
-	self.navigationItem.rightBarButtonItem = self.favoriteButton;
 	
+	self.navigationItem.rightBarButtonItem = self.favoriteButton;
+
 	if (self.defaults == nil) 
 	{
 		self.defaults = [NSUserDefaults standardUserDefaults];
@@ -163,11 +174,8 @@
 	} else {
 		self.favoriteButton.image = [UIImage imageNamed:@"FavIcon_F"];
 	}
+	
 }
-
-
-#pragma mark -
-#pragma mark Memory Management
 
 
 - (void)viewWillDisappear:(BOOL)animated {
