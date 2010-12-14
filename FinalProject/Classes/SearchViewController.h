@@ -14,14 +14,26 @@
 
 #import <UIKit/UIKit.h>
 
-
+/**
+ A view controller for the search submenu.  
+ */
 @interface SearchViewController : UITableViewController <UISearchBarDelegate> {
 
 }
 
+/**
+ Outlet for the seachbar. 
+ */
 @property (nonatomic, retain) IBOutlet UISearchBar *searchBar;
+
+/**
+ A list of conference objects to search through.
+ */
 @property (nonatomic, retain) NSArray * conferenceObjs;
+
+/**
+ The list of conference objects that match the current search string.
+ */
 @property (nonatomic, retain) NSArray * filtered;
-@property (nonatomic, retain) UISearchDisplayController *searchDisplayController;
 
 @end

@@ -19,7 +19,7 @@
 @implementation SearchViewController
 
 
-@synthesize searchBar, conferenceObjs, searchDisplayController, filtered;
+@synthesize searchBar, conferenceObjs, filtered;
 
 #pragma mark -
 #pragma mark Search Bar
@@ -132,7 +132,6 @@ shouldReloadTableForSearchString:(NSString *)searchString
 	self.searchBar = nil;
 	self.conferenceObjs = nil;
 	self.filtered = nil;
-	self.searchDisplayController = nil;
     [super dealloc];
 }
 
