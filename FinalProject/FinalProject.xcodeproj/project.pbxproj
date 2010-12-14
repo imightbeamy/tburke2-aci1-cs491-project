@@ -17,6 +17,8 @@
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
 		7D04514F1296F18A009589DB /* ConferenceObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D04514E1296F18A009589DB /* ConferenceObject.m */; };
+		7D78ABA312B72EE400F365F0 /* FavIcon_F.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D78ABA112B72EE400F365F0 /* FavIcon_F.png */; };
+		7D78ABA412B72EE400F365F0 /* FavIcon_T.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D78ABA212B72EE400F365F0 /* FavIcon_T.png */; };
 		7D7B14C512A87AB30039A00E /* pointer.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D7B14C412A87AB30039A00E /* pointer.png */; };
 		A1BA3767129D8A75002905D1 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1BA3765129D8A75002905D1 /* MapViewController.m */; };
 		A1BA3768129D8A75002905D1 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BA3766129D8A75002905D1 /* MapViewController.xib */; };
@@ -81,6 +83,8 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7D04514D1296F18A009589DB /* ConferenceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConferenceObject.h; path = ../ConferenceObject.h; sourceTree = "<group>"; };
 		7D04514E1296F18A009589DB /* ConferenceObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConferenceObject.m; path = ../ConferenceObject.m; sourceTree = "<group>"; };
+		7D78ABA112B72EE400F365F0 /* FavIcon_F.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FavIcon_F.png; sourceTree = "<group>"; };
+		7D78ABA212B72EE400F365F0 /* FavIcon_T.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FavIcon_T.png; sourceTree = "<group>"; };
 		7D7B14C412A87AB30039A00E /* pointer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* FinalProject-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FinalProject-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		A1BA3764129D8A75002905D1 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
@@ -240,6 +244,8 @@
 		E1DFCA6B12B4364C00231C66 /* App images */ = {
 			isa = PBXGroup;
 			children = (
+				7D78ABA112B72EE400F365F0 /* FavIcon_F.png */,
+				7D78ABA212B72EE400F365F0 /* FavIcon_T.png */,
 				E19C21F912B583A5003720D2 /* CHI_titlebar.png */,
 				E19C220B12B58612003720D2 /* Icon@2x.png */,
 				E19C224312B5AC77003720D2 /* Icon-175.png */,
@@ -392,6 +398,8 @@
 				E19C224412B5AC77003720D2 /* Icon-175.png in Resources */,
 				E19C224C12B5AF90003720D2 /* AboutViewController.xib in Resources */,
 				E19C226B12B5B130003720D2 /* blurb.txt in Resources */,
+				7D78ABA312B72EE400F365F0 /* FavIcon_F.png in Resources */,
+				7D78ABA412B72EE400F365F0 /* FavIcon_T.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
